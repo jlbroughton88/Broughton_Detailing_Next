@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../public/css/Work.scss";
+import "../public/css/work.scss";
 import chevytruck1 from "../public/images/chevytruck1.jpg";
 import chevyvan1 from "../public/images/chevyvan1.jpeg";
 import genesis1 from "../public/images/genesis1.jpg";

@@ -1,0 +1,188 @@
+{
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/about.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/home.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/allclients.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/contact.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/services.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/navbar.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/work.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! node_modules/next/dist/client/router.js": 0,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/about.scss 0": 1,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/allclients.scss 0": 2,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/navbar.scss 0": 3,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/contact.scss 0": 4,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/home.scss 0": 5,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/services.scss 0": 6,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/work.scss 0": 7
+    },
+    "usedIds": {
+      "0": 0,
+      "1": 1,
+      "2": 2,
+      "3": 3,
+      "4": 4,
+      "5": 5,
+      "6": 6,
+      "7": 7
+    }
+  },
+  "chunks": {
+    "byName": {
+      "static/runtime/webpack.js": 0,
+      "framework": 1,
+      "styles": 2,
+      "d37a6a9faf9d92cd36009e955e4f2be0c8a107b7": 3,
+      "f8e111f8e077cac06461f119d57da04da7d0102c": 4,
+      "abad9e530079d63c85df191408535d550ddd58e2": 5,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/_app.js": 6,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/_error.js": 7,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/about.js": 8,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/allclients.js": 9,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/comps/context.js": 10,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/comps/logos/menusvg.js": 11,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/comps/navbar.js": 12,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/contact.js": 13,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/home.js": 14,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/services.js": 15,
+      "static/iyWzuED0TOTz1gOiF6_6G/pages/work.js": 16,
+      "static/runtime/main.js": 17,
+      "static/runtime/polyfills.js": 18
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}
