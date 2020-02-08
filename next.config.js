@@ -4,7 +4,6 @@ const withImages = require('next-images');
 const withFonts = require("next-fonts");
 
 module.exports = withImages(withSass({
-  distDir: "_next",
   target: "serverless",
     cssModules: true,
     webpack (config, options) {

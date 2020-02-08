@@ -127,7 +127,8 @@
       "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/contact.scss 0": 4,
       "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/home.scss 0": 5,
       "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/services.scss 0": 6,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/Work.scss 0": 7
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/Work.scss 0": 7,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/work.scss 0": 7
     },
     "usedIds": {
       "0": 0,
@@ -160,29 +161,60 @@
       "static/qEGLBW_Tcr3oOdb0oMf87/pages/services.js": 15,
       "static/qEGLBW_Tcr3oOdb0oMf87/pages/work.js": 16,
       "static/runtime/main.js": 17,
-      "static/runtime/polyfills.js": 18
+      "static/runtime/polyfills.js": 18,
+      "d315fb175fe67dd92cfbefedbe39da91aa458320": 19,
+      "b203245037d3ad66075bc9b51c3dbcf30a2d0e72": 20,
+      "581c6078eaea625260f53c74ce89b9e8c3d62376": 21,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/_app.js": 22,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/_error.js": 23,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/about.js": 24,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/allclients.js": 25,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/comps/context.js": 26,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/comps/logos/menusvg.js": 27,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/comps/navbar.js": 28,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/contact.js": 29,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/home.js": 30,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/services.js": 31,
+      "static/P7ZzfFpsT24VM-ZG8-4XU/pages/work.js": 32
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16,
       17,
       18,
+      19,
       2,
-      3,
-      4,
-      5,
-      6,
-      7,
-      8,
-      9
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32
     ]
-  }
+  },
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/work.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ]
 }
