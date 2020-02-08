@@ -13,7 +13,6 @@ import runner1 from "../public/images/4runner1.jpg";
 
 import patriot1 from "../public/images/patriot1.jpg";
 import patriotFillDoor from "../public/images/patriotFillDoor.jpg";
-"public/images/4runner1.jpg"
 import patriotInterior1 from "../public/images/patriotInterior1.jpg";
 import patriotInterior2 from "../public/images/patriotInterior2.jpg";
 import wrx1 from "../public/images/wrx1.jpg";
