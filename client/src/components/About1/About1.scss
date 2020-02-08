@@ -1,0 +1,157 @@
+.aboutMother {
+  height: 100%;
+  .aboutMain {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    .leftSect {
+      height: 100%;
+      width: calc(50% - 30px);
+      background: #4698fe;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: fixed;
+      padding-right: 30px;
+      .headDiv {
+        // margin-bottom: 100px;
+        height: 156px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        .head {
+          text-align: end;
+          color: #333;
+          font-size: 4rem;
+        }
+      }
+    }
+
+    .rightSect {
+      // height: 100%;
+      width: 50%;
+      background: #333;
+      display: flex;
+      justify-content: center;;
+      align-items: flex-start;
+      position: relative;
+      left: 50%;
+      .rightSectChild {
+        height: auto;
+        background: #333;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+
+        .aboutSlogan{
+          color: #4698fe;
+          margin-bottom : 20px; 
+        }
+
+        .storyDiv {
+          display: flex;
+          flex-direction: column;
+          max-width: 650px;
+
+
+          .aboutImgDiv{
+            width: 100%;
+            height: auto;
+            .aboutImg{
+              width: 100%;
+              height: auto;
+            }
+          }
+          .storyParaDiv {
+            padding: 0 15px;
+            margin-top: 20px;
+            width: calc(100% - 30px);
+            padding-bottom: 100px;
+            .storyPara {
+              font-weight: 500;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    height: 100%;
+    .aboutMain {
+      flex-direction: column;
+      .leftSect {
+        width: 100%;
+        height: 180px;
+        padding-right: 0;
+        position: static;
+        .headDiv {
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end;
+          .head {
+            margin-top: 80px;
+          }
+        }
+      }
+      .rightSect {
+        width: 100%;
+        left: 0;
+        .rightSectChild {
+          align-items: flex-start;
+          justify-content: flex-start;
+          .storyDiv {
+            .storyHeadDiv{
+              max-width: initial;
+              width: calc(100% - 30px);
+              .storyHead{
+                width: 100%;
+                
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    height: 100%;
+    .aboutMain {
+      .leftSect{
+        height: auto;
+        padding-top: 83px;
+        padding-bottom: 6px;
+        .headDiv{
+          height: auto;
+          .head{
+            margin: 0;
+          }
+        }
+      }
+      .rightSect {
+      //  margin-top: 20px;
+        .rightSectChild {
+           
+          .storyDiv {
+            // margin-top: 50px;
+            .storyHeadDiv {
+              .storyHead {
+                font-size: 1.5rem;
+                padding: 5px 10px;
+              }
+            }
+            .storyParaDiv {
+              .storyPara {
+                font-size: 1rem;
+                white-space: pre-wrap;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
