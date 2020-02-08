@@ -2,7 +2,7 @@
   "name": "Broughton_Detailing",
   "version": "1.0.0",
   "engines": {
-    "node": "12.0",
+    "node": "12.13",
     "npm": "6.10.3"
   },
   "description": "Website for my auto detailing business, Broughton Detailing.",
