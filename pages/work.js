@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../public/css/work.scss";
-import chevytruck1 from "../public/images/chevytruck1.jpg";
-import chevyvan1 from "../public/images/chevyvan1.jpeg";
-import genesis1 from "../public/images/genesis1.jpg";
-import genesis2 from "../public/images/genesis2.jpg";
-import genesis3 from "../public/images/genesis3.jpg";
-import pilot1 from "../public/images/pilot1.jpg";
-import smart1 from "../public/images/smart1.jpg";
-import smart2 from "../public/images/smart2.jpg";
+const chevytruck1 = require("../public/images/chevytruck1.jpg")
+const chevyvan1 = require("../public/images/chevyvan1.jpeg")
+const genesis1 = require("../public/images/genesis1.jpg")
+const genesis2 = require("../public/images/genesis2.jpg")
+const genesis3 = require("../public/images/genesis3.jpg")
+const pilot1 = require("../public/images/pilot1.jpg")
+const smart1 = require("../public/images/smart1.jpg")
+const smart2 = require("../public/images/smart2.jpg")
 
-import runner1 from "../public/images/4runner1.jpg";
+const runner1 = require("../public/images/4runner1.jpg")
 
-import patriot1 from "../public/images/patriot1.jpg";
-import patriotFillDoor from "../public/images/patriotFillDoor.jpg";
-import patriotInterior1 from "../public/images/patriotInterior1.jpg";
-import patriotInterior2 from "../public/images/patriotInterior2.jpg";
-import wrx1 from "../public/images/wrx1.jpg";
-import wrx2 from "../public/images/wrx2.jpg";
-import wrx3 from "../public/images/wrx3.jpg";
-import wrxInterior from "../public/images/wrxInterior.jpg";
+const patriot1 = require("../public/images/patriot1.jpg")
+const patriotFillDoor = require("../public/images/patriotFillDoor.jpg")
+const patriotInterior1 = require("../public/images/patriotInterior1.jpg")
+const patriotInterior2 = require("../public/images/patriotInterior2.jpg")
+const wrx1 = require("../public/images/wrx1.jpg")
+const wrx2 = require("../public/images/wrx2.jpg")
+const wrx3 = require("../public/images/wrx3.jpg")
+const wrxInterior = require("../public/images/wrxInterior.jpg")
 
 
 
