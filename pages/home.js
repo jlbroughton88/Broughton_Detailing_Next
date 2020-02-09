@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import titleImage from "../public/images/genesisWithTitle.jpg";
+import titleImage from "../public/genesisWithTitle.jpg";
 import Link from "next/link";
 import "../public/css/home.scss";
 

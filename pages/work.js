@@ -1,24 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../public/css/work.scss";
-const chevytruck1 = require("../public/images/chevytruck1.jpg")
-const chevyvan1 = require("../public/images/chevyvan1.jpeg")
-const genesis1 = require("../public/images/genesis1.jpg")
-const genesis2 = require("../public/images/genesis2.jpg")
-const genesis3 = require("../public/images/genesis3.jpg")
-const pilot1 = require("../public/images/pilot1.jpg")
-const smart1 = require("../public/images/smart1.jpg")
-const smart2 = require("../public/images/smart2.jpg")
+const chevytruck1 = require("../public/chevytruck1.jpg")
+const chevyvan1 = require("../public/chevyvan1.jpeg")
+const genesis1 = require("../public/genesis1.jpg")
+const genesis2 = require("../public/genesis2.jpg")
+const genesis3 = require("../public/genesis3.jpg")
+const pilot1 = require("../public/pilot1.jpg")
+const smart1 = require("../public/smart1.jpg")
+const smart2 = require("../public/smart2.jpg")
 
-const runner1 = require("../public/images/4runner1.jpg")
+const runner1 = require("../public/4runner1.jpg")
 
-const patriot1 = require("../public/images/patriot1.jpg")
-const patriotFillDoor = require("../public/images/patriotFillDoor.jpg")
-const patriotInterior1 = require("../public/images/patriotInterior1.jpg")
-const patriotInterior2 = require("../public/images/patriotInterior2.jpg")
-const wrx1 = require("../public/images/wrx1.jpg")
-const wrx2 = require("../public/images/wrx2.jpg")
-const wrx3 = require("../public/images/wrx3.jpg")
-const wrxInterior = require("../public/images/wrxInterior.jpg")
+const patriot1 = require("../public/patriot1.jpg")
+const patriotFillDoor = require("../public/patriotFillDoor.jpg")
+const patriotInterior1 = require("../public/patriotInterior1.jpg")
+const patriotInterior2 = require("../public/patriotInterior2.jpg")
+const wrx1 = require("../public/wrx1.jpg")
+const wrx2 = require("../public/wrx2.jpg")
+const wrx3 = require("../public/wrx3.jpg")
+const wrxInterior = require("../public/wrxInterior.jpg")
 
 
 

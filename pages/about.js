@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import genesis4 from "../public/images/genesis4.jpg"
+import genesis4 from "../public/genesis4.jpg"
 import "../public/css/about.scss";
 
 const About1 = () => {
