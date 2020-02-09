@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  text-decoration: none;
+}
+
+.navMother {
+  position: fixed;
+  z-index: 2;
+  .navMain {
+    display: flex;
+    flex-direction: row;
+    .navLogoDiv {
+      background: #333;
+      width: 200px;
+      padding: 10px 20px;
+      border-bottom-right-radius: 3px;
+      .navLogo {
+        text-align: start;
+        font-size: 1.8rem;
+        color: #ffffff;
+        font-weight: 500;
+      }
+      .navLogoSecond {
+        font-size: 1.4rem;
+        text-align: start;
+        color: #ffffff;
+        font-weight: 500;
+      }
+    }
+    .navLinksDiv {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .navLink {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 1.15rem;
+        margin-left: 15px;
+      }
+    }
+    .burgerMenuDiv {
+      display: none;
+      .burgerMenu {
+        display: none;
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    .navDropDown {
+      display: none;
+      position: absolute;
+      right: 0;
+      z-index: 2;
+      ul {
+        background: #333;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        padding: 0;
+        padding-left: 20px;
+        border-bottom-left-radius: 5px;
+        padding: 20px 5px 20px 20px;
+        li {
+          text-decoration: none;
+          list-style: none;
+          color: #ffffff;
+          border: #333333 1px solid;
+          padding: 4px 15px;
+          font-size: 1.15rem;
+          margin: 5px 0px 0px 0px;
+        }
+      }
+    }
+
+    #overlay {
+      position: fixed;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      pointer-events: none;
+      transition: 200ms ease-in-out;
+      z-index: 1;
+    }
+    #overlay.active {
+      opacity: 1;
+      pointer-events: all;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    .navMain {
+      .navLogoDiv {
+        padding: 7px 10px;
+        width: 150px;
+        .navLogo {
+          font-size: 1.7rem;
+        }
+        .navLogoSecond {
+          font-size: 1.25rem;
+        }
+      }
+      .navLinksDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto auto;
+        align-items: flex-start;
+        justify-content: center;
+        justify-items: start;
+        align-content: center;
+        margin-left: 15px;
+        .navLink {
+          font-size: 0.9rem;
+          margin: 3px;
+          padding: 3px;
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+  @media (max-width: 700px) {
+    position: absolute;
+    width: 100%;
+    .navMain {
+      background: #4698fe;
+      width: 100%;
+      position: relative;
+      .navLogoDiv {
+        border-radius: 0;
+      }
+      .navLinksDiv {
+        display: none;
+      }
+      .burgerMenuDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 68px;
+        width: 68px;
+        position: absolute;
+        right: 0;
+        cursor: pointer;
+
+        .burgerMenu {
+          display: block;
+          height: auto;
+          width: 35px;
+          margin: 0;
+          padding: 0;
+          right: 0;
+        }
+      }
+
+      .navDropDown.active {
+        display: block;
+        ul {
+          li {
+            &:hover,
+            &:focus {
+              color: #4698fe;
+            }
+          }
+        }
+      }
+    }
+  }
+}

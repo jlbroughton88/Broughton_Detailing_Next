@@ -1,23 +1,24 @@
 import React, { useState , useEffect} from "react";
 import axios from "axios";
 // import { useAppContext } from "./comps/context.js";
-import "../public/css/contact.scss";
+import "../public/static/css/contact.scss";
+import Navbar from "./comps/navbar";
 
 const Contact = () => {
   // const { statusUrl } = useAppContext();
 
   const [formData, setFormData] = useState("");
 
-  const closeNavMenu = () => {
-    let dropdown = document.getElementById("dropDown");
-    let overlay = document.getElementById("overlay");
-    dropdown.classList.remove("active");
-    overlay.classList.remove("active");
-  }
+  // const closeNavMenu = () => {
+  //   let dropdown = document.getElementById("dropDown");
+  //   let overlay = document.getElementById("overlay");
+  //   dropdown.classList.remove("active");
+  //   overlay.classList.remove("active");
+  // }
 
-  useEffect(() => {
-    closeNavMenu();
-  })
+  // useEffect(() => {
+  //   closeNavMenu();
+  // })
 
   const handleChange = e => {
     setFormData(e.target.value);
@@ -46,6 +47,7 @@ const Contact = () => {
 
   return (
     <div className="contactMother">
+      <Navbar/>
       <div className="contactMain">
         <section className="leftSect">
           <div className="headDiv">

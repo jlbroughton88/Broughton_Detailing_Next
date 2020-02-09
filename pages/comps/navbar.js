@@ -1,84 +1,84 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
 import Menu from "./logos/menusvg";
-import "../../public/css/navbar.scss";
+import "../../public/static/css/navbar.scss";
 
 const Navbar = () => {
-
   const handleMenuOpen = e => {
     let dropdown = document.getElementById("dropDown");
-    let overlay = document.getElementById("overlay")
-    if(dropdown.classList.contains("active")) {
+    let overlay = document.getElementById("overlay");
+    if (dropdown.classList.contains("active")) {
       dropdown.classList.remove("active");
-     
     } else {
-      dropdown.classList.add("active"); 
+      dropdown.classList.add("active");
       overlay.classList.add("active");
     }
-  }
+  };
 
   useEffect(() => {
     let dropdown = document.getElementById("dropDown");
     let overlay = document.getElementById("overlay");
     dropdown.classList.remove("active");
     overlay.classList.remove("active");
-  })
+  });
 
   const overlayClose = e => {
     let dropdown = document.getElementById("dropDown");
-    if(e.target.classList.contains("active")) {
+    if (e.target.classList.contains("active")) {
       e.target.classList.remove("active");
       dropdown.classList.remove("active");
     }
-  }
+  };
 
   return (
-    <div className="navMother">
+    <nav className="navMother">
       <div className="navMain">
-      <div onClick={overlayClose} className="" id="overlay"></div>
-        <Link to="/">
-          <div className="navLogoDiv">
-            <h2 className="navLogo">Broughton</h2>
-            <h2 className="navLogoSecond">Detailing</h2>
-          </div>
+        <div onClick={overlayClose} className="" id="overlay"></div>
+        <Link href="/">
+          <a>
+            <div className="navLogoDiv">
+              <h2 className="navLogo">Broughton</h2>
+              <h2 className="navLogoSecond">Detailing</h2>
+            </div>
+          </a>
         </Link>
 
         <div tabIndex="0" className="navLinksDiv">
-          <Link className="navLink" to="/about">
-            About
+          <Link  href="/about">
+            <a className="navLink">About</a>
           </Link>
-          <Link className="navLink" to="/services">
-            Services
+          <Link  href="/services">
+            <a className="navLink">Services</a>
           </Link>
-          <Link className="navLink" to="/work">
-            Work
+          <Link  href="/work">
+            <a className="navLink">Work</a>
           </Link>
-          <Link className="navLink" to="/contact">
-            Contact
+          <Link  href="/contact">
+            <a className="navLink">Contact</a>
           </Link>
         </div>
         <div tabIndex="0" onClick={handleMenuOpen} className="burgerMenuDiv">
           {/* <button >Menu</button> */}
-          <Menu className="burgerMenu"/>
+          <Menu className="burgerMenu" />
         </div>
         <div tabIndex="0" id="dropDown" className="navDropDown">
-          <ul >
-            <Link  to="/about">
-              <li  >About</li>
+          <ul>
+            <Link href="/about">
+              <li>About</li>
             </Link>
-            <Link to="/services">
+            <Link href="/services">
               <li>Services</li>
             </Link>
-            <Link to="/work">
+            <Link href="/work">
               <li>Work</li>
             </Link>
-            <Link to="/contact">
+            <Link href="/contact">
               <li>Contact</li>
             </Link>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

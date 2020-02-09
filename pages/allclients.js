@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useAppContext } from "./comps/context.js";
 import axios from "axios";
-import "../public/css/allclients.scss";
+import "../public/static/css/allclients.scss";
+import Navbar from "./comps/navbar";
 
 const AllClients = () => {
   const { statusUrl } = useAppContext();

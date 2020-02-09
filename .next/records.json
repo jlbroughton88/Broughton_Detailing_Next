@@ -1,5 +1,5 @@
 {
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/about.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/about.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -16,7 +16,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/allclients.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -33,7 +33,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/services.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/contact.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -50,7 +50,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/work.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/work.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -67,7 +67,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/contact.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/services.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -84,7 +84,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/navbar.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -101,7 +101,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/home.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -121,13 +121,13 @@
   "modules": {
     "byIdentifier": {
       "multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! node_modules/next/dist/client/router.js": 0,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/about.scss 0": 1,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/allclients.scss 0": 2,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/navbar.scss 0": 3,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/contact.scss 0": 4,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/home.scss 0": 5,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/services.scss 0": 6,
-      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/css/work.scss 0": 7
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/about.scss 0": 1,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss 0": 2,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss 0": 3,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/contact.scss 0": 4,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss 0": 5,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/services.scss 0": 6,
+      "css node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/work.scss 0": 7
     },
     "usedIds": {
       "0": 0,
@@ -144,23 +144,24 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "framework": 1,
-      "styles": 2,
-      "af2cdb012d14ea63e56c7944ec38e35950a15683": 3,
-      "ce127ed9b163612ac24eb9e09ea2d1e8b15070c2": 4,
-      "f05c998f4d3b52115a3074fb267aa3ac872a7090": 5,
-      "static/G6NQbPelak00iBVh2FKgs/pages/_app.js": 6,
-      "static/G6NQbPelak00iBVh2FKgs/pages/_error.js": 7,
-      "static/G6NQbPelak00iBVh2FKgs/pages/about.js": 8,
-      "static/G6NQbPelak00iBVh2FKgs/pages/allclients.js": 9,
-      "static/G6NQbPelak00iBVh2FKgs/pages/comps/context.js": 10,
-      "static/G6NQbPelak00iBVh2FKgs/pages/comps/logos/menusvg.js": 11,
-      "static/G6NQbPelak00iBVh2FKgs/pages/comps/navbar.js": 12,
-      "static/G6NQbPelak00iBVh2FKgs/pages/contact.js": 13,
-      "static/G6NQbPelak00iBVh2FKgs/pages/index.js": 14,
-      "static/G6NQbPelak00iBVh2FKgs/pages/services.js": 15,
-      "static/G6NQbPelak00iBVh2FKgs/pages/work.js": 16,
-      "static/runtime/main.js": 17,
-      "static/runtime/polyfills.js": 18
+      "31dd5701c8d6272cb9b05703d8cde0eb4190ff6c": 2,
+      "cee10e519cdc02a0a6bc2e2242250aefcedee1e8": 3,
+      "6ef3478d13598466e3c9acad3642287864db105d": 4,
+      "styles": 5,
+      "e86918ccd194cf6c65d418bed86cd629ae5ec43b": 6,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/_app.js": 7,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/_error.js": 8,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/about.js": 9,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/allclients.js": 10,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/comps/context.js": 11,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/comps/logos/menusvg.js": 12,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/comps/navbar.js": 13,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/contact.js": 14,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/index.js": 15,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/services.js": 16,
+      "static/ErIyUx8RHTWs9EK03TGBn/pages/work.js": 17,
+      "static/runtime/main.js": 18,
+      "static/runtime/polyfills.js": 19
     },
     "bySource": {},
     "usedIds": [
@@ -175,6 +176,7 @@
       16,
       17,
       18,
+      19,
       2,
       3,
       4,

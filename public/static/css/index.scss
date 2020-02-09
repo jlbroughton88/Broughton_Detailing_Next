@@ -1,0 +1,598 @@
+@mixin white-gradient-left {
+    background: linear-gradient(
+      to right,
+      rgba(51, 51, 51, 1) 0%,
+      rgba(51, 51, 51, 0) 100%
+    );
+  }
+  @mixin white-gradient-right {
+    background: linear-gradient(
+      to left,
+      rgba(51, 51, 51, 1) 0%,
+      rgba(51, 51, 51, 0) 100%
+    );
+  }
+  
+  html, body, #root{
+    height: 100%;
+    min-height: 100%;
+    background: #333333;
+  }
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .body {
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  }
+  .body::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  .home1Mother {
+    height: 100%;
+    width: 100%;
+    .home1Main {
+      display: flex;
+      flex-direction: row;
+      height: 100%;
+      width: 100%;
+  
+  
+      .leftSect {
+        height: 100vh;
+        width: calc(50% - 30px);
+        background: #4698fe;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 30px;
+        position: fixed;
+  
+        .headDiv {
+          // margin-bottom: 100px;
+          height: 156px;
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+          .subHead {
+            display: none;
+          }
+          .head {
+            text-align: end;
+            color: #333;
+            font-size: 4rem;
+  
+            &:before {
+              content: "Mobile ";
+            }
+          }
+        }
+      }
+  
+      .rightSect {
+        height: 100%;
+        width: 50%;
+        background: #333;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        left: 50%;
+        .rightSectChild {
+          width: 100%;
+  
+          .imgDiv {
+            max-width: inherit;
+            margin-bottom: 50px;
+            img {
+              width: 100%;
+              height: auto;
+              max-width: 700px;
+            }
+  
+            @media (min-width: 1405px) {
+              img {
+                border-bottom-right-radius: 5px;
+              }
+            }
+            @media (min-width: 1445px) {
+              padding-top: 30px;
+              padding-left: 30px;
+              img {
+                border-radius: 5px;
+              }
+            }
+          }
+  
+          .addrParent {
+            width: calc(100% - 30px);
+            margin-bottom: 100px;
+            .addrDiv {
+              .addrTextSmall {
+                display: none;
+              }
+              .addrText {
+                color: #4698fe;
+                font-size: 2rem;
+  
+                &:after {
+                  content: ".";
+                  color: #ffffff;
+                }
+              }
+              .addrText2 {
+                color: #4698fe;
+                font-size: 2rem;
+  
+                &:after {
+                  content: "!";
+                  color: #ffffff;
+                }
+              }
+              @keyframes bounce {
+                from {
+                  box-shadow: none;
+                  transform: translateY(0px);
+                }
+                to {
+                  box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe,
+                    9px 6px 10px rgba(30, 30, 30, 0.6);
+                  transform: translateY(-1px);
+                }
+              }
+              .buttonsDiv {
+                display: flex;
+                flex-direction: row;
+                // width: 100%;
+                a {
+                  width: inherit;
+                  justify-content: center;
+                  display: flex;
+                  .CTA {
+                    background: #4696fe;
+                    color: #333333;
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    border: none;
+                    border-radius: 3px;
+                    margin-top: 12px;
+                    padding: 5px 10px;
+                    box-shadow: -2px -2px #ffffff, 3px 2px #e6522d,
+                      6px 4px #4696fe;
+                    animation: bounce 2s infinite alternate;
+                    cursor: pointer;
+                  }              
+  
+                &:nth-child(2) {
+                  margin-left: 30px;
+                }
+                }
+  
+              }
+            }
+  
+            @media (min-width: 1370px) {
+              padding-left: 30px;
+            }
+          }
+          @keyframes scrollRevs {
+            from {
+              transform: translate(0);
+            }
+            to {
+              transform: translate(-1200px);
+            }
+          }
+  
+          .reviewsParent {
+            width: calc(100% - 30px);
+            // padding-left: 30px;
+            max-width: 500px;
+            margin-bottom: 50px;
+            .reviewsHeadDiv {
+              display: flex;
+              justify-content: flex-start;
+              .reviewsHead {
+                max-width: 500px;
+                // width: calc(100% - 15px);
+                text-align: start;
+                color: #333;
+                font-size: 1.8rem;
+                background: #4698fe;
+                padding: 10px 15px;
+                border-radius: 5px;
+                margin-bottom: 10px;
+                width: calc(100% - 20px);
+                max-width: 600px;
+              }
+            }
+            .reviewsDiv {
+              overflow: hidden;
+              display: flex;
+              position: relative;
+  
+              &:before {
+                @include white-gradient-left();
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100px;
+                top: 0;
+                left: 0;
+                z-index: 2;
+              }
+              &:after {
+                @include white-gradient-right();
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 100px;
+                right: 0;
+                top: 0;
+                z-index: 2;
+              }
+  
+              .reviewsScroll {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                width: 1500px;
+                animation: scrollRevs 53s linear infinite;
+                .revItem {
+                  margin-left: 100px;
+                  padding: 5px 10px;
+                  width: 225px;
+                  .revText {
+                    width: 180px;
+                    background: #ffffff;
+                    color: #333;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    margin-bottom: 10px;
+                    font-size: 1.05rem;
+                  }
+                  .revName {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    color: #4698fe;
+                  }
+                }
+              }
+            }
+  
+            @media (min-width: 1370px) {
+              padding-left: 30px;
+            }
+  
+            @media (min-width: 1050px) {
+              max-width: 650px;
+              .reviewsDiv {
+                .reviewsScroll {
+                  .revItem {
+                    width: 275px;
+                    .revText {
+                      font-size: 1.1rem;
+                    }
+                  }
+                }
+              }
+            }
+          }
+  
+          .FAQDiv {
+            width: calc(100% - 30px);
+            margin-bottom: 100px;
+            .FAQHeadDiv {
+              display: flex;
+              justify-content: flex-start;
+              .FAQHead {
+                color: #333;
+                font-size: 1.8rem;
+                background: #4698fe;
+                padding: 10px 15px;
+                border-radius: 5px;
+                width: calc(100% - 20px);
+                max-width: 600px;
+              }
+            }
+            .FAQListDiv {
+              .faqItem {
+                margin: 10px 5px;
+                border-radius: 3px;
+                padding: 5px 10px;
+                .faqQuestion {
+                  color: #4698fe;
+                }
+                .faqAnswer {
+                  margin-left: 20px;
+                  color: #ffffff;
+                }
+                .faqLink {
+                  margin-left: 10px;
+                  color: #ffffff;
+                  font-size: 1rem;
+                  border: solid black 1px;
+                  margin-top: 5px;
+                  padding: 5px 10px;
+                  background: black;
+                  border-radius: 3px;
+                  a {
+                    text-decoration: underline;
+                    color: #4698fe;
+                    font-weight: 700;
+                  }
+                }
+              }
+            }
+            @media (min-width: 1370px) {
+              padding-left: 30px;
+            }
+  
+            @media (min-width: 1050px) {
+              max-width: 650px;
+              .FAQListDiv {
+                .faqItem {
+                  .faqQuestion {
+                    font-size: 1.6rem;
+                  }
+                  .faqAnswer {
+                    font-size: 1.1rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 1369px) {
+      .home1Main {
+        .leftSect {
+        }
+        .rightSect {
+          .rightSectChild {
+            display: flex;
+            flex-direction: column;
+            width: calc(100% - 20px);
+            padding-left: 10px;
+            padding-right: 10px;
+            justify-content: center;
+            align-items: center;
+            .imgDiv {
+              width: calc(100% + 20px);
+              align-self: center;
+              position: relative;
+              left: 0;
+              right: 0;
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 900px) {
+      .home1Main {
+        .leftSect {
+        }
+        .rightSect {
+          .rightSectChild {
+            .addrParent {
+              .addrDiv {
+                .addrText {
+                  font-size: 1.7rem;
+                }
+                .addrText2 {
+                  font-size: 1.7rem;
+                }
+                .CTA {
+                }
+              }
+            }
+            .reviewsParent {
+              .reviewsHeadDiv {
+                .reviewsHead {
+                  font-size: 1.6rem;
+                  padding: 5px 10px;
+                }
+              }
+  
+              .reviewsDiv {
+              }
+            }
+            .FAQDiv {
+              .FAQHeadDiv {
+                .FAQHead {
+                  font-size: 1.6rem;
+                  padding: 5px 10px;
+                }
+              }
+              .FAQListDiv {
+                .faqItem {
+                  padding: 5px 5px;
+                  .faqQuestion {
+                    font-size: 1.4rem;
+                  }
+                  .faqAnswer {
+                    margin-left: 10px;
+                  }
+                  .faqLink{
+                    margin-left: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 700px) {
+      .home1Main {
+        .leftSect {
+          display: none;
+        }
+        .rightSect {
+          width: 100%;
+          left: 0;
+          top: 69px;
+          .rightSectChild {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            align-items: center;
+            justify-content: flex-start;
+            .imgDiv {
+              margin-bottom: 50px;
+              img {
+              }
+            }
+            .addrParent {
+              width: calc(100% - 40px);
+              padding-left: 0;
+              padding: 0 20px 0 20px;
+              margin-bottom: 50px;
+              align-items: center;
+              .addrDiv {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+  
+                .addrTextSmall {
+                  display: inline;
+                  color: #4698fe;
+                  font-size: 2rem;
+                }
+                .addrText {
+                  font-size: 2rem;
+                  text-align: center;
+                  align-self: center;
+                }
+                .CTA {
+                }
+              }
+            }
+            .reviewsParent {
+              width: calc(100% - 15px);
+              padding-left: 0;
+              max-width: initial;
+              .reviewsHeadDiv {
+                max-width: initial;
+                .reviewsHead {
+                  max-width: initial;
+                }
+              }
+  
+              .reviewsDiv {
+                width: 100%;
+                max-width: initial;
+              }
+            }
+            .FAQDiv {
+              max-width: initial;
+              align-self: center;
+              padding-left: 0;
+              .FAQHeadDiv {
+                .FAQHead {
+                  font-size: 1.6rem;
+                }
+              }
+              .FAQListDiv {
+                .faqItem {
+                  .faqQuestion {
+                    font-size: 1.35rem;
+                  }
+                  .faqAnswer {
+                    margin-left: 20px;
+                  }
+                  .faqLink{
+                    margin-left: 10px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    @media (max-width: 500px) {
+      .home1Main {
+        .rightSect {
+          .rightSectChild {
+            .addrParent {
+              .addrDiv {
+                align-items: flex-start;
+                .addrTextSmall {
+                  font-size: 2.2rem;
+                }
+                .addrText {
+                  font-size: 1.55rem;
+                  align-self: flex-start;
+                }
+                .addrText2 {
+                  font-size: 1.55rem;
+                }
+                a {
+                  width: 100%;
+                  .CTA {
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    // smaller phones
+    @media (max-width: 400px) {
+      .home1Main {
+        .rightSect {
+          .rightSectChild {
+            .addrParent {
+              .addrDiv {
+                .addrTextSmall {
+                  font-size: 1.65rem;
+                }
+                .addrText {
+                  font-size: 1.25rem;
+                }
+                .addrText2 {
+                  font-size: 1.25rem;
+                }
+              }
+            }
+            .FAQDiv {
+              .FAQHeadDiv {
+                .FAQHead {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+            .reviewsParent {
+              .reviewsHeadDiv {
+                .reviewsHead {
+                  font-size: 1.4rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,31 +1,29 @@
 import React, { useState, useEffect } from "react";
-import "../public/css/work.scss";
-const chevytruck1 = require("../public/chevytruck1.jpg")
-const chevyvan1 = require("../public/chevyvan1.jpeg")
-const genesis1 = require("../public/genesis1.jpg")
-const genesis2 = require("../public/genesis2.jpg")
-const genesis3 = require("../public/genesis3.jpg")
-const pilot1 = require("../public/pilot1.jpg")
-const smart1 = require("../public/smart1.jpg")
-const smart2 = require("../public/smart2.jpg")
+import "../public/static/css/work.scss";
+import Navbar from "./comps/navbar";
+const chevytruck1 = require("../public/static/images/chevytruck1.jpg");
+const chevyvan1 = require("../public/static/images/chevyvan1.jpeg");
+const genesis1 = require("../public/static/images/genesis1.jpg");
+const genesis2 = require("../public/static/images/genesis2.jpg");
+const genesis3 = require("../public/static/images/genesis3.jpg");
+const pilot1 = require("../public/static/images/pilot1.jpg");
+const smart1 = require("../public/static/images/smart1.jpg");
+const smart2 = require("../public/static/images/smart2.jpg");
 
-const runner1 = require("../public/4runner1.jpg")
+const runner1 = require("../public/static/images/4runner1.jpg");
 
-const patriot1 = require("../public/patriot1.jpg")
-const patriotFillDoor = require("../public/patriotFillDoor.jpg")
-const patriotInterior1 = require("../public/patriotInterior1.jpg")
-const patriotInterior2 = require("../public/patriotInterior2.jpg")
-const wrx1 = require("../public/wrx1.jpg")
-const wrx2 = require("../public/wrx2.jpg")
-const wrx3 = require("../public/wrx3.jpg")
-const wrxInterior = require("../public/wrxInterior.jpg")
-
-
+const patriot1 = require("../public/static/images/patriot1.jpg");
+const patriotFillDoor = require("../public/static/images/patriotFillDoor.jpg");
+const patriotInterior1 = require("../public/static/images/patriotInterior1.jpg");
+const patriotInterior2 = require("../public/static/images/patriotInterior2.jpg");
+const wrx1 = require("../public/static/images/wrx1.jpg");
+const wrx2 = require("../public/static/images/wrx2.jpg");
+const wrx3 = require("../public/static/images/wrx3.jpg");
+const wrxInterior = require("../public/static/images/wrxInterior.jpg");
 
 const Work = () => {
-  
   const [loadCount, setLoadCount] = useState(0);
-  
+
   let imageArr = [
     {
       url: chevytruck1,
@@ -59,7 +57,7 @@ const Work = () => {
       url: smart2,
       alt: "Smart Car (White)"
     },
-    
+
     {
       url: runner1,
       alt: "Toyota 4Runner (Silver)"
@@ -98,40 +96,41 @@ const Work = () => {
     }
   ];
 
-  const closeNavMenu = () => {
-    let dropdown = document.getElementById("dropDown");
-    let overlay = document.getElementById("overlay");
-    dropdown.classList.remove("active");
-    overlay.classList.remove("active");
-  }
+  //   const closeNavMenu = () => {
+  //     let dropdown = document.getElementById("dropDown");
+  //     let overlay = document.getElementById("overlay");
+  //     dropdown.classList.remove("active");
+  //     overlay.classList.remove("active");
+  //   }
 
   useEffect(() => {
-    closeNavMenu();
+    // closeNavMenu();
     let imagesContainer = document.getElementById("imagesGrid");
     let loadingContainer = document.getElementById("loadingContainer");
-    console.log(loadCount)
+    console.log(loadCount);
     // console.log(imageArr.length)
 
-    if(loadCount != imageArr.length) {
+    if (loadCount != imageArr.length) {
       imagesContainer.style.display = "none";
       loadingContainer.style.display = "flex";
     } else {
       imagesContainer.style.display = "grid";
       loadingContainer.style.display = "none";
     }
-  })
+  });
 
-  const loadFunc = (img) => {
+  const loadFunc = img => {
     // let image = document.getElementById(img);
     // let imageParent = image.parentNode;
     // imageParent.style.backgroundImage = image.id;
 
     setLoadCount(loadCount + 1);
-  }
+  };
 
-// console.log(loadCount)
+  // console.log(loadCount)
   return (
     <div className="workMother">
+        <Navbar/>
       <div className="workMain">
         {/* <DownArrow className="downArrow"/> */}
         <section className="leftSect">
@@ -142,11 +141,22 @@ const Work = () => {
         <section className="rightSect">
           <div className="rightSectChild">
             <div id="imagesGrid" className="imagesGrid">
-
               {imageArr.map(img => (
-                
-                <div className="imageItem" tabIndex="0" aria-labelledby={img.alt} role="img" alt={img.alt} id={img.url} key={img.url}>
-                  <img className="image" src={img.url}  alt={img.alt} onLoad={() => loadFunc(img.url)}/>
+                <div
+                  className="imageItem"
+                  tabIndex="0"
+                  aria-labelledby={img.alt}
+                  role="img"
+                  alt={img.alt}
+                  id={img.url}
+                  key={img.url}
+                >
+                  <img
+                    className="image"
+                    src={img.url}
+                    alt={img.alt}
+                    onLoad={() => loadFunc(img.url)}
+                  />
                 </div>
               ))}
             </div>

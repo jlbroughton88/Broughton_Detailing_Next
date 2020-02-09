@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../public/css/services.scss";
+import "../public/static/css/services.scss";
+import Navbar from "./comps/navbar";
 
 const Services = () => {
   const [service, setService] = useState();
@@ -18,19 +19,20 @@ const Services = () => {
     }
   };
 
-  const closeNavMenu = () => {
-    let dropdown = document.getElementById("dropDown");
-    let overlay = document.getElementById("overlay");
-    dropdown.classList.remove("active");
-    overlay.classList.remove("active");
-  };
+  // const closeNavMenu = () => {
+  //   let dropdown = document.getElementById("dropDown");
+  //   let overlay = document.getElementById("overlay");
+  //   dropdown.classList.remove("active");
+  //   overlay.classList.remove("active");
+  // };
 
-  useEffect(() => {
-    closeNavMenu();
-  });
+  // useEffect(() => {
+  //   closeNavMenu();
+  // });
 
   return (
     <div className="servicesMother">
+      <Navbar/>
       <div className="servicesMain">
         <section className="leftSect">
           <div className="headDiv">
@@ -39,7 +41,6 @@ const Services = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
-           
             <div className="servicesGrid">
               <div className="serviceDiv">
                 <div
@@ -55,8 +56,10 @@ const Services = () => {
                   <li className="serviceListItem">- Door Jams</li>
                   <li className="serviceListItem">- Clean Plastics</li>
                   <li className="serviceListItem">- Dust</li>
-                  <li className="serviceListItem">- Vacuum</li> 
-                  <p className="priceRubric">Cars <strong>/</strong> SUVs <strong>/</strong> Minivans</p>
+                  <li className="serviceListItem">- Vacuum</li>
+                  <p className="priceRubric">
+                    Cars <strong>/</strong> SUVs <strong>/</strong> Minivans
+                  </p>
                   <div className="priceTimeDiv">
                     <h3 className="packagePrice">$45 / $55 / $65</h3>
                     <h3 className="packageTime">1 - 1.5 hours</h3>
@@ -75,11 +78,14 @@ const Services = () => {
                 <div className="serviceList" id="interiorDesc">
                   <p className="serviceListItem">
                     Plastics and other vinyl-like interior surfaces are very
-                    susceptable to damage from the sun over time, as well as from natural body oils. <br/><br/>This sun
-                    damage mainly causes the color to fade. So rather than the
-                    deep color that was there from the factory, the plastics
-                    begin to look a bit develop. Protecting and conditioning these
-                    surfaces is vital to keeping them looking fantastic.
+                    susceptable to damage from the sun over time, as well as
+                    from natural body oils. <br />
+                    <br />
+                    This sun damage mainly causes the color to fade. So rather
+                    than the deep color that was there from the factory, the
+                    plastics begin to look a bit develop. Protecting and
+                    conditioning these surfaces is vital to keeping them looking
+                    fantastic.
                   </p>
                 </div>
               </div>
@@ -94,16 +100,17 @@ const Services = () => {
                 <div className="serviceList" id="wheelsDesc">
                   <p className="serviceListItem">
                     The first glance that people give to cars is usually
-                    straight to the wheels. 
-                    <br/><br/>
-                    Over time, wheels tend to gather lots of brake dust from continuous brake pad wear while
-                    driving. This break dust builds up on the wheel and can
-                    actually embed itself into the wheel, causing permanant
-                    damage if not taken care of. Not to mention, clean wheels
-                    just look fantastic. Along with getting that brake dust
-                    taken care of, applying a fresh coat of tire shine, cleaning
-                    the wheel wells, and inner barrel of the wheel are also
-                    taken care of.
+                    straight to the wheels.
+                    <br />
+                    <br />
+                    Over time, wheels tend to gather lots of brake dust from
+                    continuous brake pad wear while driving. This break dust
+                    builds up on the wheel and can actually embed itself into
+                    the wheel, causing permanant damage if not taken care of.
+                    Not to mention, clean wheels just look fantastic. Along with
+                    getting that brake dust taken care of, applying a fresh coat
+                    of tire shine, cleaning the wheel wells, and inner barrel of
+                    the wheel are also taken care of.
                   </p>
                 </div>
               </div>
@@ -120,10 +127,11 @@ const Services = () => {
                     Leather is important to maintain. Over time, if cared for
                     correctly, it develops a wonderful finish called a patina,
                     or a 'sheen'.This adds a bit of character to the leather.
-                    <br/><br/>
+                    <br />
+                    <br />
                     This is caused by the sun, dirt particles, and your natural
-                    body oils. If cared for improperly, leather starts to crack and
-                    actually lose some of it's color.
+                    body oils. If cared for improperly, leather starts to crack
+                    and actually lose some of it's color.
                   </p>
                 </div>
               </div>
@@ -141,11 +149,11 @@ const Services = () => {
                     about on them, but the cleanliness of carpets actually
                     effect the experience quite a lot. Past the obvious visual
                     appearance, they tend to hold the majority of whatever smell
-                    seems to be locked in the car. 
-                    <br/><br/>
-                    Also, a renewed plush and deep colored
-                    carpet is a great way to really restore the feel of your
-                    interior cabin.
+                    seems to be locked in the car.
+                    <br />
+                    <br />
+                    Also, a renewed plush and deep colored carpet is a great way
+                    to really restore the feel of your interior cabin.
                   </p>
                 </div>
               </div>
@@ -161,24 +169,25 @@ const Services = () => {
                 <div className="serviceList" id="paintDesc">
                   <p className="serviceListItem">
                     Paint can make all the difference visually.
-                    
-                    <br/><br/>
-                    
-                     Firstly, (if paint
-                    clearly contains contaminants), a clay bar will be used to
-                    safely extract the contaminants that are embeded into the
-                    paint. Secondly, after the paint is smooth to the touch and
-                    lacking any grit feeling, wax will be applied. Wax creates a
-                    hydrophobic effect, making water bead off the surface rather
-                    than sheeting off. 
-                    <br/><br/>
-                    Along with the beading, wax provides an
-                    incredible gloss to the paint, as well as very smooth to the
-                    touch (I recommend avoiding contact though, without any
-                    lubrication that is.).
+                    <br />
+                    <br />
+                    Firstly, (if paint clearly contains contaminants), a clay
+                    bar will be used to safely extract the contaminants that are
+                    embeded into the paint. Secondly, after the paint is smooth
+                    to the touch and lacking any grit feeling, wax will be
+                    applied. Wax creates a hydrophobic effect, making water bead
+                    off the surface rather than sheeting off.
+                    <br />
+                    <br />
+                    Along with the beading, wax provides an incredible gloss to
+                    the paint, as well as very smooth to the touch (I recommend
+                    avoiding contact though, without any lubrication that is.).
                   </p>
-                  <br/>
-                  <p className="serviceNotice"><strong className="italic">Notice:</strong> Paint correction is not offered in this service.</p>
+                  <br />
+                  <p className="serviceNotice">
+                    <strong className="italic">Notice:</strong> Paint correction
+                    is not offered in this service.
+                  </p>
                 </div>
               </div>
             </div>
