@@ -87,7 +87,7 @@ const Contact = () => {
               >
                 <p className="email">BroughtonDetailing@gmail.com</p>
               </a>
-              <p className="phone">7047708371</p>
+              <a href="tel:+7047708371" className="phone">703-770-8371</a>
               <div className="socialDiv"></div>
             </div>
           </div>
