@@ -31,8 +31,8 @@ const Services = () => {
   // });
 
   return (
-      <div className="servicesMother">
-      <Navbar/>
+    <div className="servicesMother">
+      <Navbar />
       <div className="servicesMain">
         <section className="leftSect">
           <div className="headDiv">
@@ -57,12 +57,14 @@ const Services = () => {
                   <li className="serviceListItem">- Clean Plastics</li>
                   <li className="serviceListItem">- Dust</li>
                   <li className="serviceListItem">- Vacuum</li>
-                  <p className="priceRubric">
-                    Cars <strong>/</strong> SUVs <strong>/</strong> Minivans
-                  </p>
-                  <div className="priceTimeDiv">
-                    <h3 className="packagePrice">$45 / $55 / $65</h3>
-                    <h3 className="packageTime">1 - 1.5 hours</h3>
+                  <div className="priceTimeParent">
+                    <p className="priceRubric">
+                      Cars <strong>/</strong> SUVs <strong>/</strong> Minivans
+                    </p>
+                    <div className="priceTimeDiv">
+                      <h3 className="packagePrice">$45 / $55 / $65</h3>
+                      <h3 className="packageTime">1 - 1.5 hours</h3>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -126,7 +128,7 @@ const Services = () => {
                   <p className="serviceListItem">
                     Leather is important to maintain. Over time, if cared for
                     correctly, it develops a wonderful finish called a patina,
-                    or a 'sheen'.This adds a bit of character to the leather.
+                    or a 'sheen'. This adds a bit of character to the leather.
                     <br />
                     <br />
                     This is caused by the sun, dirt particles, and your natural
@@ -195,7 +197,6 @@ const Services = () => {
         </section>
       </div>
     </div>
-    
   );
 };
 

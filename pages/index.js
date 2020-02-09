@@ -123,7 +123,7 @@ const Index = () => {
               <div className="FAQListDiv">
                 {FAQs.map(faq => (
                   <div key={faq.question} className="faqItem">
-                    <h2 className="faqQuestion">"{faq.question}"</h2>
+                    <h2 className="faqQuestion">{faq.question}</h2>
                     <p className="faqAnswer">{faq.answer}</p>
                     {faq.link && faq.topic && (
                       <p className="faqLink">

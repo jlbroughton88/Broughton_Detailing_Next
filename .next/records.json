@@ -33,41 +33,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/contact.scss": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/services.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -101,7 +67,41 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/contact.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/services.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -144,24 +144,24 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "framework": 1,
-      "3f4a8be685ca9b99c415615bd9e47932a73f2cfb": 2,
-      "1ea77d7c4e0eb920dbd830796b23a3297569c663": 3,
-      "c04b17237074c688982df2ae53e86d02d6693ccf": 4,
+      "be2a5a44320a05f7592ce7a7fd14a95be66a0694": 2,
+      "096d08855e643667829fb5ca6ef3dbc0b0a629d5": 3,
+      "326697291d29be791a67aec3cbfec99def3ffa52": 4,
       "styles": 5,
-      "6ce2ca51e7be4a5f046014be733449c58f422e85": 6,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/_app.js": 7,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/_error.js": 8,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/about.js": 9,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/allclients.js": 10,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/comps/context.js": 11,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/comps/logos/menusvg.js": 12,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/comps/navbar.js": 13,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/contact.js": 14,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/index.js": 15,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/services.js": 16,
-      "static/Sk3dZo2yq4MFck8_io1iC/pages/work.js": 17,
-      "static/runtime/main.js": 18,
-      "static/runtime/polyfills.js": 19
+      "9e41df4de6268577d6d234b69752f4c4a39ce70b": 6,
+      "static/runtime/main.js": 7,
+      "static/runtime/polyfills.js": 8,
+      "static/vsGhsbo0k0eWzd--E661W/pages/_app.js": 9,
+      "static/vsGhsbo0k0eWzd--E661W/pages/_error.js": 10,
+      "static/vsGhsbo0k0eWzd--E661W/pages/about.js": 11,
+      "static/vsGhsbo0k0eWzd--E661W/pages/allclients.js": 12,
+      "static/vsGhsbo0k0eWzd--E661W/pages/comps/context.js": 13,
+      "static/vsGhsbo0k0eWzd--E661W/pages/comps/logos/menusvg.js": 14,
+      "static/vsGhsbo0k0eWzd--E661W/pages/comps/navbar.js": 15,
+      "static/vsGhsbo0k0eWzd--E661W/pages/contact.js": 16,
+      "static/vsGhsbo0k0eWzd--E661W/pages/index.js": 17,
+      "static/vsGhsbo0k0eWzd--E661W/pages/services.js": 18,
+      "static/vsGhsbo0k0eWzd--E661W/pages/work.js": 19
     },
     "bySource": {},
     "usedIds": [

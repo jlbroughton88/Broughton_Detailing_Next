@@ -12395,14 +12395,15 @@ var Contact = function Contact() {
       lineNumber: 88
     },
     __self: this
-  }, "BroughtonDetailing@gmail.com")), __jsx("p", {
+  }, "BroughtonDetailing@gmail.com")), __jsx("a", {
+    href: "tel:+7047708371",
     className: "phone",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 90
     },
     __self: this
-  }, "7047708371"), __jsx("div", {
+  }, "704-770-8371"), __jsx("div", {
     className: "socialDiv",
     __source: {
       fileName: _jsxFileName,
@@ -12416,7 +12417,7 @@ var Contact = function Contact() {
 
 /***/ }),
 
-/***/ 4:
+/***/ 8:
 /*!*****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fcontact.js ***!
   \*****************************************************************************************************************************************************************/
@@ -12439,5 +12440,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[8,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=contact.js.map

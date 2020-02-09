@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2555,14 +2555,15 @@ const Contact = () => {
       lineNumber: 88
     },
     __self: undefined
-  }, "BroughtonDetailing@gmail.com")), __jsx("p", {
+  }, "BroughtonDetailing@gmail.com")), __jsx("a", {
+    href: "tel:+7047708371",
     className: "phone",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 90
     },
     __self: undefined
-  }, "7047708371"), __jsx("div", {
+  }, "704-770-8371"), __jsx("div", {
     className: "socialDiv",
     __source: {
       fileName: _jsxFileName,
@@ -2598,7 +2599,7 @@ const Contact = () => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 6:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

@@ -2625,7 +2625,7 @@ const Index = () => {
       lineNumber: 126
     },
     __self: undefined
-  }, "\"", faq.question, "\""), __jsx("p", {
+  }, faq.question), __jsx("p", {
     className: "faqAnswer",
     __source: {
       fileName: _jsxFileName,

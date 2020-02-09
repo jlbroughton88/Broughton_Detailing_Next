@@ -132,7 +132,7 @@
   
                 &:after {
                   content: ".";
-                  color: #ffffff;
+                  // color: #ffffff;
                 }
               }
               .addrText2 {
@@ -141,7 +141,7 @@
   
                 &:after {
                   content: "!";
-                  color: #ffffff;
+                  // color: #ffffff;
                 }
               }
               @keyframes bounce {
@@ -442,6 +442,8 @@
         }
       }
     }
+
+    
   
     @media (max-width: 700px) {
       .home1Main {
@@ -478,12 +480,15 @@
                 .addrTextSmall {
                   display: inline;
                   color: #4698fe;
-                  font-size: 2rem;
+                  font-size: 2.2rem;
                 }
                 .addrText {
-                  font-size: 2rem;
+                  font-size: 2.2rem;
                   text-align: center;
                   align-self: center;
+                }
+                .addrText2{
+                  font-size: 2.2rem;
                 }
                 .CTA {
                 }
