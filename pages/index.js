@@ -108,7 +108,9 @@ const Index = () => {
                     <button className="CTA">Lets talk!</button>
                   </a>
                   <Link href="/services">
-                    <button className="CTA">Services</button>
+                    <a>
+                      <button className="CTA">Services</button>
+                    </a>
                   </Link>
                 </div>
               </div>

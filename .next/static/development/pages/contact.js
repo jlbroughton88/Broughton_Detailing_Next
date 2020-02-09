@@ -12416,7 +12416,7 @@ var Contact = function Contact() {
 
 /***/ }),
 
-/***/ 6:
+/***/ 2:
 /*!*****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fcontact.js ***!
   \*****************************************************************************************************************************************************************/
@@ -12439,5 +12439,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[6,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=contact.js.map

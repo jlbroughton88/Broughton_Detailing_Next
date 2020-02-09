@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 7);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2806,7 +2806,7 @@ module.exports = "/_next/static/images/wrxInterior-e2b6b416581a09fcbd8fcde405a0a
 
 /***/ }),
 
-/***/ 7:
+/***/ 6:
 /*!*****************************!*\
   !*** multi ./pages/work.js ***!
   \*****************************/

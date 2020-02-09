@@ -10620,7 +10620,7 @@ module.exports = "/_next/static/images/wrxInterior-e2b6b416581a09fcbd8fcde405a0a
 
 /***/ }),
 
-/***/ 10:
+/***/ 7:
 /*!***********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fwork&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fwork.js ***!
   \***********************************************************************************************************************************************************/
@@ -10643,5 +10643,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[10,"static/runtime/webpack.js","styles"]]]);
+},[[7,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=work.js.map

@@ -31,7 +31,7 @@ const Services = () => {
   // });
 
   return (
-    <div className="servicesMother">
+      <div className="servicesMother">
       <Navbar/>
       <div className="servicesMain">
         <section className="leftSect">
@@ -195,6 +195,7 @@ const Services = () => {
         </section>
       </div>
     </div>
+    
   );
 };
 

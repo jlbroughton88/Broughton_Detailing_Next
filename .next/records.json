@@ -50,6 +50,23 @@
       }
     }
   ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
   "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/work.scss": [
     {
       "modules": {
@@ -101,23 +118,6 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
   "modules": {
     "byIdentifier": {
       "multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! node_modules/next/dist/client/router.js": 0,
@@ -144,62 +144,47 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "framework": 1,
-      "31dd5701c8d6272cb9b05703d8cde0eb4190ff6c": 2,
-      "cee10e519cdc02a0a6bc2e2242250aefcedee1e8": 3,
-      "6ef3478d13598466e3c9acad3642287864db105d": 4,
+      "ed08477a9a6c885f9251f7866db8d63fcd6a4d25": 2,
+      "4b99865e3ffb84aa7e70591ea766d1ed4149ae03": 3,
+      "55a0e0f268700563cc9255eeeb2f1fb914c2f3ec": 4,
       "styles": 5,
-      "e86918ccd194cf6c65d418bed86cd629ae5ec43b": 6,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/_app.js": 7,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/_error.js": 8,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/about.js": 9,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/allclients.js": 10,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/comps/context.js": 11,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/comps/logos/menusvg.js": 12,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/comps/navbar.js": 13,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/contact.js": 14,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/index.js": 15,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/services.js": 16,
-      "static/ErIyUx8RHTWs9EK03TGBn/pages/work.js": 17,
+      "d6d3d63ace459c4b98a6deb34cd280ce378991bd": 6,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/_app.js": 7,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/_error.js": 8,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/about.js": 9,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/allclients.js": 10,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/comps/context.js": 11,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/comps/logos/menusvg.js": 12,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/comps/navbar.js": 13,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/contact.js": 14,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/index.js": 15,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/services.js": 16,
+      "static/BFcNgGTB9dfvDRegIp3nh/pages/work.js": 17,
       "static/runtime/main.js": 18,
-      "static/runtime/polyfills.js": 19,
-      "59bd3727ff59136aa7ec1ac2b4a913c79cb52708": 20,
-      "6cf3a86ed4d63ce8d3102082982094fe12f3a809": 21,
-      "137fcce8010508f3d27db5fde6dc52742cac7d32": 22,
-      "835251dbd06841a66d1542c744035c71fc6044d3": 23,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/_app.js": 24,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/_error.js": 25,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/about.js": 26,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/allclients.js": 27,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/comps/context.js": 28,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/comps/logos/menusvg.js": 29,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/comps/navbar.js": 30,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/contact.js": 31,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/index.js": 32,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/services.js": 33,
-      "static/zduIG8wPeUgEGAEnlM1hR/pages/work.js": 34
+      "static/runtime/polyfills.js": 19
     },
     "bySource": {},
     "usedIds": [
       0,
       1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
       18,
       19,
-      20,
-      21,
-      22,
-      23,
-      24,
-      25,
-      26,
-      27,
-      28,
-      29,
-      30,
-      31,
-      32,
-      33,
-      34,
-      5
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
     ]
   }
 }
