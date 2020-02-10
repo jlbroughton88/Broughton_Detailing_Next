@@ -16,24 +16,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/services.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -67,7 +50,24 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -101,7 +101,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/services.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -144,24 +144,23 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "framework": 1,
-      "be2a5a44320a05f7592ce7a7fd14a95be66a0694": 2,
-      "096d08855e643667829fb5ca6ef3dbc0b0a629d5": 3,
-      "326697291d29be791a67aec3cbfec99def3ffa52": 4,
+      "3b3d506e8f9d336ad12f82df92af1d66dc451101": 2,
+      "577708bb60f615e0ba06660981636ffa304116a7": 3,
+      "75ede1c2268b78d83b4b49178dd2dbc6239d2d46": 4,
       "styles": 5,
-      "9e41df4de6268577d6d234b69752f4c4a39ce70b": 6,
-      "static/runtime/main.js": 7,
-      "static/runtime/polyfills.js": 8,
-      "static/vsGhsbo0k0eWzd--E661W/pages/_app.js": 9,
-      "static/vsGhsbo0k0eWzd--E661W/pages/_error.js": 10,
-      "static/vsGhsbo0k0eWzd--E661W/pages/about.js": 11,
-      "static/vsGhsbo0k0eWzd--E661W/pages/allclients.js": 12,
-      "static/vsGhsbo0k0eWzd--E661W/pages/comps/context.js": 13,
-      "static/vsGhsbo0k0eWzd--E661W/pages/comps/logos/menusvg.js": 14,
-      "static/vsGhsbo0k0eWzd--E661W/pages/comps/navbar.js": 15,
-      "static/vsGhsbo0k0eWzd--E661W/pages/contact.js": 16,
-      "static/vsGhsbo0k0eWzd--E661W/pages/index.js": 17,
-      "static/vsGhsbo0k0eWzd--E661W/pages/services.js": 18,
-      "static/vsGhsbo0k0eWzd--E661W/pages/work.js": 19
+      "static/eWqFiogm63iIQ1H8owVMY/pages/_app.js": 6,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/_error.js": 7,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/about.js": 8,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/allclients.js": 9,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/comps/context.js": 10,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/comps/logos/menusvg.js": 11,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/comps/navbar.js": 12,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/contact.js": 13,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/index.js": 14,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/services.js": 15,
+      "static/eWqFiogm63iIQ1H8owVMY/pages/work.js": 16,
+      "static/runtime/main.js": 17,
+      "static/runtime/polyfills.js": 18
     },
     "bySource": {},
     "usedIds": [
@@ -176,7 +175,6 @@
       16,
       17,
       18,
-      19,
       2,
       3,
       4,

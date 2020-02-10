@@ -27,12 +27,12 @@ const Contact = () => {
   const handleFormInput = e => {
     let input = document.getElementById("emailInput");
     let thankYou = document.getElementById("thankYou");
-    // axios
-    //   .post(`${statusUrl}/api/addclient`, {
-    //     email: formData
-    //   })
-    //   .then(response => console.log(response))
-    //   .catch(err => console.log(err));
+    axios
+      .post(`https://www.broughtondetailing.com/api/addclient`, {
+        email: formData
+      })
+      .then(response => console.log(response))
+      .catch(err => console.log(err));
     if (formData !== "") {
       thankYou.style.display = "block";
     }

@@ -1,21 +1,31 @@
 import React, { useEffect, useState } from "react";
 import { useAppContext } from "./comps/context.js";
-import axios from "axios";
+import fetch from "isomorphic-unfetch"
 import "../public/static/css/allclients.scss";
 import Navbar from "./comps/navbar";
 
-const AllClients = () => {
+
+
+
+
+
+
+const AllClients = (allClients) => {
   const { statusUrl } = useAppContext();
   const [clients, setClients] = useState([]);
 
-//   useEffect(() => {
+  useEffect(() => {
+    setClients(allClients);
 //     if (statusUrl !== "") {
 //       axios
 //         .get(`${statusUrl}/api/getclients`)
 //         .then(response => setClients([...response.data]))
 //         .catch(err => console.log(err));
 //     }
-//   }, [statusUrl]);
+  }, [])
+  // }, [statusUrl]);
+
+
 
   return (
     <div className="allMother">
@@ -44,5 +54,18 @@ const AllClients = () => {
     </div>
   );
 };
+
+AllClients.getInitialProps = async({ req, query }) => {
+  const protocol = req 
+  ? `${req.headers["x-forwarded-proto"]};`
+  : location.protocol
+  const host = req ? req.headers["x-forwarded-host"] : location.host
+  const pageRequest = `${protocol}//${host}/api/clients`
+  const res = await fetch(pageRequest);
+  const json = await res.json();
+  return json
+};
+
+
 
 export default AllClients;

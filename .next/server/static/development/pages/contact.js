@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2367,7 +2367,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/static/css/contact.scss */ "./public/static/css/contact.scss");
 /* harmony import */ var _public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _comps_navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./comps/navbar */ "./pages/comps/navbar.js");
-var _jsxFileName = "/Users/JacobBroughton/coding/work/broughton-detailing-next/pages/contact.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
  // import { useAppContext } from "./comps/context.js";
@@ -2396,12 +2395,10 @@ const Contact = () => {
 
   const handleFormInput = e => {
     let input = document.getElementById("emailInput");
-    let thankYou = document.getElementById("thankYou"); // axios
-    //   .post(`${statusUrl}/api/addclient`, {
-    //     email: formData
-    //   })
-    //   .then(response => console.log(response))
-    //   .catch(err => console.log(err));
+    let thankYou = document.getElementById("thankYou");
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`http://localhost:5004/api/addclient`, {
+      email: formData
+    }).then(response => console.log(response)).catch(err => console.log(err));
 
     if (formData !== "") {
       thankYou.style.display = "block";
@@ -2415,161 +2412,55 @@ const Contact = () => {
   };
 
   return __jsx("div", {
-    className: "contactMother",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49
-    },
-    __self: undefined
-  }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50
-    },
-    __self: undefined
-  }), __jsx("div", {
-    className: "contactMain",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51
-    },
-    __self: undefined
+    className: "contactMother"
+  }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_3__["default"], null), __jsx("div", {
+    className: "contactMain"
   }, __jsx("section", {
-    className: "leftSect",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 52
-    },
-    __self: undefined
+    className: "leftSect"
   }, __jsx("div", {
-    className: "headDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 53
-    },
-    __self: undefined
+    className: "headDiv"
   }, __jsx("h1", {
-    className: "head",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: undefined
+    className: "head"
   }, "Contact"))), __jsx("section", {
-    className: "rightSect",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57
-    },
-    __self: undefined
+    className: "rightSect"
   }, __jsx("div", {
-    className: "rightSectChild",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58
-    },
-    __self: undefined
+    className: "rightSectChild"
   }, __jsx("div", {
-    className: "signupDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 59
-    },
-    __self: undefined
+    className: "signupDiv"
   }, __jsx("h2", {
-    className: "signupHead",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 60
-    },
-    __self: undefined
+    className: "signupHead"
   }, "Sign Up For Deals!"), __jsx("form", {
     onSubmit: handleFormInput,
-    className: "signupForm",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61
-    },
-    __self: undefined
+    className: "signupForm"
   }, __jsx("div", {
-    className: "signupInputParent",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: undefined
+    className: "signupInputParent"
   }, __jsx("input", {
     className: "signupInput",
     id: "emailInput",
     type: "email",
     onChange: handleChange,
-    placeholder: "Your Email (I won't spam)",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: undefined
+    placeholder: "Your Email (I won't spam)"
   })), __jsx("input", {
     className: "signupSubmit",
     type: "submit",
-    placeholder: "Submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72
-    },
-    __self: undefined
+    placeholder: "Submit"
   })), __jsx("h4", {
     id: "thankYou",
-    className: "thankYou",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78
-    },
-    __self: undefined
+    className: "thankYou"
   }, "Thank You!")), __jsx("div", {
-    className: "letsTalkDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 82
-    },
-    __self: undefined
+    className: "letsTalkDiv"
   }, __jsx("h2", {
-    className: "letsTalkHead",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 83
-    },
-    __self: undefined
+    className: "letsTalkHead"
   }, "Lets Talk"), __jsx("a", {
     href: "mailto:broughtondetailing@gmail.com?subject=Detailing Inquiry",
-    className: "emailLink",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: undefined
+    className: "emailLink"
   }, __jsx("p", {
-    className: "email",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 88
-    },
-    __self: undefined
+    className: "email"
   }, "BroughtonDetailing@gmail.com")), __jsx("a", {
     href: "tel:+7047708371",
-    className: "phone",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90
-    },
-    __self: undefined
+    className: "phone"
   }, "704-770-8371"), __jsx("div", {
-    className: "socialDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91
-    },
-    __self: undefined
+    className: "socialDiv"
   }))))));
 };
 
@@ -2599,7 +2490,7 @@ const Contact = () => {
 
 /***/ }),
 
-/***/ 6:
+/***/ 4:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

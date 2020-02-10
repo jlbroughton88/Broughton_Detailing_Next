@@ -46,6 +46,11 @@ const Index = () => {
       name: "Luidmila B.",
       text:
         "Jacob did a fantastic job cleaning my car and it’s never looked this good! Very convenient and very thorough, would 100% recommend. Thank you!"
+    }, 
+    {
+      name: "Carli R.",
+      text:
+        "I had some pretty bad stains on all my seats and most of the carpet and Jacob got them all out. Definitely would recommend 10/10"
     }
   ];
 
