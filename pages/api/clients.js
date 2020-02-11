@@ -7,5 +7,5 @@ module.exports = async (req, res) => {
     console.log("THESE ARE THE CLIENTS")
     console.log(allClients)
     console.log("END OF CLIENTS")
-    res.status(200).json(allClients)
+    res.status(200).json({ allClients })
 }

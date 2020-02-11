@@ -12,7 +12,9 @@ const AllClients = (allClients) => {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    console.log(allClients)
+    console.log("CLIENTS: ");
+    console.log(allClients);
+    console.log("END OF CLIENTS")
       setClients([allClients]);
     
 //     if (statusUrl !== "") {
@@ -64,7 +66,7 @@ AllClients.getInitialProps = async(ctx) => {
   console.log(res)
   console.log("getInitialProps res END")
   const json = await res.json();
-  
+
   return {json}
 };
 

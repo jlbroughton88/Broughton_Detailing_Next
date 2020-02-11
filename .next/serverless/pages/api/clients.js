@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "2muD");
+/******/ 	return __webpack_require__(__webpack_require__.s = "29xD");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -815,19 +815,7 @@ PoolSelector.ORDER = function PoolSelectorOrder() {
 
 /***/ }),
 
-/***/ "2Nt0":
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = Array.isArray || function (arr) {
-  return toString.call(arr) == '[object Array]';
-};
-
-
-/***/ }),
-
-/***/ "2muD":
+/***/ "29xD":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -913,6 +901,18 @@ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace
         }
       });
     
+
+/***/ }),
+
+/***/ "2Nt0":
+/***/ (function(module, exports) {
+
+var toString = {}.toString;
+
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+
 
 /***/ }),
 
@@ -21860,7 +21860,9 @@ module.exports = async (req, res) => {
   console.log("THESE ARE THE CLIENTS");
   console.log(allClients);
   console.log("END OF CLIENTS");
-  res.status(200).json(allClients);
+  res.status(200).json({
+    allClients
+  });
 };
 
 /***/ }),
