@@ -1,7 +1,7 @@
 module.exports =
 /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
-/******/ 	var installedModules = require('../../../ssr-module-cache.js');
+/******/ 	var installedModules = {};
 /******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
@@ -88,111 +88,24 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = "KqAr");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./lib/db.js":
-/*!*******************!*\
-  !*** ./lib/db.js ***!
-  \*******************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "KqAr":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-// Creates a connection to MySql database using credentials
-// exports a function that ensures connections are closed once the query has resolved
-const mysql = __webpack_require__(/*! serverless-mysql */ "serverless-mysql");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 
-__webpack_require__(/*! dotenv */ "dotenv").config();
+    
 
-const db = mysql({
-  config: {
-    host: process.env.HOST,
-    database: process.env.DATABASE,
-    user: process.env.USERNAME,
-    password: process.env.PASSWORD
-  }
-});
-
-exports.query = async query => {
-  try {
-    const results = await db.query(query);
-    await db.end();
-    return results;
-  } catch (error) {
-    return {
-      error
-    };
-  }
-};
-
-/***/ }),
-
-/***/ "./pages/api/index.js":
-/*!****************************!*\
-  !*** ./pages/api/index.js ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-const db = __webpack_require__(/*! ../../lib/db */ "./lib/db.js");
-
-const escape = __webpack_require__(/*! sql-template-strings */ "sql-template-strings");
-
-module.exports = async (req, res) => {
-  res.setHeader('Content-Type', 'application/json');
-  const allClients = await db.query(escape`SELECT * FROM clients`);
-  console.log(allClients);
-  res.status(200).json(allClients);
-};
-
-/***/ }),
-
-/***/ 5:
-/*!**********************************!*\
-  !*** multi ./pages/api/index.js ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! /Users/JacobBroughton/coding/work/broughton-detailing-next/pages/api/index.js */"./pages/api/index.js");
-
-
-/***/ }),
-
-/***/ "dotenv":
-/*!*************************!*\
-  !*** external "dotenv" ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("dotenv");
-
-/***/ }),
-
-/***/ "serverless-mysql":
-/*!***********************************!*\
-  !*** external "serverless-mysql" ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("serverless-mysql");
-
-/***/ }),
-
-/***/ "sql-template-strings":
-/*!***************************************!*\
-  !*** external "sql-template-strings" ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("sql-template-strings");
+    /* harmony default export */ __webpack_exports__["default"] = (function (ctx) {
+      return Promise.all([])
+    });
+  
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=api.js.map

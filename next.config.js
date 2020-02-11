@@ -3,6 +3,7 @@ const withImages = require("next-images");
 
 module.exports = withImages(
   withSass({
+    target: 'serverless',
     exportPathMap: function () {
         return {
           '/': { page: '/' },
