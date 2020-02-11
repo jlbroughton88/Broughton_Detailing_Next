@@ -1,5 +1,6 @@
 const withSass = require("@zeit/next-sass");
 const withImages = require("next-images");
+const webpack = require("webpack");
 
 module.exports = withImages(
   withSass({
@@ -14,9 +15,11 @@ module.exports = withImages(
           '/allclients': { page: '/allclients' }
         }
       },
-    webpack: function(config) {
-      // custom configs
-      return config;
-    }
+      webpack: config => {
+        config.plugins.push(
+            new webpack.DefinePlugin({ 'global.GENTLY': false }),
+        );
+        return config;
+    },
   })
 );
