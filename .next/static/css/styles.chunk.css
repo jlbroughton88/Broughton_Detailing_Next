@@ -24,104 +24,6 @@ body {
 * {
   appearance: none; }
 
-.allMother {
-  height: 100%;
-  width: 100%; }
-  .allMother .allMain {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%; }
-    .allMother .allMain .leftSect {
-      height: 100vh;
-      width: calc(50% - 30px);
-      background: #4698fe;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-right: 30px;
-      position: fixed; }
-      .allMother .allMain .leftSect .headDiv {
-        height: 156px;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%; }
-        .allMother .allMain .leftSect .headDiv .subHead {
-          display: none; }
-        .allMother .allMain .leftSect .headDiv .head {
-          text-align: end;
-          color: #333;
-          font-size: 4rem; }
-          .allMother .allMain .leftSect .headDiv .head:before {
-            content: "Mobile "; }
-    .allMother .allMain .rightSect {
-      height: 100%;
-      width: 50%;
-      background: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      position: relative;
-      left: 50%; }
-      .allMother .allMain .rightSect .rightSectChild {
-        width: 100%; }
-        .allMother .allMain .rightSect .rightSectChild .clientItem .clientEmail {
-          color: #ffffff;
-          margin: 5px 10px; }
-  @media (max-width: 650px) {
-    .allMother .allMain {
-      flex-direction: column; }
-      .allMother .allMain .leftSect {
-        width: 100%;
-        height: 180px;
-        padding-right: 0;
-        position: static; }
-        .allMother .allMain .leftSect .headDiv {
-          margin: 0;
-          justify-content: center;
-          align-items: flex-end; }
-          .allMother .allMain .leftSect .headDiv .head {
-            margin-top: 80px;
-            font-size: 3rem;
-            padding-bottom: 10px; }
-      .allMother .allMain .rightSect {
-        width: 100%;
-        left: 0;
-        top: 50px; }
-        .allMother .allMain .rightSect .rightSectChild {
-          display: flex;
-          flex-direction: column;
-          align-self: center;
-          align-items: center;
-          justify-content: flex-start; } }
-
-html, body, #root {
-  height: 100%;
-  min-height: 100%;
-  background: #333333; }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.body {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */ }
-
-.body::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0; }
-
-* {
-  appearance: none; }
-
 .home1Mother {
   height: 100%;
   width: 100%; }
@@ -468,6 +370,104 @@ body {
       font-size: 1.4rem; }
     .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
       font-size: 1.4rem; } }
+
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+  background: #333333; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+
+.body::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0; }
+
+* {
+  appearance: none; }
+
+.allMother {
+  height: 100%;
+  width: 100%; }
+  .allMother .allMain {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%; }
+    .allMother .allMain .leftSect {
+      height: 100vh;
+      width: calc(50% - 30px);
+      background: #4698fe;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 30px;
+      position: fixed; }
+      .allMother .allMain .leftSect .headDiv {
+        height: 156px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; }
+        .allMother .allMain .leftSect .headDiv .subHead {
+          display: none; }
+        .allMother .allMain .leftSect .headDiv .head {
+          text-align: end;
+          color: #333;
+          font-size: 4rem; }
+          .allMother .allMain .leftSect .headDiv .head:before {
+            content: "Mobile "; }
+    .allMother .allMain .rightSect {
+      height: 100%;
+      width: 50%;
+      background: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      left: 50%; }
+      .allMother .allMain .rightSect .rightSectChild {
+        width: 100%; }
+        .allMother .allMain .rightSect .rightSectChild .clientItem .clientEmail {
+          color: #ffffff;
+          margin: 5px 10px; }
+  @media (max-width: 650px) {
+    .allMother .allMain {
+      flex-direction: column; }
+      .allMother .allMain .leftSect {
+        width: 100%;
+        height: 180px;
+        padding-right: 0;
+        position: static; }
+        .allMother .allMain .leftSect .headDiv {
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end; }
+          .allMother .allMain .leftSect .headDiv .head {
+            margin-top: 80px;
+            font-size: 3rem;
+            padding-bottom: 10px; }
+      .allMother .allMain .rightSect {
+        width: 100%;
+        left: 0;
+        top: 50px; }
+        .allMother .allMain .rightSect .rightSectChild {
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+          align-items: center;
+          justify-content: flex-start; } }
 
 * {
   margin: 0;

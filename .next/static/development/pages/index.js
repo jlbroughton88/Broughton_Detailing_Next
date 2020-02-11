@@ -10579,7 +10579,7 @@ module.exports = "/_next/static/images/genesisWithTitle-59f4f0e06bd0027addd312ef
 
 /***/ }),
 
-/***/ 5:
+/***/ 2:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************************/
@@ -10602,5 +10602,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

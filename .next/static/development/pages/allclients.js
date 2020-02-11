@@ -9999,27 +9999,24 @@ AllClients.getInitialProps = function _callee(ctx) {
     while (1) {
       switch (_context.prev = _context.next) {
         case 0:
-          console.log("THIS IS THE CONTEXT");
-          console.log(ctx);
-          console.log("END OF CONTEXT");
-          _context.next = 5;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://www.broughtondetailing.com/api/clients"));
+          _context.next = 2;
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("http://localhost:3000/api/clients"));
 
-        case 5:
+        case 2:
           res = _context.sent;
           console.log("getInitialProps res START");
           console.log(res);
           console.log("getInitialProps res END");
-          _context.next = 11;
+          _context.next = 8;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-        case 11:
+        case 8:
           json = _context.sent;
           return _context.abrupt("return", {
             json: json
           });
 
-        case 13:
+        case 10:
         case "end":
           return _context.stop();
       }
@@ -10410,7 +10407,7 @@ var Navbar = function Navbar() {
 
 /***/ }),
 
-/***/ 2:
+/***/ 5:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fallclients&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fallclients.js ***!
   \***********************************************************************************************************************************************************************/
@@ -10433,5 +10430,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[5,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=allclients.js.map

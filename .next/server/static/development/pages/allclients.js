@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 5);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2145,10 +2145,7 @@ const AllClients = allClients => {
 };
 
 AllClients.getInitialProps = async ctx => {
-  console.log("THIS IS THE CONTEXT");
-  console.log(ctx);
-  console.log("END OF CONTEXT");
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://www.broughtondetailing.com/api/clients");
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("http://localhost:3000/api/clients");
   console.log("getInitialProps res START");
   console.log(res);
   console.log("getInitialProps res END");
@@ -2561,7 +2558,7 @@ const Navbar = () => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 5:
 /*!***********************************!*\
   !*** multi ./pages/allclients.js ***!
   \***********************************/
