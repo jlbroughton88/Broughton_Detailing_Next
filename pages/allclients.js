@@ -7,15 +7,13 @@ import Navbar from "./comps/navbar";
 
 
 
-
-
-
 const AllClients = (allClients) => {
   const { statusUrl } = useAppContext();
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    setClients(allClients);
+    
+    setClients([allClients]);
 //     if (statusUrl !== "") {
 //       axios
 //         .get(`${statusUrl}/api/getclients`)
@@ -38,7 +36,7 @@ const AllClients = (allClients) => {
         <section className="rightSect">
           <div className="rightSectChild">
             {clients.length !== 0 ? (
-              clients.map(client => (
+              clients[0].json.map(client => (
                 <div key={client.id} className="clientItem">
                   <h3 className="clientEmail">{client.email}</h3>
                 </div>
@@ -55,15 +53,11 @@ const AllClients = (allClients) => {
   );
 };
 
-AllClients.getInitialProps = async({ req, query }) => {
-  const protocol = req 
-  ? `${req.headers["x-forwarded-proto"]};`
-  : location.protocol
-  const host = req ? req.headers["x-forwarded-host"] : location.host
-  const pageRequest = `${protocol}//${host}/api/clients`
-  const res = await fetch(pageRequest);
+AllClients.getInitialProps = async({ req }) => {
+  const res = await fetch("https://www.broughtondetailing.com/api/index");
   const json = await res.json();
-  return json
+  console.log(json)
+  return {json}
 };
 
 

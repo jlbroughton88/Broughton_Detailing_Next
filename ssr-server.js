@@ -1,7 +1,7 @@
 const express = require("express");
-const next = require("next");
+const nextt = require("next");
 const dev = process.env.NODE_ENV !== "production";
-const app = next({ dev });
+const app = nextt({ dev });
 const handle = app.getRequestHandler();
 const path = require("path");
 const routes = require("./routes");

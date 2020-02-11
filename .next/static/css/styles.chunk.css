@@ -24,14 +24,16 @@ body {
 * {
   appearance: none; }
 
-.contactMother {
-  height: 100%; }
-  .contactMother .contactMain {
+.allMother {
+  height: 100%;
+  width: 100%; }
+  .allMother .allMain {
     display: flex;
     flex-direction: row;
-    height: 100%; }
-    .contactMother .contactMain .leftSect {
-      height: 100%;
+    height: 100%;
+    width: 100%; }
+    .allMother .allMain .leftSect {
+      height: 100vh;
       width: calc(50% - 30px);
       background: #4698fe;
       display: flex;
@@ -39,127 +41,60 @@ body {
       justify-content: flex-end;
       padding-right: 30px;
       position: fixed; }
-      .contactMother .contactMain .leftSect .headDiv {
+      .allMother .allMain .leftSect .headDiv {
         height: 156px;
         display: flex;
         justify-content: flex-end;
         width: 100%; }
-        .contactMother .contactMain .leftSect .headDiv .head {
+        .allMother .allMain .leftSect .headDiv .subHead {
+          display: none; }
+        .allMother .allMain .leftSect .headDiv .head {
           text-align: end;
           color: #333;
           font-size: 4rem; }
-    .contactMother .contactMain .rightSect {
-      height: 100vh;
+          .allMother .allMain .leftSect .headDiv .head:before {
+            content: "Mobile "; }
+    .allMother .allMain .rightSect {
+      height: 100%;
       width: 50%;
       background: #333;
       display: flex;
-      align-items: flex-start;
-      justify-content: center;
       flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
       position: relative;
       left: 50%; }
-      .contactMother .contactMain .rightSect .rightSectChild {
-        padding-left: 30px; }
-        .contactMother .contactMain .rightSect .rightSectChild .signupDiv {
-          margin-bottom: 40px; }
-          .contactMother .contactMain .rightSect .rightSectChild .signupDiv .signupHead {
-            background: #4698fe;
-            text-align: start;
-            color: #333;
-            font-size: 1.8rem;
-            background: #4698fe;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-bottom: 10px; }
-          .contactMother .contactMain .rightSect .rightSectChild .signupDiv .signupForm {
-            display: flex;
-            flex-direction: row; }
-            .contactMother .contactMain .rightSect .rightSectChild .signupDiv .signupForm .signupInputParent {
-              background: #4698fe;
-              padding: 3px;
-              border-radius: 3px;
-              border-top-right-radius: 0;
-              border-bottom-right-radius: 0;
-              width: calc(100% - 50px); }
-              .contactMother .contactMain .rightSect .rightSectChild .signupDiv .signupForm .signupInputParent .signupInput {
-                background: #333;
-                padding: 5px 10px;
-                border-radius: 3px;
-                border: none;
-                width: calc(100% - 20px);
-                color: #ffffff;
-                font-size: 0.8rem; }
-            .contactMother .contactMain .rightSect .rightSectChild .signupDiv .signupForm .signupSubmit {
-              background: #4698fe;
-              border: none;
-              font-size: 1rem;
-              font-weight: 600;
-              margin: 0;
-              border-radius: 0;
-              border-top-right-radius: 3px;
-              border-bottom-right-radius: 3px;
-              cursor: pointer;
-              appearance: none;
-              -webkit-appearance: none; }
-          .contactMother .contactMain .rightSect .rightSectChild .signupDiv .thankYou {
-            margin-top: 10px;
-            color: #ffffff;
-            display: none; }
-        .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .letsTalkHead {
-          background: #4698fe;
-          text-align: start;
-          color: #333;
-          font-size: 1.8rem;
-          background: #4698fe;
-          padding: 10px 15px;
-          border-radius: 5px;
-          margin-bottom: 10px; }
-        .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .emailLink .email {
+      .allMother .allMain .rightSect .rightSectChild {
+        width: 100%; }
+        .allMother .allMain .rightSect .rightSectChild .clientItem .clientEmail {
           color: #ffffff;
-          text-decoration: none;
-          font-size: 1.1rem;
-          margin-bottom: 10px;
-          cursor: pointer; }
-        .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .phone {
-          color: #ffffff !important;
-          font-size: 1.1rem;
-          text-decoration: none;
-          cursor: pointer; }
-  @media (max-width: 700px) {
-    .contactMother {
-      height: 100%; }
-      .contactMother .contactMain {
-        flex-direction: column; }
-        .contactMother .contactMain .leftSect {
-          width: 100%;
-          height: 180px;
-          padding-right: 0;
-          position: static; }
-          .contactMother .contactMain .leftSect .headDiv {
-            margin: 0;
-            justify-content: center;
-            align-items: flex-end; }
-            .contactMother .contactMain .leftSect .headDiv .head {
-              margin-top: 80px; }
-        .contactMother .contactMain .rightSect {
-          width: 100%; }
-          .contactMother .contactMain .rightSect .rightSectChild {
-            align-items: flex-start;
-            justify-content: flex-start; } }
-  @media (max-width: 700px) {
-    .contactMother {
-      height: 100%; }
-      .contactMother .contactMain .leftSect {
-        height: 180px; }
-      .contactMother .contactMain .rightSect {
-        justify-content: flex-start;
-        left: 0; }
-        .contactMother .contactMain .rightSect .rightSectChild {
+          margin: 5px 10px; }
+  @media (max-width: 650px) {
+    .allMother .allMain {
+      flex-direction: column; }
+      .allMother .allMain .leftSect {
+        width: 100%;
+        height: 180px;
+        padding-right: 0;
+        position: static; }
+        .allMother .allMain .leftSect .headDiv {
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end; }
+          .allMother .allMain .leftSect .headDiv .head {
+            margin-top: 80px;
+            font-size: 3rem;
+            padding-bottom: 10px; }
+      .allMother .allMain .rightSect {
+        width: 100%;
+        left: 0;
+        top: 50px; }
+        .allMother .allMain .rightSect .rightSectChild {
+          display: flex;
+          flex-direction: column;
           align-self: center;
-          margin-top: 50px;
-          width: calc(100% - 40px);
-          max-width: 500px;
-          padding: 0 20px 0 20px; } }
+          align-items: center;
+          justify-content: flex-start; } }
 
 * {
   margin: 0;

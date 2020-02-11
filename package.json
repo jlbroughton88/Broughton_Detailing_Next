@@ -11,7 +11,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "next start",
     "build": "next build",
-    "dev": "node ssr-server.js",
+    "dev": "next",
     "find": "pgrep node",
     "kill": "pkill node"
   },
