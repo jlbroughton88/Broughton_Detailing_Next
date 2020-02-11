@@ -10,7 +10,7 @@
       "pages/_error.js": 2,
       "pages/about.js": 3,
       "pages/allclients.js": 4,
-      "pages/api.js": 5,
+      "pages/api/clients.js": 5,
       "pages/comps/context.js": 6,
       "pages/comps/logos/menusvg.js": 7,
       "pages/comps/navbar.js": 8,

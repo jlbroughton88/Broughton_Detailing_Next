@@ -10001,21 +10001,23 @@ AllClients.getInitialProps = function _callee(ctx) {
           console.log(ctx);
           console.log("END OF CONTEXT");
           _context.next = 5;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://www.broughtondetailing.com/api/index"));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://www.broughtondetailing.com/api/clients"));
 
         case 5:
           res = _context.sent;
+          console.log("getInitialProps res START");
           console.log(res);
-          _context.next = 9;
+          console.log("getInitialProps res END");
+          _context.next = 11;
           return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(res.json());
 
-        case 9:
+        case 11:
           json = _context.sent;
           return _context.abrupt("return", {
             json: json
           });
 
-        case 11:
+        case 13:
         case "end":
           return _context.stop();
       }
@@ -10406,7 +10408,7 @@ var Navbar = function Navbar() {
 
 /***/ }),
 
-/***/ 5:
+/***/ 2:
 /*!***********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fallclients&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fallclients.js ***!
   \***********************************************************************************************************************************************************************/
@@ -10429,5 +10431,5 @@ module.exports = dll_5f137288facb1107b491;
 
 /***/ })
 
-},[[5,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=allclients.js.map
