@@ -2145,7 +2145,7 @@ const AllClients = allClients => {
 };
 
 AllClients.getInitialProps = async ctx => {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("http://localhost:3000/api/clients");
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://www.broughtondetailing.com/api/clients");
   console.log("getInitialProps res START");
   console.log(res);
   console.log("getInitialProps res END");
