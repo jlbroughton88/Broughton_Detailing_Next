@@ -4,7 +4,7 @@ const webpack = require("webpack");
 
 module.exports = withImages(
   withSass({
-    target: 'server',
+    target: 'serverless',
     exportPathMap: function () {
         return {
           '/': { page: '/' },

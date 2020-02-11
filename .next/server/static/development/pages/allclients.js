@@ -2142,11 +2142,12 @@ const AllClients = allClients => {
   }, "No clients yet"))))));
 };
 
-AllClients.getInitialProps = async ({
-  req
-}) => {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://www.broughtondetailing.com/api/index"); // console.log(res)
-
+AllClients.getInitialProps = async ctx => {
+  console.log("THIS IS THE CONTEXT");
+  console.log(ctx);
+  console.log("END OF CONTEXT");
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("http://localhost:3000/api/index");
+  console.log(res);
   const json = await res.json();
   return {
     json
