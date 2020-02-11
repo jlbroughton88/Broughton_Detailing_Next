@@ -1,5 +1,5 @@
 {
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -101,7 +101,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/index.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -144,51 +144,23 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "framework": 1,
-      "82ac83c2d50056a8b6aafdb449c40e13732bec7f": 2,
-      "bfd56e006483d50e3791eba6d157463f4879db46": 3,
-      "30ae2c630689800df09ab5c16349262f54c23762": 4,
+      "952c8c1938bfe66ed7eef8e3718b7dbdb21305a2": 2,
+      "fc8c39c0c066a7c823af829ca5d85bc2b914be03": 3,
+      "5c4d280458ccb5ebb3209bc42330000050f65cb7": 4,
       "styles": 5,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/_app.js": 6,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/_error.js": 7,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/about.js": 8,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/allclients.js": 9,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/comps/context.js": 10,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/comps/logos/menusvg.js": 11,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/comps/navbar.js": 12,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/contact.js": 13,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/index.js": 14,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/services.js": 15,
-      "static/mHp99IEWf5EilfAKWBTAx/pages/work.js": 16,
-      "static/runtime/main.js": 17,
-      "static/runtime/polyfills.js": 18,
-      "760590a3b2483a85afd1c0ec63af66aff5a23adc": 19,
-      "e1a0e8be19ce938feec8a1f419663d659e7a1665": 20,
-      "d514e2482ff164b843472a8036d62c8ddb35671d": 21,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/_app.js": 22,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/_error.js": 23,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/about.js": 24,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/allclients.js": 25,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/comps/context.js": 26,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/comps/logos/menusvg.js": 27,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/comps/navbar.js": 28,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/contact.js": 29,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/index.js": 30,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/services.js": 31,
-      "static/u3UIaHC6-ZgOHMV6zs7s8/pages/work.js": 32,
-      "a492edb64a751761ecf873d02b96f1a2816aca0b": 2,
-      "97d00c217c3ee6d2804c6242f6c6ee5a05a9a57d": 3,
-      "62fea0ce313ff40925f91beb48e233fe5f5ddaae": 4,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/_app.js": 6,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/_error.js": 7,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/about.js": 8,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/allclients.js": 9,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/comps/context.js": 10,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/comps/logos/menusvg.js": 11,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/comps/navbar.js": 12,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/contact.js": 13,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/index.js": 14,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/services.js": 15,
-      "static/2uPOYVNApOz1hxyO6o8nF/pages/work.js": 16
+      "static/runtime/main.js": 6,
+      "static/runtime/polyfills.js": 7,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/_app.js": 8,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/_error.js": 9,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/about.js": 10,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/allclients.js": 11,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/comps/context.js": 12,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/comps/logos/menusvg.js": 13,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/comps/navbar.js": 14,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/contact.js": 15,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/index.js": 16,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/services.js": 17,
+      "static/rvC6ov-vUb0YgABztR-DS/pages/work.js": 18
     },
     "bySource": {},
     "usedIds": [
