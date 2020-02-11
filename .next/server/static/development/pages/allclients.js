@@ -2054,6 +2054,7 @@ const AllClients = allClients => {
     1: setClients
   } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    console.log(allClients);
     setClients([allClients]); //     if (statusUrl !== "") {
     //       axios
     //         .get(`${statusUrl}/api/getclients`)
@@ -2066,76 +2067,76 @@ const AllClients = allClients => {
     className: "allMother",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 30
     },
     __self: undefined
   }, __jsx("div", {
     className: "allMain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 31
     },
     __self: undefined
   }, __jsx("section", {
     className: "leftSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 32
     },
     __self: undefined
   }, __jsx("div", {
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx("h1", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 34
     },
     __self: undefined
   }, "Sign Ups"))), __jsx("section", {
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: undefined
   }, __jsx("div", {
     className: "rightSectChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: undefined
-  }, clients.length !== 0 ? clients[0].json.map(client => __jsx("div", {
+  }, console.log(clients), clients.length !== 0 ? clients[0].json.map(client => __jsx("div", {
     key: client.id,
     className: "clientItem",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx("h3", {
     className: "clientEmail",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 43
     },
     __self: undefined
   }, client.email))) : __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 47
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 48
     },
     __self: undefined
   }, "No clients yet"))))));
@@ -2144,9 +2145,9 @@ const AllClients = allClients => {
 AllClients.getInitialProps = async ({
   req
 }) => {
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://www.broughtondetailing.com/api/index");
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_2___default()("https://www.broughtondetailing.com/api/index"); // console.log(res)
+
   const json = await res.json();
-  console.log(json);
   return {
     json
   };

@@ -143,6 +143,7 @@ const escape = __webpack_require__(/*! sql-template-strings */ "sql-template-str
 module.exports = async (req, res) => {
   res.setHeader('Content-Type', 'application/json');
   const allClients = await db.query(escape`SELECT * FROM clients`);
+  console.log(allClients);
   res.status(200).json(allClients);
 };
 

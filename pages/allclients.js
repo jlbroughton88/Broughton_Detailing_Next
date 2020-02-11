@@ -12,8 +12,9 @@ const AllClients = (allClients) => {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
+    console.log(allClients)
+      setClients([allClients]);
     
-    setClients([allClients]);
 //     if (statusUrl !== "") {
 //       axios
 //         .get(`${statusUrl}/api/getclients`)
@@ -35,6 +36,7 @@ const AllClients = (allClients) => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
+            {console.log(clients)}
             {clients.length !== 0 ? (
               clients[0].json.map(client => (
                 <div key={client.id} className="clientItem">
@@ -55,8 +57,8 @@ const AllClients = (allClients) => {
 
 AllClients.getInitialProps = async({ req }) => {
   const res = await fetch("https://www.broughtondetailing.com/api/index");
+  // console.log(res)
   const json = await res.json();
-  console.log(json)
   return {json}
 };
 
