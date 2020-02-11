@@ -93,6 +93,7 @@ const Index = () => {
       <div className="home1Main">
         <section className="leftSect">
           <div className="headDiv">
+            <h1>TEST</h1>
             <h3 className="subHead">Mobile</h3>
             <h1 className="head">Auto Detailing</h1>
           </div>
