@@ -59,7 +59,7 @@ AllClients.getInitialProps = async(ctx) => {
   console.log("THIS IS THE CONTEXT")
   console.log(ctx);
   console.log("END OF CONTEXT")
-  const res = await fetch("http://localhost:3000/api/index");
+  const res = await fetch("https://www.broughtondetailing.com/api/index");
   console.log(res)
   const json = await res.json();
   return {json}

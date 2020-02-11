@@ -10001,7 +10001,7 @@ AllClients.getInitialProps = function _callee(ctx) {
           console.log(ctx);
           console.log("END OF CONTEXT");
           _context.next = 5;
-          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("http://localhost:3000/api/index"));
+          return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.awrap(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://www.broughtondetailing.com/api/index"));
 
         case 5:
           res = _context.sent;
