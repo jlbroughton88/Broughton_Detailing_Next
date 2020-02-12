@@ -184,7 +184,7 @@ body {
   }
 
   @media (max-width: 700px) {
-    height: 100%;
+    height: calc(100vh - 156px);
     .contactMain {
       flex-direction: column;
       .leftSect {
