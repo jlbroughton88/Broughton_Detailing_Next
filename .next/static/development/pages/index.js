@@ -10298,20 +10298,7 @@ var Index = function Index() {
       lineNumber: 95
     },
     __self: this
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/allclients",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: this
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: this
-  }, "All Clients")), __jsx("h3", {
+  }, __jsx("h3", {
     className: "subHead",
     __source: {
       fileName: _jsxFileName,

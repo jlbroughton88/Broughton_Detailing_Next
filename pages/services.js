@@ -54,8 +54,8 @@ const Services = () => {
                   <li className="serviceListItem">- Hand Washed</li>
                   <li className="serviceListItem">- Windows Inside & Out</li>
                   <li className="serviceListItem">- Door Jams</li>
-                  <li className="serviceListItem">- Clean Plastics</li>
-                  <li className="serviceListItem">- Dust</li>
+                  <li className="serviceListItem">- Clean Plastics / Dust</li>
+                  <li className="serviceListItem">- Shampoo Floor Mats</li>
                   <li className="serviceListItem">- Vacuum</li>
                   <div className="priceTimeParent">
                     <p className="priceRubric">
@@ -67,6 +67,9 @@ const Services = () => {
                     </div>
                   </div>
                 </div>
+              </div>
+              <div className="premiumHeadDiv">
+                <h2 className="premiumHead">Premium Services</h2>
               </div>
 
               <div className="serviceDiv">
@@ -88,6 +91,14 @@ const Services = () => {
                     plastics begin to look a bit develop. Protecting and
                     conditioning these surfaces is vital to keeping them looking
                     fantastic.
+                  </p>
+                  <br />
+                  <p className="questionPara">
+                    <strong className="italic">Any questions?</strong> Click{" "}
+                    <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
+                      <strong className="link">here</strong>
+                    </a>{" "}
+                    and ask away!
                   </p>
                 </div>
               </div>
@@ -114,6 +125,14 @@ const Services = () => {
                     of tire shine, cleaning the wheel wells, and inner barrel of
                     the wheel are also taken care of.
                   </p>
+                  <br />
+                  <p className="questionPara">
+                    <strong className="italic">Any questions?</strong> Click{" "}
+                    <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
+                      <strong className="link">here</strong>
+                    </a>{" "}
+                    and ask away!
+                  </p>
                 </div>
               </div>
               <div className="serviceDiv">
@@ -135,6 +154,14 @@ const Services = () => {
                     body oils. If cared for improperly, leather starts to crack
                     and actually lose some of it's color.
                   </p>
+                  <br />
+                  <p className="questionPara">
+                    <strong className="italic">Any questions?</strong> Click{" "}
+                    <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
+                      <strong className="link">here</strong>
+                    </a>{" "}
+                    and ask away!
+                  </p>
                 </div>
               </div>
               <div className="serviceDiv">
@@ -143,19 +170,27 @@ const Services = () => {
                   id="carpets"
                   className="serviceHead"
                 >
-                  Carpet Cleaning
+                  Carpet & Seat Cleaning
                 </div>
                 <div className="serviceList" id="carpetsDesc">
                   <p className="serviceListItem">
                     Carpets are often overlooked because we're always stepping
-                    about on them, but the cleanliness of carpets actually
-                    effect the experience quite a lot. Past the obvious visual
+                    and sitting on them, but their cleanliness actually
+                    effect the experience quite a lot. Past the obvious, (or not-so-obvious) visual
                     appearance, they tend to hold the majority of whatever smell
                     seems to be locked in the car.
                     <br />
                     <br />
-                    Also, a renewed plush and deep colored carpet is a great way
-                    to really restore the feel of your interior cabin.
+                    You'd be amazed at how much dirt and gunk usually comes out of seats/carpets that look pretty clean.
+                    This is a great way to really restore the feel of your interior cabin.
+                  </p>
+                  <br />
+                  <p className="questionPara">
+                    <strong className="italic">Any questions?</strong> Click{" "}
+                    <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
+                      <strong className="link">here</strong>
+                    </a>{" "}
+                    and ask away!
                   </p>
                 </div>
               </div>
@@ -186,12 +221,52 @@ const Services = () => {
                     avoiding contact though, without any lubrication that is.).
                   </p>
                   <br />
+                  <p className="questionPara">
+                    <strong className="italic">Any questions?</strong> Click{" "}
+                    <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
+                      <strong className="link">here</strong>
+                    </a>{" "}
+                    and ask away!
+                  </p>
+                  <br />
                   <p className="serviceNotice">
                     <strong className="italic">Notice:</strong> Paint correction
                     is not offered in this service.
                   </p>
                 </div>
               </div>
+              {/* <div className="serviceDiv">
+                <div
+                  onClick={handlePackageClick}
+                  id="all"
+                  className="serviceHead"
+                >
+                 All In
+                </div>
+                <div className="serviceList" id="allDesc">
+                  <p className="serviceListItem">
+                    Paint can make all the difference visually.
+                    <br />
+                    <br />
+                    Firstly, (if paint clearly contains contaminants), a clay
+                    bar will be used to safely extract the contaminants that are
+                    embeded into the paint. Secondly, after the paint is smooth
+                    to the touch and lacking any grit feeling, wax will be
+                    applied. Wax creates a hydrophobic effect, making water bead
+                    off the surface rather than sheeting off.
+                    <br />
+                    <br />
+                    Along with the beading, wax provides an incredible gloss to
+                    the paint, as well as very smooth to the touch (I recommend
+                    avoiding contact though, without any lubrication that is.).
+                  </p>
+                  <br />
+                  <p className="serviceNotice">
+                    <strong className="italic">Notice:</strong> Paint correction
+                    is not offered in this service.
+                  </p>
+                </div>
+              </div> */}
             </div>
           </div>
         </section>

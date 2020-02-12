@@ -1,8 +1,10 @@
-import React, { useState , useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 // import { useAppContext } from "./comps/context.js";
 import "../public/static/css/contact.scss";
 import Navbar from "./comps/navbar";
+import Facebook from "./comps/logos/facebook";
+import Instagram from "./comps/logos/instagram";
 
 const Contact = () => {
   // const { statusUrl } = useAppContext();
@@ -47,7 +49,7 @@ const Contact = () => {
 
   return (
     <div className="contactMother">
-      <Navbar/>
+      <Navbar />
       <div className="contactMain">
         <section className="leftSect">
           <div className="headDiv">
@@ -56,7 +58,7 @@ const Contact = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
-            <div className="signupDiv">
+            {/* <div className="signupDiv">
               <h2 className="signupHead">Sign Up For Deals!</h2>
               <form onSubmit={handleFormInput} className="signupForm">
                 <div className="signupInputParent">
@@ -78,17 +80,27 @@ const Contact = () => {
               <h4 id="thankYou" className="thankYou">
                 Thank You!
               </h4>
-            </div>
+            </div> */}
             <div className="letsTalkDiv">
-              <h2 className="letsTalkHead">Lets Talk</h2>
+              <h2 className="letsTalkHead">Lets Talk!</h2>
               <a
                 href="mailto:broughtondetailing@gmail.com?subject=Detailing Inquiry"
                 className="emailLink"
               >
                 <p className="email">BroughtonDetailing@gmail.com</p>
               </a>
-              <a href="tel:+7047708371" className="phone">704-770-8371</a>
-              <div className="socialDiv"></div>
+              <a href="tel:+7047708371" className="phone">
+                704-770-8371
+              </a>
+              <div className="socialDiv">
+                <a href="https://facebook.com/broughtondetailing">
+                  <Facebook className="socialIcon" />
+                  </a>
+                  <a href="https://instagram.com/broughtondetailing">
+                    <Instagram className="socialIcon"/>
+                  </a>
+                
+              </div>
             </div>
           </div>
         </section>

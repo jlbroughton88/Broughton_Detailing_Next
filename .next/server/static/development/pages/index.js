@@ -2466,20 +2466,7 @@ const Index = () => {
       lineNumber: 95
     },
     __self: undefined
-  }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    href: "/allclients",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: undefined
-  }, __jsx("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: undefined
-  }, "All Clients")), __jsx("h3", {
+  }, __jsx("h3", {
     className: "subHead",
     __source: {
       fileName: _jsxFileName,

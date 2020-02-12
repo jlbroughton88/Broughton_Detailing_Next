@@ -12,9 +12,8 @@ const AllClients = (allClients) => {
   const [clients, setClients] = useState([]);
 
   useEffect(() => {
-    console.log("CLIENTS: ");
+    console.log("CLIENTS ON CLIENT SIDE: ");
     console.log(allClients);
-    console.log("END OF CLIENTS")
       setClients([allClients]);
     
 //     if (statusUrl !== "") {
@@ -58,7 +57,7 @@ const AllClients = (allClients) => {
 };
 
 AllClients.getInitialProps = async(ctx) => {
-  const res = await fetch("https://www.broughtondetailing.com/api/clients");
+  const res = await fetch("http://localhost:3000/api/clients");
   console.log("getInitialProps res START")
   console.log(res)
   console.log("getInitialProps res END")

@@ -1,3 +1,3 @@
-Get database stuff working on production.
-Fix heading div sizing issue.
-Consider SEO headings
+Add content to services page
+Edit contact page
+Fix heading div sizing issue (on mobile).

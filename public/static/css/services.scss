@@ -2,15 +2,18 @@ strong.italic {
   font-weight: 700;
   font-style: italic;
 }
-.strong {
-  font-weight: 700;
+strong {
+  font-weight: 800;
+  color: inherit;
 }
 
-  *{
-    appearance: none;
+* {
+  appearance: none;
 }
 
-html, body, #root{
+html,
+body,
+#root {
   height: 100%;
   min-height: 100%;
   background: #333333;
@@ -18,8 +21,8 @@ html, body, #root{
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -28,14 +31,15 @@ body {
 .body {
   overflow-y: scroll;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
-.body::-webkit-scrollbar { /* WebKit */
+.body::-webkit-scrollbar {
+  /* WebKit */
   width: 0;
   height: 0;
 }
 
-  .servicesMother {
+.servicesMother {
   height: 100%;
   .servicesMain {
     display: flex;
@@ -83,6 +87,17 @@ body {
         padding-left: 30px;
         display: flex;
         width: calc(100% - 30px);
+        .premiumHeadDiv {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          max-width: 500px;
+          .premiumHead {
+            color: #ffffff;
+            margin: 25px 0 5px 0;
+            justify-self: flex-start;
+          }
+        }
 
         .servicesGrid {
           width: calc(100% - 60px);
@@ -128,6 +143,12 @@ body {
                 list-style: none;
                 margin: 3px;
                 white-space: pre-wrap;
+              }
+              .questionPara{
+                color: #000000;
+                background: #ffffff;
+                padding: 3px 8px;
+                border-radius: 3px;
               }
               .serviceNotice {
                 color: #ffffff;
@@ -209,8 +230,8 @@ body {
             }
 
             #basics {
-              border-left: #4698fe solid 3px;
-              padding-left: 15px;
+              border-left: #4698fe solid 5px;
+              padding-left: 12px;
             }
             #interior {
               border-left: #ffffff solid 5px;
@@ -289,5 +310,3 @@ body {
     }
   }
 }
-
-

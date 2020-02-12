@@ -93,9 +93,9 @@ const Index = () => {
       <div className="home1Main">
         <section className="leftSect">
           <div className="headDiv">
-            <Link href="/allclients">
+            {/* <Link href="/allclients">
               <a >All Clients</a>
-            </Link>
+            </Link> */}
             <h3 className="subHead">Mobile</h3>
             <h1 className="head">Auto Detailing</h1>
           </div>
