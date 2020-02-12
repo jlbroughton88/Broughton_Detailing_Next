@@ -3,7 +3,6 @@ import titleImage from "../public/static/images/genesisWithTitle.jpg";
 import Link from "next/link";
 import "../public/static/css/index.scss";
 import Navbar from "./comps/navbar";
-import {Helmet} from "react-helmet";
 
 const Index = () => {
   // const closeNavMenu = () => {

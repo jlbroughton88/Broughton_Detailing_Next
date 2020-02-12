@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "PPDF");
+/******/ 	return __webpack_require__(__webpack_require__.s = "1iiX");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -826,6 +826,296 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
 
 /***/ }),
 
+/***/ "1iiX":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var pages_allclients_namespaceObject = {};
+__webpack_require__.r(pages_allclients_namespaceObject);
+__webpack_require__.d(pages_allclients_namespaceObject, "default", function() { return pages_allclients; });
+
+// EXTERNAL MODULE: external "url"
+var external_url_ = __webpack_require__("bzos");
+
+// EXTERNAL MODULE: external "querystring"
+var external_querystring_ = __webpack_require__("8xkj");
+
+// EXTERNAL MODULE: ./node_modules/next/dist/next-server/server/render.js
+var render = __webpack_require__("/bjS");
+
+// EXTERNAL MODULE: ./node_modules/next/dist/next-server/server/send-html.js
+var send_html = __webpack_require__("LuNM");
+
+// EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-init-server
+var next_plugin_loadermiddleware_on_init_server = __webpack_require__("GX0O");
+
+// EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-error-server
+var next_plugin_loadermiddleware_on_error_server = __webpack_require__("KqAr");
+
+// EXTERNAL MODULE: ./.next/build-manifest.json
+var build_manifest = __webpack_require__("LZ9C");
+
+// EXTERNAL MODULE: ./.next/react-loadable-manifest.json
+var react_loadable_manifest = __webpack_require__("67Bq");
+
+// EXTERNAL MODULE: ./pages/_document.js
+var _document = __webpack_require__("5w0S");
+
+// EXTERNAL MODULE: ./node_modules/next/dist/pages/_error.js
+var _error = __webpack_require__("/a9y");
+var _error_default = /*#__PURE__*/__webpack_require__.n(_error);
+
+// EXTERNAL MODULE: ./pages/_app.js
+var _app = __webpack_require__("1TCz");
+
+// EXTERNAL MODULE: ./node_modules/react/index.js
+var react = __webpack_require__("q1tI");
+var react_default = /*#__PURE__*/__webpack_require__.n(react);
+
+// EXTERNAL MODULE: ./pages/comps/context.js
+var context = __webpack_require__("lC6Y");
+
+// EXTERNAL MODULE: ./node_modules/isomorphic-unfetch/index.js
+var isomorphic_unfetch = __webpack_require__("GXyi");
+var isomorphic_unfetch_default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch);
+
+// EXTERNAL MODULE: ./public/static/css/allclients.scss
+var allclients = __webpack_require__("QtOj");
+
+// EXTERNAL MODULE: ./pages/comps/navbar.js
+var navbar = __webpack_require__("JAUf");
+
+// CONCATENATED MODULE: ./pages/allclients.js
+var __jsx = react_default.a.createElement;
+
+
+
+
+
+
+const AllClients = allClients => {
+  const {
+    statusUrl
+  } = Object(context["useAppContext"])();
+  const {
+    0: clients,
+    1: setClients
+  } = Object(react["useState"])([]);
+  Object(react["useEffect"])(() => {
+    console.log("CLIENTS ON CLIENT SIDE: ");
+    console.log(allClients);
+    setClients([allClients]); //     if (statusUrl !== "") {
+    //       axios
+    //         .get(`${statusUrl}/api/getclients`)
+    //         .then(response => setClients([...response.data]))
+    //         .catch(err => console.log(err));
+    //     }
+  }, []); // }, [statusUrl]);
+
+  return __jsx("div", {
+    className: "allMother"
+  }, __jsx("div", {
+    className: "allMain"
+  }, __jsx("section", {
+    className: "leftSect"
+  }, __jsx("div", {
+    className: "headDiv"
+  }, __jsx("h1", {
+    className: "head"
+  }, "Sign Ups"))), __jsx("section", {
+    className: "rightSect"
+  }, __jsx("div", {
+    className: "rightSectChild"
+  }, console.log(clients), clients.length !== 0 ? clients[0].json.map(client => __jsx("div", {
+    key: client.id,
+    className: "clientItem"
+  }, __jsx("h3", {
+    className: "clientEmail"
+  }, client.email))) : __jsx("div", null, __jsx("h3", null, "No clients yet"))))));
+};
+
+AllClients.getInitialProps = async ctx => {
+  const res = await isomorphic_unfetch_default()("http://localhost:3000/api/clients");
+  console.log("getInitialProps res START");
+  console.log(res);
+  console.log("getInitialProps res END");
+  const json = await res.json();
+  return {
+    json
+  };
+};
+
+/* harmony default export */ var pages_allclients = (AllClients);
+// EXTERNAL MODULE: ./.next/routes-manifest.json
+var routes_manifest = __webpack_require__("Skye");
+
+// EXTERNAL MODULE: ./node_modules/next/dist/next-server/server/lib/path-match.js
+var path_match = __webpack_require__("uDRR");
+var path_match_default = /*#__PURE__*/__webpack_require__.n(path_match);
+
+// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-serverless-loader.js?page=%2Fallclients&absolutePagePath=private-next-pages%2Fallclients.js&absoluteAppPath=private-next-pages%2F_app.js&absoluteDocumentPath=private-next-pages%2F_document.js&absoluteErrorPath=next%2Fdist%2Fpages%2F_error&distDir=private-dot-next&buildId=zt261QjCbfG6fP8VAJn-R&assetPrefix=&generateEtags=true&canonicalBase=&basePath=
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_zt261QjCbfG6fP8VAJn_R_assetPrefix_generateEtags_true_canonicalBase_basePath_app; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_zt261QjCbfG6fP8VAJn_R_assetPrefix_generateEtags_true_canonicalBase_basePath_render; });
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  
+
+    const Component = pages_allclients
+    /* harmony default export */ var next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_zt261QjCbfG6fP8VAJn_R_assetPrefix_generateEtags_true_canonicalBase_basePath_ = __webpack_exports__["default"] = (Component);
+    const unstable_getStaticProps = pages_allclients_namespaceObject['unstable_getStaticProp' + 's']
+    const unstable_getStaticParams = pages_allclients_namespaceObject['unstable_getStaticParam' + 's']
+    const unstable_getStaticPaths = pages_allclients_namespaceObject['unstable_getStaticPath' + 's']
+
+    
+    
+    const getCustomRouteMatcher = path_match_default()(true)
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of routes_manifest["a" /* rewrites */]) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          parsedUrl.query = {
+            ...parsedUrl.query,
+            ...params
+          }
+          const parsedDest = Object(external_url_["parse"])(rewrite.destination)
+          const destCompiler = path_match["pathToRegexp"].compile(
+            `${parsedDest.pathname}${parsedDest.hash || ''}`
+          )
+          const newUrl = destCompiler(params)
+          const parsedNewUrl = Object(external_url_["parse"])(newUrl)
+
+          parsedUrl.pathname = parsedNewUrl.pathname
+          parsedUrl.hash = parsedNewUrl.hash
+
+          if (parsedUrl.pathname === '/allclients'){
+            break
+          }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+    const config = pages_allclients_namespaceObject['confi' + 'g'] || {}
+    const next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_zt261QjCbfG6fP8VAJn_R_assetPrefix_generateEtags_true_canonicalBase_basePath_app = _app["a" /* default */]
+    async function renderReqToHTML(req, res, fromExport, _renderOpts, _params) {
+      
+      const options = {
+        App: _app["a" /* default */],
+        Document: _document["a" /* default */],
+        buildManifest: build_manifest,
+        unstable_getStaticProps,
+        unstable_getStaticPaths,
+        reactLoadableManifest: react_loadable_manifest,
+        canonicalBase: "",
+        buildId: "zt261QjCbfG6fP8VAJn-R",
+        assetPrefix: "",
+        ..._renderOpts
+      }
+      let _nextData = false
+
+      if (req.url.match(/_next\/data/)) {
+        _nextData = true
+        req.url = req.url
+          .replace(new RegExp('/_next/data/zt261QjCbfG6fP8VAJn\-R/'), '/')
+          .replace(/\.json$/, '')
+      }
+      const parsedUrl = handleRewrites(Object(external_url_["parse"])(req.url, true))
+
+      const renderOpts = Object.assign(
+        {
+          Component,
+          pageConfig: config,
+          nextExport: fromExport
+        },
+        options,
+      )
+      try {
+        
+        const params = {};
+        const nowParams = null;
+        let result = await Object(render["renderToHTML"])(req, res, "/allclients", Object.assign({}, unstable_getStaticProps ? {} : parsedUrl.query, nowParams ? nowParams : params, _params), renderOpts)
+
+        if (_nextData && !fromExport) {
+          const payload = JSON.stringify(renderOpts.pageData)
+          res.setHeader('Content-Type', 'application/json')
+          res.setHeader('Content-Length', Buffer.byteLength(payload))
+          res.setHeader(
+            'Cache-Control',
+            `s-maxage=${renderOpts.revalidate}, stale-while-revalidate`
+          )
+          res.end(payload)
+          return null
+        }
+
+        if (fromExport) return { html: result, renderOpts }
+        return result
+      } catch (err) {
+        if (err.code === 'ENOENT') {
+          res.statusCode = 404
+          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+            unstable_getStaticProps: undefined,
+            unstable_getStaticPaths: undefined,
+            Component: _error_default.a
+          }))
+          return result
+        } else {
+          console.error(err)
+          res.statusCode = 500
+          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
+            unstable_getStaticProps: undefined,
+            unstable_getStaticPaths: undefined,
+            Component: _error_default.a,
+            err
+          }))
+          return result
+        }
+      }
+    }
+    async function next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_private_next_pages_2F_document_js_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_zt261QjCbfG6fP8VAJn_R_assetPrefix_generateEtags_true_canonicalBase_basePath_render (req, res) {
+      try {
+        await Object(next_plugin_loadermiddleware_on_init_server["default"])()
+        const html = await renderReqToHTML(req, res)
+        if (html) {
+          Object(send_html["sendHTML"])(req, res, html, {generateEtags: true})
+        }
+      } catch(err) {
+        await Object(next_plugin_loadermiddleware_on_error_server["default"])(err)
+        console.error(err)
+        res.statusCode = 500
+        res.end('Internal Server Error')
+      }
+    }
+  
+
+/***/ }),
+
 /***/ "29s/":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1464,6 +1754,43 @@ module.exports = function (object, names) {
 
 /***/ }),
 
+/***/ "5w0S":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("q1tI");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("8cZr");
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_1__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+
+
+class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_1___default.a {
+  static async getInitialProps(ctx) {
+    const initialProps = await next_document__WEBPACK_IMPORTED_MODULE_1___default.a.getInitialProps(ctx);
+    return _objectSpread({}, initialProps);
+  }
+
+  render() {
+    return __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Html"], {
+      lang: "en"
+    }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Head"], null), __jsx("body", null, __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["Main"], null), __jsx(next_document__WEBPACK_IMPORTED_MODULE_1__["NextScript"], null)));
+  }
+
+}
+
+/* harmony default export */ __webpack_exports__["a"] = (MyDocument);
+
+/***/ }),
+
 /***/ "6/1s":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1869,6 +2196,14 @@ exports.default = Head;
 if (true) {
   module.exports = __webpack_require__("f/k9");
 } else {}
+
+
+/***/ }),
+
+/***/ "8cZr":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__("VDXt")
 
 
 /***/ }),
@@ -3089,7 +3424,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ "LZ9C":
 /***/ (function(module) {
 
-module.exports = JSON.parse("{\"devFiles\":[],\"pages\":{\"/\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/chunks/ff6264e5ba64c77e1e2e999c0a1640bafa3f10bd.1385d6f0cf153a321a9b.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/_app\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/chunks/ff6264e5ba64c77e1e2e999c0a1640bafa3f10bd.1385d6f0cf153a321a9b.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\",\"static/lpzc-N_gmPFjvsIh7FRCm/_buildManifest.js\"],\"/_error\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/_polyfills\":[\"static/runtime/polyfills-3488ef9f3c8c930b217b.js\"],\"/about\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/allclients\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/context\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/logos/facebook\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/logos/instagram\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/logos/menusvg\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/navbar\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/contact\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/index\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/chunks/ff6264e5ba64c77e1e2e999c0a1640bafa3f10bd.1385d6f0cf153a321a9b.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/services\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/work\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/c374cc68e39c0288dd0a5077050bfb9b559a8af6.1dbe2fff21c17c74b77a.js\",\"static/chunks/51a0b8d09be35059c8e1d8ec31d9b694ea605d79.f8d915fbb12f4e9acfb9.js\",\"static/css/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.80f97d33.chunk.css\",\"static/chunks/3721ab5e20ce6bfb1df73b545873a9ebca7f5ded.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"]}}");
+module.exports = JSON.parse("{\"devFiles\":[],\"pages\":{\"/\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/_app\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\",\"static/zt261QjCbfG6fP8VAJn-R/_buildManifest.js\"],\"/_error\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/_polyfills\":[\"static/runtime/polyfills-3488ef9f3c8c930b217b.js\"],\"/about\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/allclients\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/context\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/logos/facebook\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/logos/instagram\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/logos/menusvg\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/comps/navbar\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/contact\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/index\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/services\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"],\"/work\":[\"static/runtime/webpack-9369c5c69dbf6d4912cb.js\",\"static/chunks/framework.5ab3ddd5dfcaa70047b4.js\",\"static/chunks/6d86fd98e6788222f16f2257949d351043a66a57.1dbe2fff21c17c74b77a.js\",\"static/chunks/6ceab1ff49b3455cc4e04b0edf2086500e883b1b.f8d915fbb12f4e9acfb9.js\",\"static/css/db58f358ff48b4c60d84d49961e33b37d8f530fb.80f97d33.chunk.css\",\"static/chunks/db58f358ff48b4c60d84d49961e33b37d8f530fb.d01cee4ed98602b69118.js\",\"static/css/styles.fec26aa9.chunk.css\",\"static/chunks/styles.1a3c17e6ca9c95832158.js\",\"static/runtime/main-2fd1967819e51da71cdb.js\"]}}");
 
 /***/ }),
 
@@ -4157,297 +4492,6 @@ Utf7IMAPDecoder.prototype.end = function() {
 /***/ (function(module, exports) {
 
 module.exports = require("crypto");
-
-/***/ }),
-
-/***/ "PPDF":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var pages_allclients_namespaceObject = {};
-__webpack_require__.r(pages_allclients_namespaceObject);
-__webpack_require__.d(pages_allclients_namespaceObject, "default", function() { return pages_allclients; });
-
-// EXTERNAL MODULE: external "url"
-var external_url_ = __webpack_require__("bzos");
-
-// EXTERNAL MODULE: external "querystring"
-var external_querystring_ = __webpack_require__("8xkj");
-
-// EXTERNAL MODULE: ./node_modules/next/dist/next-server/server/render.js
-var render = __webpack_require__("/bjS");
-
-// EXTERNAL MODULE: ./node_modules/next/dist/next-server/server/send-html.js
-var send_html = __webpack_require__("LuNM");
-
-// EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-init-server
-var next_plugin_loadermiddleware_on_init_server = __webpack_require__("GX0O");
-
-// EXTERNAL MODULE: ./node_modules/next/dist/build/webpack/loaders/next-plugin-loader.js?middleware=on-error-server
-var next_plugin_loadermiddleware_on_error_server = __webpack_require__("KqAr");
-
-// EXTERNAL MODULE: ./.next/build-manifest.json
-var build_manifest = __webpack_require__("LZ9C");
-
-// EXTERNAL MODULE: ./.next/react-loadable-manifest.json
-var react_loadable_manifest = __webpack_require__("67Bq");
-
-// EXTERNAL MODULE: ./node_modules/next/dist/pages/_document.js
-var _document = __webpack_require__("VDXt");
-var _document_default = /*#__PURE__*/__webpack_require__.n(_document);
-
-// EXTERNAL MODULE: ./node_modules/next/dist/pages/_error.js
-var _error = __webpack_require__("/a9y");
-var _error_default = /*#__PURE__*/__webpack_require__.n(_error);
-
-// EXTERNAL MODULE: ./pages/_app.js
-var _app = __webpack_require__("1TCz");
-
-// EXTERNAL MODULE: ./node_modules/react/index.js
-var react = __webpack_require__("q1tI");
-var react_default = /*#__PURE__*/__webpack_require__.n(react);
-
-// EXTERNAL MODULE: ./pages/comps/context.js
-var context = __webpack_require__("lC6Y");
-
-// EXTERNAL MODULE: ./node_modules/isomorphic-unfetch/index.js
-var isomorphic_unfetch = __webpack_require__("GXyi");
-var isomorphic_unfetch_default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch);
-
-// EXTERNAL MODULE: ./public/static/css/allclients.scss
-var allclients = __webpack_require__("QtOj");
-
-// EXTERNAL MODULE: ./pages/comps/navbar.js
-var navbar = __webpack_require__("JAUf");
-
-// CONCATENATED MODULE: ./pages/allclients.js
-var __jsx = react_default.a.createElement;
-
-
-
-
-
-
-const AllClients = allClients => {
-  const {
-    statusUrl
-  } = Object(context["useAppContext"])();
-  const {
-    0: clients,
-    1: setClients
-  } = Object(react["useState"])([]);
-  Object(react["useEffect"])(() => {
-    console.log("CLIENTS ON CLIENT SIDE: ");
-    console.log(allClients);
-    setClients([allClients]); //     if (statusUrl !== "") {
-    //       axios
-    //         .get(`${statusUrl}/api/getclients`)
-    //         .then(response => setClients([...response.data]))
-    //         .catch(err => console.log(err));
-    //     }
-  }, []); // }, [statusUrl]);
-
-  return __jsx("div", {
-    className: "allMother"
-  }, __jsx("div", {
-    className: "allMain"
-  }, __jsx("section", {
-    className: "leftSect"
-  }, __jsx("div", {
-    className: "headDiv"
-  }, __jsx("h1", {
-    className: "head"
-  }, "Sign Ups"))), __jsx("section", {
-    className: "rightSect"
-  }, __jsx("div", {
-    className: "rightSectChild"
-  }, console.log(clients), clients.length !== 0 ? clients[0].json.map(client => __jsx("div", {
-    key: client.id,
-    className: "clientItem"
-  }, __jsx("h3", {
-    className: "clientEmail"
-  }, client.email))) : __jsx("div", null, __jsx("h3", null, "No clients yet"))))));
-};
-
-AllClients.getInitialProps = async ctx => {
-  const res = await isomorphic_unfetch_default()("http://localhost:3000/api/clients");
-  console.log("getInitialProps res START");
-  console.log(res);
-  console.log("getInitialProps res END");
-  const json = await res.json();
-  return {
-    json
-  };
-};
-
-/* harmony default export */ var pages_allclients = (AllClients);
-// EXTERNAL MODULE: ./.next/routes-manifest.json
-var routes_manifest = __webpack_require__("Skye");
-
-// EXTERNAL MODULE: ./node_modules/next/dist/next-server/server/lib/path-match.js
-var path_match = __webpack_require__("uDRR");
-var path_match_default = /*#__PURE__*/__webpack_require__.n(path_match);
-
-// CONCATENATED MODULE: ./node_modules/next/dist/build/webpack/loaders/next-serverless-loader.js?page=%2Fallclients&absolutePagePath=private-next-pages%2Fallclients.js&absoluteAppPath=private-next-pages%2F_app.js&absoluteDocumentPath=next%2Fdist%2Fpages%2F_document&absoluteErrorPath=next%2Fdist%2Fpages%2F_error&distDir=private-dot-next&buildId=lpzc-N_gmPFjvsIh7FRCm&assetPrefix=&generateEtags=true&canonicalBase=&basePath=
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticProps", function() { return unstable_getStaticProps; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticParams", function() { return unstable_getStaticParams; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "unstable_getStaticPaths", function() { return unstable_getStaticPaths; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "config", function() { return config; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "_app", function() { return next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_lpzc_N_gmPFjvsIh7FRCm_assetPrefix_generateEtags_true_canonicalBase_basePath_app; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "renderReqToHTML", function() { return renderReqToHTML; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_lpzc_N_gmPFjvsIh7FRCm_assetPrefix_generateEtags_true_canonicalBase_basePath_render; });
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  
-
-    const Component = pages_allclients
-    /* harmony default export */ var next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_lpzc_N_gmPFjvsIh7FRCm_assetPrefix_generateEtags_true_canonicalBase_basePath_ = __webpack_exports__["default"] = (Component);
-    const unstable_getStaticProps = pages_allclients_namespaceObject['unstable_getStaticProp' + 's']
-    const unstable_getStaticParams = pages_allclients_namespaceObject['unstable_getStaticParam' + 's']
-    const unstable_getStaticPaths = pages_allclients_namespaceObject['unstable_getStaticPath' + 's']
-
-    
-    
-    const getCustomRouteMatcher = path_match_default()(true)
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of routes_manifest["a" /* rewrites */]) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          parsedUrl.query = {
-            ...parsedUrl.query,
-            ...params
-          }
-          const parsedDest = Object(external_url_["parse"])(rewrite.destination)
-          const destCompiler = path_match["pathToRegexp"].compile(
-            `${parsedDest.pathname}${parsedDest.hash || ''}`
-          )
-          const newUrl = destCompiler(params)
-          const parsedNewUrl = Object(external_url_["parse"])(newUrl)
-
-          parsedUrl.pathname = parsedNewUrl.pathname
-          parsedUrl.hash = parsedNewUrl.hash
-
-          if (parsedUrl.pathname === '/allclients'){
-            break
-          }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-    const config = pages_allclients_namespaceObject['confi' + 'g'] || {}
-    const next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_lpzc_N_gmPFjvsIh7FRCm_assetPrefix_generateEtags_true_canonicalBase_basePath_app = _app["a" /* default */]
-    async function renderReqToHTML(req, res, fromExport, _renderOpts, _params) {
-      
-      const options = {
-        App: _app["a" /* default */],
-        Document: _document_default.a,
-        buildManifest: build_manifest,
-        unstable_getStaticProps,
-        unstable_getStaticPaths,
-        reactLoadableManifest: react_loadable_manifest,
-        canonicalBase: "",
-        buildId: "lpzc-N_gmPFjvsIh7FRCm",
-        assetPrefix: "",
-        ..._renderOpts
-      }
-      let _nextData = false
-
-      if (req.url.match(/_next\/data/)) {
-        _nextData = true
-        req.url = req.url
-          .replace(new RegExp('/_next/data/lpzc\-N_gmPFjvsIh7FRCm/'), '/')
-          .replace(/\.json$/, '')
-      }
-      const parsedUrl = handleRewrites(Object(external_url_["parse"])(req.url, true))
-
-      const renderOpts = Object.assign(
-        {
-          Component,
-          pageConfig: config,
-          nextExport: fromExport
-        },
-        options,
-      )
-      try {
-        
-        const params = {};
-        const nowParams = null;
-        let result = await Object(render["renderToHTML"])(req, res, "/allclients", Object.assign({}, unstable_getStaticProps ? {} : parsedUrl.query, nowParams ? nowParams : params, _params), renderOpts)
-
-        if (_nextData && !fromExport) {
-          const payload = JSON.stringify(renderOpts.pageData)
-          res.setHeader('Content-Type', 'application/json')
-          res.setHeader('Content-Length', Buffer.byteLength(payload))
-          res.setHeader(
-            'Cache-Control',
-            `s-maxage=${renderOpts.revalidate}, stale-while-revalidate`
-          )
-          res.end(payload)
-          return null
-        }
-
-        if (fromExport) return { html: result, renderOpts }
-        return result
-      } catch (err) {
-        if (err.code === 'ENOENT') {
-          res.statusCode = 404
-          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-            unstable_getStaticProps: undefined,
-            unstable_getStaticPaths: undefined,
-            Component: _error_default.a
-          }))
-          return result
-        } else {
-          console.error(err)
-          res.statusCode = 500
-          const result = await Object(render["renderToHTML"])(req, res, "/_error", parsedUrl.query, Object.assign({}, options, {
-            unstable_getStaticProps: undefined,
-            unstable_getStaticPaths: undefined,
-            Component: _error_default.a,
-            err
-          }))
-          return result
-        }
-      }
-    }
-    async function next_serverless_loaderpage_2Fallclients_absolutePagePath_private_next_pages_2Fallclients_js_absoluteAppPath_private_next_pages_2F_app_js_absoluteDocumentPath_next_2Fdist_2Fpages_2F_document_absoluteErrorPath_next_2Fdist_2Fpages_2F_error_distDir_private_dot_next_buildId_lpzc_N_gmPFjvsIh7FRCm_assetPrefix_generateEtags_true_canonicalBase_basePath_render (req, res) {
-      try {
-        await Object(next_plugin_loadermiddleware_on_init_server["default"])()
-        const html = await renderReqToHTML(req, res)
-        if (html) {
-          Object(send_html["sendHTML"])(req, res, html, {generateEtags: true})
-        }
-      } catch(err) {
-        await Object(next_plugin_loadermiddleware_on_error_server["default"])(err)
-        console.error(err)
-        res.statusCode = 500
-        res.end('Internal Server Error')
-      }
-    }
-  
 
 /***/ }),
 
