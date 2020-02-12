@@ -182,6 +182,7 @@ body {
       }
     }
   }
+
   @media (max-width: 700px) {
     height: 100%;
     .contactMain {
@@ -202,28 +203,19 @@ body {
       }
       .rightSect {
         width: 100%;
-        .rightSectChild {
-          align-items: flex-start;
-          justify-content: flex-start;
-        }
-      }
-    }
-  }
-  @media (max-width: 700px) {
-    height: 100%;
-    .contactMain {
-      .leftSect {
-        height: 180px;
-      }
-      .rightSect {
         justify-content: flex-start;
         left: 0;
-        .rightSectChild {
+        .rightSectChild {          
+          align-items: flex-start;
+          justify-content: flex-start;
           align-self: center;
           margin-top: 50px;
           width: calc(100% - 40px);
           max-width: 500px;
           padding: 0 20px 0 20px;
+          .letsTalkDiv{
+            width: calc(100% - 30px);
+          }
         }
       }
     }
