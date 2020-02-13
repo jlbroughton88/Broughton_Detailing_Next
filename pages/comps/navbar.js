@@ -43,7 +43,7 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <div itemscope itemtype="http://schema.org/ItemList" tabIndex="0" className="navLinksDiv">
+        <div itemScope itemType="http://schema.org/ItemList" tabIndex="0" className="navLinksDiv">
           <Link  href="/about">
             <a itemprop="itemListElement"  className="navLink">About</a>
           </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
           <Menu className="burgerMenu" />
         </div>
         <div tabIndex="0" id="dropDown" className="navDropDown">
-          <ul itemscope itemtype="http://schema.org/ItemList">
+          <ul itemScope itemType="http://schema.org/ItemList">
             <Link href="/about">
               <li  itemprop="itemListElement" >About</li>
             </Link>

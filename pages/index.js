@@ -89,7 +89,7 @@ const Index = () => {
   ];
   
   return (
-    <div itemscope itemtype="http://schema.org/WebPage" className="home1Mother">
+    <div itemScope itemType="http://schema.org/WebPage" className="home1Mother">
       <Navbar/>
       <div className="home1Main">
         <section className="leftSect">
@@ -125,15 +125,15 @@ const Index = () => {
               </div>
             </div>
 
-            <div itemscope itemtype="http://schema.org/FAQPage" className="FAQDiv">
+            <div itemScope itemType="http://schema.org/FAQPage" className="FAQDiv">
               <div className="FAQHeadDiv">
                 <h2 className="FAQHead">FAQ</h2>
               </div>
               <div className="FAQListDiv">
                 {FAQs.map(faq => (
                   <div key={faq.question} className="faqItem">
-                    <h2 itemscope itemtype="http://schema.org/Questione" className="faqQuestion">{faq.question}</h2>
-                    <p itemscope itemtype="http://schema.org/acceptedAnswer" className="faqAnswer">{faq.answer}</p>
+                    <h2 itemScope itemType="http://schema.org/Questione" className="faqQuestion">{faq.question}</h2>
+                    <p itemScope itemType="http://schema.org/acceptedAnswer" className="faqAnswer">{faq.answer}</p>
                     {faq.link && faq.topic && (
                       <p className="faqLink">
                         Click{" "}
@@ -154,7 +154,7 @@ const Index = () => {
               <div className="reviewsDiv">
                 <div className="reviewsScroll">
                   {reviews.map(rev => (
-                    <div itemscope itemtype="http://schema.org/Recommendation" key={rev.text} className="revItem">
+                    <div itemScope itemType="http://schema.org/Recommendation" key={rev.text} className="revItem">
                       <p itemprop="reviewBody" className="revText">{rev.text}</p>
                       <p itemprop="author" className="revName">{rev.name}</p>
                     </div>

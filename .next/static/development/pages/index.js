@@ -4497,12 +4497,12 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ "./node_modules/next/dist/build/polyfills/object-assign.js":
 /*!***********************************************************************************************************************!*\
-  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_5f137288facb1107b491 ***!
+  !*** delegated ./node_modules/next/dist/build/polyfills/object-assign.js from dll-reference dll_ef0ff7c60362f24a921f ***!
   \***********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/next/dist/build/polyfills/object-assign.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f */ "dll-reference dll_ef0ff7c60362f24a921f"))("./node_modules/next/dist/build/polyfills/object-assign.js");
 
 /***/ }),
 
@@ -7209,12 +7209,12 @@ module.exports = exports['default'];
 
 /***/ "./node_modules/prop-types/checkPropTypes.js":
 /*!*********************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_5f137288facb1107b491 ***!
+  !*** delegated ./node_modules/prop-types/checkPropTypes.js from dll-reference dll_ef0ff7c60362f24a921f ***!
   \*********************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/prop-types/checkPropTypes.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f */ "dll-reference dll_ef0ff7c60362f24a921f"))("./node_modules/prop-types/checkPropTypes.js");
 
 /***/ }),
 
@@ -7849,12 +7849,12 @@ if (true) {
 
 /***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
 /*!*******************************************************************************************************************!*\
-  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_5f137288facb1107b491 ***!
+  !*** delegated ./node_modules/prop-types/lib/ReactPropTypesSecret.js from dll-reference dll_ef0ff7c60362f24a921f ***!
   \*******************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f */ "dll-reference dll_ef0ff7c60362f24a921f"))("./node_modules/prop-types/lib/ReactPropTypesSecret.js");
 
 /***/ }),
 
@@ -8334,12 +8334,12 @@ if (false) {} else {
 
 /***/ "./node_modules/react/index.js":
 /*!*******************************************************************************************!*\
-  !*** delegated ./node_modules/react/index.js from dll-reference dll_5f137288facb1107b491 ***!
+  !*** delegated ./node_modules/react/index.js from dll-reference dll_ef0ff7c60362f24a921f ***!
   \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = (__webpack_require__(/*! dll-reference dll_5f137288facb1107b491 */ "dll-reference dll_5f137288facb1107b491"))("./node_modules/react/index.js");
+module.exports = (__webpack_require__(/*! dll-reference dll_ef0ff7c60362f24a921f */ "dll-reference dll_ef0ff7c60362f24a921f"))("./node_modules/react/index.js");
 
 /***/ }),
 
@@ -10030,8 +10030,8 @@ var Navbar = function Navbar() {
     },
     __self: this
   }, "Detailing")))), __jsx("div", {
-    itemscope: true,
-    itemtype: "http://schema.org/ItemList",
+    itemScope: true,
+    itemType: "http://schema.org/ItemList",
     tabIndex: "0",
     className: "navLinksDiv",
     __source: {
@@ -10125,8 +10125,8 @@ var Navbar = function Navbar() {
     },
     __self: this
   }, __jsx("ul", {
-    itemscope: true,
-    itemtype: "http://schema.org/ItemList",
+    itemScope: true,
+    itemType: "http://schema.org/ItemList",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
@@ -10277,32 +10277,32 @@ var Index = function Index() {
     topic: "service time-frames"
   }];
   return __jsx("div", {
-    itemscope: true,
-    itemtype: "http://schema.org/WebPage",
+    itemScope: true,
+    itemType: "http://schema.org/WebPage",
     className: "home1Mother",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 92
     },
     __self: this
   }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 93
     },
     __self: this
   }), __jsx("div", {
     className: "home1Main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 94
     },
     __self: this
   }, __jsx("section", {
     className: "leftSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 95
     },
     __self: this
   }, __jsx("div", {
@@ -10310,42 +10310,42 @@ var Index = function Index() {
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 96
     },
     __self: this
   }, __jsx("h3", {
     className: "subHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: this
   }, "Mobile"), __jsx("h1", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100
+      lineNumber: 101
     },
     __self: this
   }, "Auto Detailing"))), __jsx("section", {
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: this
   }, __jsx("div", {
     className: "rightSectChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: this
   }, __jsx("div", {
     className: "imgDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 106
     },
     __self: this
   }, __jsx("img", {
@@ -10353,14 +10353,14 @@ var Index = function Index() {
     alt: "Broughton Detailing",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 107
     },
     __self: this
   })), __jsx("div", {
     className: "addrParent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 110
     },
     __self: this
   }, __jsx("div", {
@@ -10368,7 +10368,7 @@ var Index = function Index() {
     className: "addrDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 111
     },
     __self: this
   }, __jsx("h1", {
@@ -10376,7 +10376,7 @@ var Index = function Index() {
     className: "addrTextSmall",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 112
     },
     __self: this
   }, "Mobile Auto Detailing"), __jsx("h1", {
@@ -10384,85 +10384,85 @@ var Index = function Index() {
     className: "addrText",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 113
     },
     __self: this
   }, "Located in Matthews, NC"), __jsx("h1", {
     className: "addrText2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: this
   }, "I'll come to you"), __jsx("div", {
     className: "buttonsDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 115
     },
     __self: this
   }, __jsx("a", {
     href: "mailto:broughtondetailing@gmail.com?subject=Detail Inquiry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 116
     },
     __self: this
   }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 117
     },
     __self: this
   }, "Lets talk!")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/services",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 119
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 120
     },
     __self: this
   }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 121
     },
     __self: this
   }, "Services")))))), __jsx("div", {
-    itemscope: true,
-    itemtype: "http://schema.org/FAQPage",
+    itemScope: true,
+    itemType: "http://schema.org/FAQPage",
     className: "FAQDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 128
     },
     __self: this
   }, __jsx("div", {
     className: "FAQHeadDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 129
     },
     __self: this
   }, __jsx("h2", {
     className: "FAQHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 130
     },
     __self: this
   }, "FAQ")), __jsx("div", {
     className: "FAQListDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 132
     },
     __self: this
   }, FAQs.map(function (faq) {
@@ -10471,45 +10471,45 @@ var Index = function Index() {
       className: "faqItem",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133
-      },
-      __self: this
-    }, __jsx("h2", {
-      itemscope: true,
-      itemtype: "http://schema.org/Questione",
-      className: "faqQuestion",
-      __source: {
-        fileName: _jsxFileName,
         lineNumber: 134
       },
       __self: this
-    }, faq.question), __jsx("p", {
-      itemscope: true,
-      itemtype: "http://schema.org/acceptedAnswer",
-      className: "faqAnswer",
+    }, __jsx("h2", {
+      itemScope: true,
+      itemType: "http://schema.org/Questione",
+      className: "faqQuestion",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 135
+      },
+      __self: this
+    }, faq.question), __jsx("p", {
+      itemScope: true,
+      itemType: "http://schema.org/acceptedAnswer",
+      className: "faqAnswer",
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 136
       },
       __self: this
     }, faq.answer), faq.link && faq.topic && __jsx("p", {
       className: "faqLink",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137
+        lineNumber: 138
       },
       __self: this
     }, "Click", " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: faq.link,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139
+        lineNumber: 140
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140
+        lineNumber: 141
       },
       __self: this
     }, "here")), " ", "for more info on ", faq.topic, "."));
@@ -10517,46 +10517,46 @@ var Index = function Index() {
     className: "reviewsParent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 150
     },
     __self: this
   }, __jsx("div", {
     className: "reviewsHeadDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 151
     },
     __self: this
   }, __jsx("h2", {
     className: "reviewsHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 152
     },
     __self: this
   }, "Here's what people are saying!")), __jsx("div", {
     className: "reviewsDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 154
     },
     __self: this
   }, __jsx("div", {
     className: "reviewsScroll",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 155
     },
     __self: this
   }, reviews.map(function (rev) {
     return __jsx("div", {
-      itemscope: true,
-      itemtype: "http://schema.org/Recommendation",
+      itemScope: true,
+      itemType: "http://schema.org/Recommendation",
       key: rev.text,
       className: "revItem",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 156
+        lineNumber: 157
       },
       __self: this
     }, __jsx("p", {
@@ -10564,7 +10564,7 @@ var Index = function Index() {
       className: "revText",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 157
+        lineNumber: 158
       },
       __self: this
     }, rev.text), __jsx("p", {
@@ -10572,7 +10572,7 @@ var Index = function Index() {
       className: "revName",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 158
+        lineNumber: 159
       },
       __self: this
     }, rev.name));
@@ -10594,7 +10594,7 @@ module.exports = "/_next/static/images/genesisWithTitle-59f4f0e06bd0027addd312ef
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************************/
@@ -10606,16 +10606,16 @@ module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2F&absol
 
 /***/ }),
 
-/***/ "dll-reference dll_5f137288facb1107b491":
+/***/ "dll-reference dll_ef0ff7c60362f24a921f":
 /*!*******************************************!*\
-  !*** external "dll_5f137288facb1107b491" ***!
+  !*** external "dll_ef0ff7c60362f24a921f" ***!
   \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = dll_5f137288facb1107b491;
+module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

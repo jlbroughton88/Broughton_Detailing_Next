@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <div itemscope itemtype="http://schema.org/ContactPage" className="contactMother">
+    <div itemScope itemType="http://schema.org/ContactPage" className="contactMother">
       <Navbar />
       <div className="contactMain">
         <section className="leftSect">
@@ -58,7 +58,7 @@ const Contact = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
-            {/* <div className="signupDiv">
+            <div className="signupDiv">
               <h2 className="signupHead">Sign Up For Deals!</h2>
               <form onSubmit={handleFormInput} className="signupForm">
                 <div className="signupInputParent">
@@ -80,7 +80,7 @@ const Contact = () => {
               <h4 id="thankYou" className="thankYou">
                 Thank You!
               </h4>
-            </div> */}
+            </div>
             <div className="letsTalkDiv">
               <h2 className="letsTalkHead">Lets Talk!</h2>
               <p itemprop="creator">Jacob Broughton</p>

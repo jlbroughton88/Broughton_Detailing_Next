@@ -1,0 +1,1 @@
+{"ast":null,"code":"const db = require(\"../../lib/db\");\n\nconst escape = require(\"sql-template-strings\");\n\nmodule.exports = async (req, res) => {\n  console.log(req.body);\n  const newClient = await db.query(escape`INSERT INTO clients (email) VALUES (\"${req.body.email}\")`);\n  res.status(200).json(newClient);\n};","map":null,"metadata":{},"sourceType":"script"}

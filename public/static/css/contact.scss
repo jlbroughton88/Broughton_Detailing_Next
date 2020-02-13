@@ -74,59 +74,59 @@ body {
       .rightSectChild {
         padding-left: 30px;
         width: calc(100% - 30px);
-        // .signupDiv {
-        //   margin-bottom: 40px;
-        //   .signupHead {
-        //     background: #4698fe;
-        //     text-align: start;
-        //     color: #333;
-        //     font-size: 1.8rem;
-        //     background: #4698fe;
-        //     padding: 10px 15px;
-        //     border-radius: 5px;
-        //     margin-bottom: 10px;
-        //   }
-        //   .signupForm {
-        //     display: flex;
-        //     flex-direction: row;
-        //     .signupInputParent {
-        //       background: #4698fe;
-        //       padding: 3px;
-        //       border-radius: 3px;
-        //       border-top-right-radius: 0;
-        //       border-bottom-right-radius: 0;
-        //       width: calc(100% - 50px);
-        //       .signupInput {
-        //         background: #333;
-        //         padding: 5px 10px;
-        //         border-radius: 3px;
-        //         border: none;
-        //         width: calc(100% - 20px);
-        //         color: #ffffff;
-        //         font-size: 0.8rem;
-        //       }
-        //     }
+        .signupDiv {
+          margin-bottom: 40px;
+          .signupHead {
+            background: #4698fe;
+            text-align: start;
+            color: #333;
+            font-size: 1.8rem;
+            background: #4698fe;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+          }
+          .signupForm {
+            display: flex;
+            flex-direction: row;
+            .signupInputParent {
+              background: #4698fe;
+              padding: 3px;
+              border-radius: 3px;
+              border-top-right-radius: 0;
+              border-bottom-right-radius: 0;
+              width: calc(100% - 50px);
+              .signupInput {
+                background: #333;
+                padding: 5px 10px;
+                border-radius: 3px;
+                border: none;
+                width: calc(100% - 20px);
+                color: #ffffff;
+                font-size: 0.8rem;
+              }
+            }
 
-        //     .signupSubmit {
-        //       background: #4698fe;
-        //       border: none;
-        //       font-size: 1rem;
-        //       font-weight: 600;
-        //       margin: 0;
-        //       border-radius: 0;
-        //       border-top-right-radius: 3px;
-        //       border-bottom-right-radius: 3px;
-        //       cursor: pointer;
-        //       appearance: none;
-        //       -webkit-appearance: none;
-        //     }
-        //   }
-        //   .thankYou{
-        //     margin-top: 10px;
-        //     color: #ffffff;
-        //     display: none;
-        //   }
-        // }
+            .signupSubmit {
+              background: #4698fe;
+              border: none;
+              font-size: 1rem;
+              font-weight: 600;
+              margin: 0;
+              border-radius: 0;
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 3px;
+              cursor: pointer;
+              appearance: none;
+              -webkit-appearance: none;
+            }
+          }
+          .thankYou{
+            margin-top: 10px;
+            color: #ffffff;
+            display: none;
+          }
+        }
         .letsTalkDiv {
           width: calc(100% - 60px);
           max-width: 500px;

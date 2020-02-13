@@ -129,7 +129,7 @@ const Work = () => {
 
   // console.log(loadCount)
   return (
-    <div itemscope itemtype="http://schema.org/ImageGallery" className="workMother">
+    <div itemScope itemType="http://schema.org/ImageGallery" className="workMother">
         <Navbar/>
       <div className="workMain">
         {/* <DownArrow className="downArrow"/> */}
@@ -140,7 +140,7 @@ const Work = () => {
         </section>
         <section  className="rightSect">
           <div className="rightSectChild">
-            <div itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Collection" id="imagesGrid" className="imagesGrid">
+            <div itemprop="mainContentOfPage" itemScope itemType="http://schema.org/Collection" id="imagesGrid" className="imagesGrid">
               {imageArr.map(img => (
                 <div
                   className="imageItem"

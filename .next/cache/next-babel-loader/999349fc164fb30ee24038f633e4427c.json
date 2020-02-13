@@ -1,0 +1,1 @@
+{"ast":null,"code":"const db = require(\"../../lib/db\");\n\nconst escape = require(\"sql-template-strings\");\n\nmodule.exports = (req, res) => {\n  console.log(req);\n  db.query(escape`INSERT INTO clients (email) VALUES (\"${req.body.email}\")`);\n};","map":null,"metadata":{},"sourceType":"script"}

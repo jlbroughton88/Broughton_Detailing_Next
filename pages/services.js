@@ -42,7 +42,7 @@ const Services = () => {
         <section className="rightSect">
           <div className="rightSectChild">
             <div className="servicesGrid">
-              <div itemscope itemtype="http://schema.org/ItemList" className="serviceDiv">
+              <div itemScope itemType="http://schema.org/ItemList" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="basics"
@@ -50,14 +50,14 @@ const Services = () => {
                 >
                   The Basics
                 </div>
-                <div itemscope itemtype="http://schema.org/ItemList" className="serviceListBasics" id="basicsList">
-                  <li itemprop="itemListElement" className="serviceListItem">- Hand Washed</li>
-                  <li itemprop="itemListElement" className="serviceListItem">- Windows Inside & Out</li>
-                  <li itemprop="itemListElement" className="serviceListItem">- Door Jams</li>
-                  <li itemprop="itemListElement" className="serviceListItem">- Clean Plastics / Dust</li>
-                  <li itemprop="itemListElement" className="serviceListItem">- Shampoo Floor Mats</li>
-                  <li citemprop="itemListElement" lassName="serviceListItem">- Vacuum</li>
-                  <div itemprop="itemListElement" className="priceTimeParent">
+                <div itemScope itemType="http://schema.org/ItemList" className="serviceListBasics" id="basicsList">
+                  <li itemProp="itemListElement" className="serviceListItem">- Hand Washed</li>
+                  <li itemProp="itemListElement" className="serviceListItem">- Windows Inside & Out</li>
+                  <li itemProp="itemListElement" className="serviceListItem">- Door Jams</li>
+                  <li itemProp="itemListElement" className="serviceListItem">- Clean Plastics / Dust</li>
+                  <li itemProp="itemListElement" className="serviceListItem">- Shampoo Floor Mats</li>
+                  <li citemProp="itemListElement" lassName="serviceListItem">- Vacuum</li>
+                  <div itemProp="itemListElement" className="priceTimeParent">
                     <p className="priceRubric">
                       Cars <strong>/</strong> SUVs <strong>/</strong> Minivans
                     </p>
@@ -72,7 +72,7 @@ const Services = () => {
                 <h2 className="premiumHead">Premium Services</h2>
               </div>
 
-              <div itemprop="itemListElement" className="serviceDiv">
+              <div itemProp="itemListElement" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="interior"
@@ -81,7 +81,7 @@ const Services = () => {
                   Interior Conditioning
                 </div>
                 <div className="serviceList" id="interiorDesc">
-                  <p itemscope itemtype="http://schema.org/HowToTip" className="serviceListItem">
+                  <p itemScope itemType="http://schema.org/HowToTip" className="serviceListItem">
                     Plastics and other vinyl-like interior surfaces are very
                     susceptable to damage from the sun over time, as well as
                     from natural body oils. <br />
@@ -103,7 +103,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div itemprop="itemListElement" className="serviceDiv">
+              <div itemProp="itemListElement" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="wheels"
@@ -112,7 +112,7 @@ const Services = () => {
                   Wheel Service
                 </div>
                 <div className="serviceList" id="wheelsDesc">
-                  <p itemscope itemtype="http://schema.org/HowToTip" className="serviceListItem">
+                  <p itemScope itemType="http://schema.org/HowToTip" className="serviceListItem">
                     The first glance that people give to cars is usually
                     straight to the wheels.
                     <br />
@@ -137,7 +137,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div itemprop="itemListElement" className="serviceDiv">
+              <div itemProp="itemListElement" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="leather"
@@ -146,7 +146,7 @@ const Services = () => {
                   Leather Treatment
                 </div>
                 <div  className="serviceList" id="leatherDesc">
-                  <p itemscope itemtype="http://schema.org/HowToTip" className="serviceListItem">
+                  <p itemScope itemType="http://schema.org/HowToTip" className="serviceListItem">
                     Leather is important to maintain. Over time, if cared for
                     correctly, it develops a wonderful finish called a patina,
                     or a 'sheen'. This adds a bit of character to the leather.
@@ -167,7 +167,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div itemprop="itemListElement" className="serviceDiv">
+              <div itemProp="itemListElement" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="carpets"
@@ -176,7 +176,7 @@ const Services = () => {
                   Carpet & Seat Cleaning
                 </div>
                 <div className="serviceList" id="carpetsDesc">
-                  <p itemscope itemtype="http://schema.org/HowToTip" className="serviceListItem">
+                  <p itemScope itemType="http://schema.org/HowToTip" className="serviceListItem">
                     Carpets are often overlooked because we're always stepping
                     and sitting on them, but their cleanliness actually
                     effect the experience quite a lot. Past the obvious, (or not-so-obvious) visual
@@ -198,7 +198,7 @@ const Services = () => {
                 </div>
               </div>
 
-              <div itemprop="itemListElement" className="serviceDiv">
+              <div itemProp="itemListElement" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="paint"
@@ -207,7 +207,7 @@ const Services = () => {
                   Paint Revitalization
                 </div>
                 <div className="serviceList" id="paintDesc">
-                  <p itemscope itemtype="http://schema.org/HowToTip" className="serviceListItem">
+                  <p itemScope itemType="http://schema.org/HowToTip" className="serviceListItem">
                     Paint can make all the difference visually.
                     <br />
                     <br />

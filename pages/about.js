@@ -17,7 +17,7 @@ const About1 = () => {
   // })
 
   return (
-    <div itemscope itemtype="http://schema.org/AboutPage" className="aboutMother">
+    <div itemScope itemType="http://schema.org/AboutPage" className="aboutMother">
       <Navbar />
       <div className="aboutMain">
         <section className="leftSect">
@@ -36,7 +36,7 @@ const About1 = () => {
               </div>
               <div className="storyParaDiv">
                 <h2 className="aboutSlogan">"Nothing Less Than Remarkable"</h2>
-                <h3 itemscope itemtype="http://schema.org/ShortStory" itemprop="about" className="storyPara">
+                <h3 itemScope itemType="http://schema.org/ShortStory" itemprop="about" className="storyPara">
                   Hi, my name is Jacob, founder of Broughton Detailing. I
                   appreciate you spending a few minutes here on my site!
                   <br /> <br />
