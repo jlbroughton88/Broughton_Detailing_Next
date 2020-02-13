@@ -1,5 +1,12 @@
 {
-    "name": "broughton-detailing",
     "version": 2,
-    "alias": "www.broughtondetailing.com"
+    "build": {
+        "env": {
+            "HOST" : "@host",
+            "USERNAME" : "@username",
+            "PASSWORD" : "@password",
+            "DATABASE" : "@database",
+            "JAWSDB_URL": "@jawsdb_url"
+        }
+    }
 }

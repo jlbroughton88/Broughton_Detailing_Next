@@ -2604,6 +2604,8 @@ const Index = () => {
     },
     __self: undefined
   }, "Services")))))), __jsx("div", {
+    itemscope: true,
+    itemtype: "http://schema.org/FAQPage",
     className: "FAQDiv",
     __source: {
       fileName: _jsxFileName,
@@ -2641,7 +2643,7 @@ const Index = () => {
     __self: undefined
   }, __jsx("h2", {
     itemscope: true,
-    itemtype: "http://schema.org/Question",
+    itemtype: "http://schema.org/Questione",
     className: "faqQuestion",
     __source: {
       fileName: _jsxFileName,
@@ -2650,7 +2652,7 @@ const Index = () => {
     __self: undefined
   }, faq.question), __jsx("p", {
     itemscope: true,
-    itemtype: "http://schema.org/Answer",
+    itemtype: "http://schema.org/acceptedAnswer",
     className: "faqAnswer",
     __source: {
       fileName: _jsxFileName,

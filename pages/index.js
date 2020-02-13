@@ -87,6 +87,7 @@ const Index = () => {
       topic: "service time-frames"
     }
   ];
+  
   return (
     <div itemscope itemtype="http://schema.org/WebPage" className="home1Mother">
       <Navbar/>
@@ -124,15 +125,15 @@ const Index = () => {
               </div>
             </div>
 
-            <div className="FAQDiv">
+            <div itemscope itemtype="http://schema.org/FAQPage" className="FAQDiv">
               <div className="FAQHeadDiv">
                 <h2 className="FAQHead">FAQ</h2>
               </div>
               <div className="FAQListDiv">
                 {FAQs.map(faq => (
                   <div key={faq.question} className="faqItem">
-                    <h2 itemscope itemtype="http://schema.org/Question" className="faqQuestion">{faq.question}</h2>
-                    <p itemscope itemtype="http://schema.org/Answer" className="faqAnswer">{faq.answer}</p>
+                    <h2 itemscope itemtype="http://schema.org/Questione" className="faqQuestion">{faq.question}</h2>
+                    <p itemscope itemtype="http://schema.org/acceptedAnswer" className="faqAnswer">{faq.answer}</p>
                     {faq.link && faq.topic && (
                       <p className="faqLink">
                         Click{" "}

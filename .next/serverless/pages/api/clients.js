@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "chpY");
+/******/ 	return __webpack_require__(__webpack_require__.s = "s/oU");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1714,126 +1714,6 @@ Field.prototype.buffer = function () {
 Field.prototype.geometry = function () {
   return this.parser.parseGeometryValue();
 };
-
-
-/***/ }),
-
-/***/ "7RiN":
-/***/ (function(module, exports, __webpack_require__) {
-
-/* @flow */
-/*::
-
-type DotenvParseOptions = {
-  debug?: boolean
-}
-
-// keys and values from src
-type DotenvParseOutput = { [string]: string }
-
-type DotenvConfigOptions = {
-  path?: string, // path to .env file
-  encoding?: string, // encoding of .env file
-  debug?: string // turn on logging for debugging purposes
-}
-
-type DotenvConfigOutput = {
-  parsed?: DotenvParseOutput,
-  error?: Error
-}
-
-*/
-
-const fs = __webpack_require__("mw/K")
-const path = __webpack_require__("oyvS")
-
-function log (message /*: string */) {
-  console.log(`[dotenv][DEBUG] ${message}`)
-}
-
-const NEWLINE = '\n'
-const RE_INI_KEY_VAL = /^\s*([\w.-]+)\s*=\s*(.*)?\s*$/
-const RE_NEWLINES = /\\n/g
-const NEWLINES_MATCH = /\n|\r|\r\n/
-
-// Parses src into an Object
-function parse (src /*: string | Buffer */, options /*: ?DotenvParseOptions */) /*: DotenvParseOutput */ {
-  const debug = Boolean(options && options.debug)
-  const obj = {}
-
-  // convert Buffers before splitting into lines and processing
-  src.toString().split(NEWLINES_MATCH).forEach(function (line, idx) {
-    // matching "KEY' and 'VAL' in 'KEY=VAL'
-    const keyValueArr = line.match(RE_INI_KEY_VAL)
-    // matched?
-    if (keyValueArr != null) {
-      const key = keyValueArr[1]
-      // default undefined or missing values to empty string
-      let val = (keyValueArr[2] || '')
-      const end = val.length - 1
-      const isDoubleQuoted = val[0] === '"' && val[end] === '"'
-      const isSingleQuoted = val[0] === "'" && val[end] === "'"
-
-      // if single or double quoted, remove quotes
-      if (isSingleQuoted || isDoubleQuoted) {
-        val = val.substring(1, end)
-
-        // if double quoted, expand newlines
-        if (isDoubleQuoted) {
-          val = val.replace(RE_NEWLINES, NEWLINE)
-        }
-      } else {
-        // remove surrounding whitespace
-        val = val.trim()
-      }
-
-      obj[key] = val
-    } else if (debug) {
-      log(`did not match key and value when parsing line ${idx + 1}: ${line}`)
-    }
-  })
-
-  return obj
-}
-
-// Populates process.env from .env file
-function config (options /*: ?DotenvConfigOptions */) /*: DotenvConfigOutput */ {
-  let dotenvPath = path.resolve(process.cwd(), '.env')
-  let encoding /*: string */ = 'utf8'
-  let debug = false
-
-  if (options) {
-    if (options.path != null) {
-      dotenvPath = options.path
-    }
-    if (options.encoding != null) {
-      encoding = options.encoding
-    }
-    if (options.debug != null) {
-      debug = true
-    }
-  }
-
-  try {
-    // specifying an encoding returns a string instead of a buffer
-    const parsed = parse(fs.readFileSync(dotenvPath, { encoding }), { debug })
-
-    Object.keys(parsed).forEach(function (key) {
-      if (!Object.prototype.hasOwnProperty.call(process.env, key)) {
-        process.env[key] = parsed[key]
-      } else if (debug) {
-        log(`"${key}" is already defined in \`process.env\` and will not be overwritten`)
-      }
-    })
-
-    return { parsed }
-  } catch (e) {
-    return { error: e }
-  }
-}
-
-module.exports.config = config
-module.exports.parse = parse
 
 
 /***/ }),
@@ -12457,95 +12337,6 @@ module.exports = JSON.parse("[[\"8740\",\"䏰䰲䘃䖦䕸𧉧䵷䖳𧲱䳢𧳅�
 
 /***/ }),
 
-/***/ "chpY":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("bzos");
-/* harmony import */ var url__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(url__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("PCLx");
-/* harmony import */ var next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("KqAr");
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("uDRR");
-/* harmony import */ var next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5__);
-
-      
-      
-      
-      
-      
-      
-    
-    
-  
-
-      
-      
-    const getCustomRouteMatcher = next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5___default()(true)
-
-    function handleRewrites(parsedUrl) {
-      for (const rewrite of private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_4__[/* rewrites */ "a"]) {
-        const matcher = getCustomRouteMatcher(rewrite.source)
-        const params = matcher(parsedUrl.pathname)
-
-        if (params) {
-          parsedUrl.query = {
-            ...parsedUrl.query,
-            ...params
-          }
-          const parsedDest = Object(url__WEBPACK_IMPORTED_MODULE_0__["parse"])(rewrite.destination)
-          const destCompiler = next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5__["pathToRegexp"].compile(
-            `${parsedDest.pathname}${parsedDest.hash || ''}`
-          )
-          const newUrl = destCompiler(params)
-          const parsedNewUrl = Object(url__WEBPACK_IMPORTED_MODULE_0__["parse"])(newUrl)
-
-          parsedUrl.pathname = parsedNewUrl.pathname
-          parsedUrl.hash = parsedNewUrl.hash
-
-          if (parsedUrl.pathname === '/api/clients'){
-            break
-          }
-          
-        }
-      }
-
-      return parsedUrl
-    }
-  
-
-      /* harmony default export */ __webpack_exports__["default"] = (async (req, res) => {
-        try {
-          await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_2__["default"])()
-
-          
-          const parsedUrl = Object(url__WEBPACK_IMPORTED_MODULE_0__["parse"])(req.url, true)
-
-          const params = {}
-
-          const resolver = __webpack_require__("wpIy")
-          Object(next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1__["apiResolver"])(
-            req,
-            res,
-            Object.assign({}, parsedUrl.query, params ),
-            resolver,
-            next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_3__["default"]
-          )
-        } catch (err) {
-          console.error(err)
-          await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_3__["default"])(err)
-          res.statusCode = 500
-          res.end('Internal Server Error')
-        }
-      });
-    
-
-/***/ }),
-
 /***/ "dX9h":
 /***/ (function(module, exports) {
 
@@ -19887,6 +19678,95 @@ function indexOf(xs, x) {
 
 /***/ }),
 
+/***/ "s/oU":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var url__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("bzos");
+/* harmony import */ var url__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(url__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("PCLx");
+/* harmony import */ var next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("KqAr");
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_4___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__("uDRR");
+/* harmony import */ var next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5__);
+
+      
+      
+      
+      
+      
+      
+    
+    
+  
+
+      
+      
+    const getCustomRouteMatcher = next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5___default()(true)
+
+    function handleRewrites(parsedUrl) {
+      for (const rewrite of private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_4__[/* rewrites */ "a"]) {
+        const matcher = getCustomRouteMatcher(rewrite.source)
+        const params = matcher(parsedUrl.pathname)
+
+        if (params) {
+          parsedUrl.query = {
+            ...parsedUrl.query,
+            ...params
+          }
+          const parsedDest = Object(url__WEBPACK_IMPORTED_MODULE_0__["parse"])(rewrite.destination)
+          const destCompiler = next_dist_next_server_server_lib_path_match__WEBPACK_IMPORTED_MODULE_5__["pathToRegexp"].compile(
+            `${parsedDest.pathname}${parsedDest.hash || ''}`
+          )
+          const newUrl = destCompiler(params)
+          const parsedNewUrl = Object(url__WEBPACK_IMPORTED_MODULE_0__["parse"])(newUrl)
+
+          parsedUrl.pathname = parsedNewUrl.pathname
+          parsedUrl.hash = parsedNewUrl.hash
+
+          if (parsedUrl.pathname === '/api/clients'){
+            break
+          }
+          
+        }
+      }
+
+      return parsedUrl
+    }
+  
+
+      /* harmony default export */ __webpack_exports__["default"] = (async (req, res) => {
+        try {
+          await Object(next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_2__["default"])()
+
+          
+          const parsedUrl = Object(url__WEBPACK_IMPORTED_MODULE_0__["parse"])(req.url, true)
+
+          const params = {}
+
+          const resolver = __webpack_require__("wpIy")
+          Object(next_dist_next_server_server_api_utils__WEBPACK_IMPORTED_MODULE_1__["apiResolver"])(
+            req,
+            res,
+            Object.assign({}, parsedUrl.query, params ),
+            resolver,
+            next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_3__["default"]
+          )
+        } catch (err) {
+          console.error(err)
+          await Object(next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_3__["default"])(err)
+          res.statusCode = 500
+          res.end('Internal Server Error')
+        }
+      });
+    
+
+/***/ }),
+
 /***/ "sB7P":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -21239,24 +21119,22 @@ ComChangeUserPacket.prototype.write = function(writer) {
 // exports a function that ensures connections are closed once the query has resolved
 const mysql = __webpack_require__("ti7c");
 
-__webpack_require__("7RiN").config();
-
 console.log("this is the db.js file");
 const db = mysql({
   config: {
-    host: process.env.HOST,
-    database: process.env.DATABASE,
-    user: process.env.USERNAME,
-    password: process.env.PASSWORD
+    host: undefined,
+    database: undefined,
+    user: undefined,
+    password: undefined
   }
 });
 
 exports.query = async query => {
   console.log("THESE ARE THE ENV VARIABLES");
-  console.log("HOST: " + process.env.HOST);
-  console.log("DATABASE: " + process.env.DATABASE);
-  console.log("USERNAME: " + process.env.USERNAME);
-  console.log("PASSWORD: " + process.env.PASSWORD);
+  console.log("HOST: " + undefined);
+  console.log("DATABASE: " + undefined);
+  console.log("USERNAME: " + undefined);
+  console.log("PASSWORD: " + undefined);
 
   try {
     const results = await db.query(query);

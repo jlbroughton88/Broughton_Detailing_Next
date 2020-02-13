@@ -10436,6 +10436,8 @@ var Index = function Index() {
     },
     __self: this
   }, "Services")))))), __jsx("div", {
+    itemscope: true,
+    itemtype: "http://schema.org/FAQPage",
     className: "FAQDiv",
     __source: {
       fileName: _jsxFileName,
@@ -10474,7 +10476,7 @@ var Index = function Index() {
       __self: this
     }, __jsx("h2", {
       itemscope: true,
-      itemtype: "http://schema.org/Question",
+      itemtype: "http://schema.org/Questione",
       className: "faqQuestion",
       __source: {
         fileName: _jsxFileName,
@@ -10483,7 +10485,7 @@ var Index = function Index() {
       __self: this
     }, faq.question), __jsx("p", {
       itemscope: true,
-      itemtype: "http://schema.org/Answer",
+      itemtype: "http://schema.org/acceptedAnswer",
       className: "faqAnswer",
       __source: {
         fileName: _jsxFileName,
