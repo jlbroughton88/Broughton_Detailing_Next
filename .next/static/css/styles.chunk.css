@@ -24,137 +24,6 @@ body {
 * {
   appearance: none; }
 
-.aboutMother {
-  height: 100%; }
-  .aboutMother .aboutMain {
-    display: flex;
-    flex-direction: row;
-    height: 100%; }
-    .aboutMother .aboutMain .leftSect {
-      height: 100%;
-      width: calc(50% - 30px);
-      background: #4698fe;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      position: fixed;
-      padding-right: 30px; }
-      .aboutMother .aboutMain .leftSect .headDiv {
-        height: 156px;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%; }
-        .aboutMother .aboutMain .leftSect .headDiv .head {
-          text-align: end;
-          color: #333;
-          font-size: 4rem; }
-    .aboutMother .aboutMain .rightSect {
-      width: 50%;
-      background: #333;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      position: relative;
-      left: 50%; }
-      .aboutMother .aboutMain .rightSect .rightSectChild {
-        height: auto;
-        background: #333;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        flex-direction: column; }
-        .aboutMother .aboutMain .rightSect .rightSectChild .aboutSlogan {
-          color: #4698fe;
-          margin-bottom: 20px; }
-        .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv {
-          display: flex;
-          flex-direction: column;
-          max-width: 650px; }
-          .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .aboutImgDiv {
-            width: 100%;
-            height: auto; }
-            .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .aboutImgDiv .aboutImg {
-              width: 100%;
-              height: auto; }
-          .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyParaDiv {
-            padding: 0 15px;
-            margin-top: 20px;
-            width: calc(100% - 30px);
-            padding-bottom: 100px; }
-            .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyParaDiv .storyPara {
-              font-weight: 500;
-              color: #ffffff; }
-  @media (max-width: 700px) {
-    .aboutMother {
-      height: 100%; }
-      .aboutMother .aboutMain {
-        flex-direction: column; }
-        .aboutMother .aboutMain .leftSect {
-          width: 100%;
-          height: 180px;
-          padding-right: 0;
-          position: static; }
-          .aboutMother .aboutMain .leftSect .headDiv {
-            margin: 0;
-            justify-content: center;
-            align-items: flex-end; }
-            .aboutMother .aboutMain .leftSect .headDiv .head {
-              margin-top: 80px; }
-        .aboutMother .aboutMain .rightSect {
-          width: 100%;
-          left: 0; }
-          .aboutMother .aboutMain .rightSect .rightSectChild {
-            align-items: flex-start;
-            justify-content: flex-start; }
-            .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyHeadDiv {
-              max-width: initial;
-              width: calc(100% - 30px); }
-              .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyHeadDiv .storyHead {
-                width: 100%; } }
-  @media (max-width: 500px) {
-    .aboutMother {
-      height: 100%; }
-      .aboutMother .aboutMain .leftSect {
-        height: auto;
-        padding-top: 83px;
-        padding-bottom: 6px; }
-        .aboutMother .aboutMain .leftSect .headDiv {
-          height: auto; }
-          .aboutMother .aboutMain .leftSect .headDiv .head {
-            margin: 0; }
-      .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyHeadDiv .storyHead {
-        font-size: 1.5rem;
-        padding: 5px 10px; }
-      .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyParaDiv .storyPara {
-        font-size: 1rem;
-        white-space: pre-wrap; } }
-
-html, body, #root {
-  height: 100%;
-  min-height: 100%;
-  background: #333333; }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.body {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */ }
-
-.body::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0; }
-
-* {
-  appearance: none; }
-
 .home1Mother {
   height: 100%;
   width: 100%; }
@@ -501,6 +370,137 @@ body {
       font-size: 1.4rem; }
     .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
       font-size: 1.4rem; } }
+
+html, body, #root {
+  height: 100%;
+  min-height: 100%;
+  background: #333333; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+
+.body::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0; }
+
+* {
+  appearance: none; }
+
+.aboutMother {
+  height: 100%; }
+  .aboutMother .aboutMain {
+    display: flex;
+    flex-direction: row;
+    height: 100%; }
+    .aboutMother .aboutMain .leftSect {
+      height: 100%;
+      width: calc(50% - 30px);
+      background: #4698fe;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: fixed;
+      padding-right: 30px; }
+      .aboutMother .aboutMain .leftSect .headDiv {
+        height: 156px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; }
+        .aboutMother .aboutMain .leftSect .headDiv .head {
+          text-align: end;
+          color: #333;
+          font-size: 4rem; }
+    .aboutMother .aboutMain .rightSect {
+      width: 50%;
+      background: #333;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      position: relative;
+      left: 50%; }
+      .aboutMother .aboutMain .rightSect .rightSectChild {
+        height: auto;
+        background: #333;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column; }
+        .aboutMother .aboutMain .rightSect .rightSectChild .aboutSlogan {
+          color: #4698fe;
+          margin-bottom: 20px; }
+        .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv {
+          display: flex;
+          flex-direction: column;
+          max-width: 650px; }
+          .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .aboutImgDiv {
+            width: 100%;
+            height: auto; }
+            .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .aboutImgDiv .aboutImg {
+              width: 100%;
+              height: auto; }
+          .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyParaDiv {
+            padding: 0 15px;
+            margin-top: 20px;
+            width: calc(100% - 30px);
+            padding-bottom: 100px; }
+            .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyParaDiv .storyPara {
+              font-weight: 500;
+              color: #ffffff; }
+  @media (max-width: 700px) {
+    .aboutMother {
+      height: 100%; }
+      .aboutMother .aboutMain {
+        flex-direction: column; }
+        .aboutMother .aboutMain .leftSect {
+          width: 100%;
+          height: 180px;
+          padding-right: 0;
+          position: static; }
+          .aboutMother .aboutMain .leftSect .headDiv {
+            margin: 0;
+            justify-content: center;
+            align-items: flex-end; }
+            .aboutMother .aboutMain .leftSect .headDiv .head {
+              margin-top: 80px; }
+        .aboutMother .aboutMain .rightSect {
+          width: 100%;
+          left: 0; }
+          .aboutMother .aboutMain .rightSect .rightSectChild {
+            align-items: flex-start;
+            justify-content: flex-start; }
+            .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyHeadDiv {
+              max-width: initial;
+              width: calc(100% - 30px); }
+              .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyHeadDiv .storyHead {
+                width: 100%; } }
+  @media (max-width: 500px) {
+    .aboutMother {
+      height: 100%; }
+      .aboutMother .aboutMain .leftSect {
+        height: auto;
+        padding-top: 83px;
+        padding-bottom: 6px; }
+        .aboutMother .aboutMain .leftSect .headDiv {
+          height: auto; }
+          .aboutMother .aboutMain .leftSect .headDiv .head {
+            margin: 0; }
+      .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyHeadDiv .storyHead {
+        font-size: 1.5rem;
+        padding: 5px 10px; }
+      .aboutMother .aboutMain .rightSect .rightSectChild .storyDiv .storyParaDiv .storyPara {
+        font-size: 1rem;
+        white-space: pre-wrap; } }
 
 * {
   margin: 0;

@@ -88,11 +88,11 @@ const Index = () => {
     }
   ];
   return (
-    <div className="home1Mother">
+    <div itemscope itemtype="http://schema.org/WebPage" className="home1Mother">
       <Navbar/>
       <div className="home1Main">
         <section className="leftSect">
-          <div className="headDiv">
+          <div  itemprop="description" className="headDiv">
             {/* <Link href="/allclients">
               <a >All Clients</a>
             </Link> */}
@@ -107,9 +107,9 @@ const Index = () => {
             </div>
 
             <div className="addrParent">
-              <div className="addrDiv">
-                <h1 className="addrTextSmall">Mobile Auto Detailing</h1>
-                <h1 className="addrText">Located in Matthews, NC</h1>
+              <div itemprop="about" className="addrDiv">
+                <h1 itemprop="description" className="addrTextSmall">Mobile Auto Detailing</h1>
+                <h1 itemprop="contentLocation" className="addrText">Located in Matthews, NC</h1>
                 <h1 className="addrText2">I'll come to you</h1>
                 <div className="buttonsDiv">
                   <a href="mailto:broughtondetailing@gmail.com?subject=Detail Inquiry">
@@ -154,8 +154,8 @@ const Index = () => {
                 <div className="reviewsScroll">
                   {reviews.map(rev => (
                     <div itemscope itemtype="http://schema.org/Recommendation" key={rev.text} className="revItem">
-                      <p className="revText">{rev.text}</p>
-                      <p className="revName">{rev.name}</p>
+                      <p itemprop="reviewBody" className="revText">{rev.text}</p>
+                      <p itemprop="author" className="revName">{rev.name}</p>
                     </div>
                   ))}
                 </div>

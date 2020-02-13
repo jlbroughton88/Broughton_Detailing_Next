@@ -10277,6 +10277,8 @@ var Index = function Index() {
     topic: "service time-frames"
   }];
   return __jsx("div", {
+    itemscope: true,
+    itemtype: "http://schema.org/WebPage",
     className: "home1Mother",
     __source: {
       fileName: _jsxFileName,
@@ -10304,6 +10306,7 @@ var Index = function Index() {
     },
     __self: this
   }, __jsx("div", {
+    itemprop: "description",
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
@@ -10361,6 +10364,7 @@ var Index = function Index() {
     },
     __self: this
   }, __jsx("div", {
+    itemprop: "about",
     className: "addrDiv",
     __source: {
       fileName: _jsxFileName,
@@ -10368,6 +10372,7 @@ var Index = function Index() {
     },
     __self: this
   }, __jsx("h1", {
+    itemprop: "description",
     className: "addrTextSmall",
     __source: {
       fileName: _jsxFileName,
@@ -10375,6 +10380,7 @@ var Index = function Index() {
     },
     __self: this
   }, "Mobile Auto Detailing"), __jsx("h1", {
+    itemprop: "contentLocation",
     className: "addrText",
     __source: {
       fileName: _jsxFileName,
@@ -10552,6 +10558,7 @@ var Index = function Index() {
       },
       __self: this
     }, __jsx("p", {
+      itemprop: "reviewBody",
       className: "revText",
       __source: {
         fileName: _jsxFileName,
@@ -10559,6 +10566,7 @@ var Index = function Index() {
       },
       __self: this
     }, rev.text), __jsx("p", {
+      itemprop: "author",
       className: "revName",
       __source: {
         fileName: _jsxFileName,
