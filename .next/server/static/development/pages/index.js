@@ -2558,7 +2558,7 @@ const Index = () => {
       lineNumber: 115
     },
     __self: undefined
-  }, __jsx("button", {
+  }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,
@@ -2578,7 +2578,7 @@ const Index = () => {
       lineNumber: 119
     },
     __self: undefined
-  }, __jsx("button", {
+  }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,

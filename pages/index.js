@@ -113,11 +113,11 @@ const Index = () => {
                 <h1 className="addrText2">I'll come to you</h1>
                 <div className="buttonsDiv">
                   <a href="mailto:broughtondetailing@gmail.com?subject=Detail Inquiry">
-                    <button className="CTA">Lets talk!</button>
+                    <div className="CTA">Lets talk!</div>
                   </a>
                   <Link href="/services">
                     <a>
-                      <button className="CTA">Services</button>
+                      <div className="CTA">Services</div>
                     </a>
                   </Link>
                 </div>

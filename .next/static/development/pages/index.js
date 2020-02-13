@@ -10390,7 +10390,7 @@ var Index = function Index() {
       lineNumber: 115
     },
     __self: this
-  }, __jsx("button", {
+  }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,
@@ -10410,7 +10410,7 @@ var Index = function Index() {
       lineNumber: 119
     },
     __self: this
-  }, __jsx("button", {
+  }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,
