@@ -131,8 +131,8 @@ const Index = () => {
               <div className="FAQListDiv">
                 {FAQs.map(faq => (
                   <div key={faq.question} className="faqItem">
-                    <h2 className="faqQuestion">{faq.question}</h2>
-                    <p className="faqAnswer">{faq.answer}</p>
+                    <h2 itemscope itemtype="http://schema.org/Question" className="faqQuestion">{faq.question}</h2>
+                    <p itemscope itemtype="http://schema.org/Answer" className="faqAnswer">{faq.answer}</p>
                     {faq.link && faq.topic && (
                       <p className="faqLink">
                         Click{" "}
@@ -153,7 +153,7 @@ const Index = () => {
               <div className="reviewsDiv">
                 <div className="reviewsScroll">
                   {reviews.map(rev => (
-                    <div key={rev.text} className="revItem">
+                    <div itemscope itemtype="http://schema.org/Recommendation" key={rev.text} className="revItem">
                       <p className="revText">{rev.text}</p>
                       <p className="revName">{rev.name}</p>
                     </div>

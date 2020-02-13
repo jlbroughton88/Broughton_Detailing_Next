@@ -48,7 +48,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="contactMother">
+    <div itemscope itemtype="http://schema.org/ContactPage" className="contactMother">
       <Navbar />
       <div className="contactMain">
         <section className="leftSect">
@@ -83,6 +83,7 @@ const Contact = () => {
             </div> */}
             <div className="letsTalkDiv">
               <h2 className="letsTalkHead">Lets Talk!</h2>
+              <p itemprop="creator">Jacob Broughton</p>
               <a
                 href="mailto:broughtondetailing@gmail.com?subject=Detailing Inquiry"
                 className="emailLink"

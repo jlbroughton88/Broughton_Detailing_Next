@@ -2198,6 +2198,8 @@ const Navbar = () => {
     },
     __self: undefined
   }, "Detailing")))), __jsx("div", {
+    itemscope: true,
+    itemtype: "http://schema.org/ItemList",
     tabIndex: "0",
     className: "navLinksDiv",
     __source: {
@@ -2213,6 +2215,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2227,6 +2230,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2241,6 +2245,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2255,6 +2260,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2287,6 +2293,8 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("ul", {
+    itemscope: true,
+    itemtype: "http://schema.org/ItemList",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
@@ -2300,6 +2308,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -2313,6 +2322,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70
@@ -2326,6 +2336,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
@@ -2339,6 +2350,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76
@@ -2622,6 +2634,8 @@ const Index = () => {
     },
     __self: undefined
   }, __jsx("h2", {
+    itemscope: true,
+    itemtype: "http://schema.org/Question",
     className: "faqQuestion",
     __source: {
       fileName: _jsxFileName,
@@ -2629,6 +2643,8 @@ const Index = () => {
     },
     __self: undefined
   }, faq.question), __jsx("p", {
+    itemscope: true,
+    itemtype: "http://schema.org/Answer",
     className: "faqAnswer",
     __source: {
       fileName: _jsxFileName,
@@ -2691,6 +2707,8 @@ const Index = () => {
     },
     __self: undefined
   }, reviews.map(rev => __jsx("div", {
+    itemscope: true,
+    itemtype: "http://schema.org/Recommendation",
     key: rev.text,
     className: "revItem",
     __source: {

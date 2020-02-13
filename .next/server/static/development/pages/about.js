@@ -2055,6 +2055,8 @@ const About1 = () => {
   //   closeNavMenu();
   // })
   return __jsx("div", {
+    itemscope: true,
+    itemtype: "http://schema.org/AboutPage",
     className: "aboutMother",
     __source: {
       fileName: _jsxFileName,
@@ -2096,6 +2098,7 @@ const About1 = () => {
     },
     __self: undefined
   }, "About"))), __jsx("section", {
+    itemprop: "mainContentOfPage",
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
@@ -2117,6 +2120,7 @@ const About1 = () => {
     },
     __self: undefined
   }, __jsx("div", {
+    itemprop: "primaryImageOfPage",
     className: "aboutImgDiv",
     __source: {
       fileName: _jsxFileName,
@@ -2147,6 +2151,9 @@ const About1 = () => {
     },
     __self: undefined
   }, "\"Nothing Less Than Remarkable\""), __jsx("h3", {
+    itemscope: true,
+    itemtype: "http://schema.org/ShortStory",
+    itemprop: "about",
     className: "storyPara",
     __source: {
       fileName: _jsxFileName,
@@ -2374,6 +2381,8 @@ const Navbar = () => {
     },
     __self: undefined
   }, "Detailing")))), __jsx("div", {
+    itemscope: true,
+    itemtype: "http://schema.org/ItemList",
     tabIndex: "0",
     className: "navLinksDiv",
     __source: {
@@ -2389,6 +2398,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2403,6 +2413,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2417,6 +2428,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2431,6 +2443,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("a", {
+    itemprop: "itemListElement",
     className: "navLink",
     __source: {
       fileName: _jsxFileName,
@@ -2463,6 +2476,8 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("ul", {
+    itemscope: true,
+    itemtype: "http://schema.org/ItemList",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 65
@@ -2476,6 +2491,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 67
@@ -2489,6 +2505,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 70
@@ -2502,6 +2519,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 73
@@ -2515,6 +2533,7 @@ const Navbar = () => {
     },
     __self: undefined
   }, __jsx("li", {
+    itemprop: "itemListElement",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 76

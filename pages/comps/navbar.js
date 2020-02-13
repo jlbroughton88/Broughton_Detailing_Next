@@ -43,18 +43,18 @@ const Navbar = () => {
           </a>
         </Link>
 
-        <div tabIndex="0" className="navLinksDiv">
+        <div itemscope itemtype="http://schema.org/ItemList" tabIndex="0" className="navLinksDiv">
           <Link  href="/about">
-            <a className="navLink">About</a>
+            <a itemprop="itemListElement"  className="navLink">About</a>
           </Link>
           <Link  href="/services">
-            <a className="navLink">Services</a>
+            <a itemprop="itemListElement"  className="navLink">Services</a>
           </Link>
           <Link  href="/work">
-            <a className="navLink">Work</a>
+            <a itemprop="itemListElement"  className="navLink">Work</a>
           </Link>
           <Link  href="/contact">
-            <a className="navLink">Contact</a>
+            <a itemprop="itemListElement"  className="navLink">Contact</a>
           </Link>
         </div>
         <div tabIndex="0" onClick={handleMenuOpen} className="burgerMenuDiv">
@@ -62,18 +62,18 @@ const Navbar = () => {
           <Menu className="burgerMenu" />
         </div>
         <div tabIndex="0" id="dropDown" className="navDropDown">
-          <ul>
+          <ul itemscope itemtype="http://schema.org/ItemList">
             <Link href="/about">
-              <li>About</li>
+              <li  itemprop="itemListElement" >About</li>
             </Link>
             <Link href="/services">
-              <li>Services</li>
+              <li  itemprop="itemListElement" >Services</li>
             </Link>
             <Link href="/work">
-              <li>Work</li>
+              <li  itemprop="itemListElement" >Work</li>
             </Link>
             <Link href="/contact">
-              <li>Contact</li>
+              <li itemprop="itemListElement"  >Contact</li>
             </Link>
           </ul>
         </div>
