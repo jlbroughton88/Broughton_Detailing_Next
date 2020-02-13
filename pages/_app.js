@@ -13,6 +13,7 @@ class MyApp extends App {
 
         <Helmet>
           <meta charSet="utf-8" />
+          
           <title>Broughton Detailing | Mobile Auto Detailing Matthews, NC</title> />
           <meta name="description" content="Mobile auto detailing in Matthews, NC. We'll come to you! Broughton Detailing delivers nothing short of a remarkable result."/>
         </Helmet>

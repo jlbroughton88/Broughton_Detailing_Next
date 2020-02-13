@@ -1,3 +1,2 @@
-Add content to services page
-Edit contact page
+Polish content and styles
 Fix heading div sizing issue (on mobile).

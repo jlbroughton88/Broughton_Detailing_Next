@@ -450,7 +450,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
     }), __jsx("title", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 16
+        lineNumber: 17
       },
       __self: this
     }, "Broughton Detailing | Mobile Auto Detailing Matthews, NC"), " />", __jsx("meta", {
@@ -458,7 +458,7 @@ class MyApp extends next_app__WEBPACK_IMPORTED_MODULE_1___default.a {
       content: "Mobile auto detailing in Matthews, NC. We'll come to you! Broughton Detailing delivers nothing short of a remarkable result.",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 18
       },
       __self: this
     })));
