@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2497,24 +2497,75 @@ const Contact = () => {
   const {
     0: formData,
     1: setFormData
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""); // const closeNavMenu = () => {
-  //   let dropdown = document.getElementById("dropDown");
-  //   let overlay = document.getElementById("overlay");
-  //   dropdown.classList.remove("active");
-  //   overlay.classList.remove("active");
-  // }
-  // useEffect(() => {
-  //   closeNavMenu();
-  // })
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: email,
+    1: setEmail
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: name,
+    1: setName
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: make,
+    1: setMake
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: model,
+    1: setModel
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: condition,
+    1: setCondition
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    0: detail,
+    1: setDetail
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
 
   const handleChange = e => {
     setFormData(e.target.value);
   };
 
+  const handleEmailChange = e => {
+    setEmail(e.target.value);
+  };
+
+  const handleNameChange = e => {
+    setName(e.target.value);
+  };
+
+  const handleMakeChange = e => {
+    setMake(e.target.value);
+  };
+
+  const handleModelChange = e => {
+    setModel(e.target.value);
+  };
+
+  const handleConditionChange = e => {
+    setCondition(e.target.value);
+  };
+
+  const handleDetailChange = e => {
+    setDetail(e.target.value);
+  };
+
+  const handleQuoteSubmit = e => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`https://www.broughtondetailing.com/api/addquote`, {
+      email: email,
+      first_name: name,
+      car_make: make,
+      car_model: model,
+      car_condition: condition,
+      preferred_service: detail
+    }).then(response => console.log(response)).catch(err => console.log(err));
+  };
+
   const handleFormInput = e => {
     let input = document.getElementById("emailInput");
     let thankYou = document.getElementById("thankYou");
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`http://localhost:3000/api/addclient`, {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`https://www.broughtondetailing.com/api/addclient`, {
       email: formData
     }).then(response => console.log(response)).catch(err => console.log(err));
 
@@ -2535,69 +2586,231 @@ const Contact = () => {
     className: "contactMother",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 87
     },
     __self: undefined
   }), __jsx("div", {
     className: "contactMain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 88
     },
     __self: undefined
   }, __jsx("section", {
     className: "leftSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 89
     },
     __self: undefined
   }, __jsx("div", {
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 90
     },
     __self: undefined
   }, __jsx("h1", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 91
     },
     __self: undefined
   }, "Contact"))), __jsx("section", {
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 94
     },
     __self: undefined
   }, __jsx("div", {
     className: "rightSectChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 95
     },
     __self: undefined
   }, __jsx("div", {
+    className: "letsTalkDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: undefined
+  }, __jsx("h2", {
+    className: "letsTalkHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: undefined
+  }, "Lets Talk!"), __jsx("p", {
+    itemprop: "creator",
+    className: "contactPara name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: undefined
+  }, "Jacob Broughton"), __jsx("a", {
+    href: "mailto:broughtondetailing@gmail.com?subject=Detailing Inquiry",
+    className: "emailLink",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: undefined
+  }, __jsx("p", {
+    className: "email contactPara",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106
+    },
+    __self: undefined
+  }, "BroughtonDetailing@gmail.com")), __jsx("a", {
+    href: "tel:+7047708371",
+    className: "contactPara phone",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: undefined
+  }, "704-770-8371"), __jsx("div", {
+    className: "socialDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "https://facebook.com/broughtondetailing",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: undefined
+  }, __jsx(_comps_logos_facebook__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "socialIcon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: undefined
+  })), __jsx("a", {
+    href: "https://instagram.com/broughtondetailing",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: undefined
+  }, __jsx(_comps_logos_instagram__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "socialIcon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: undefined
+  })))), __jsx("div", {
+    className: "quoteDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: undefined
+  }, __jsx("h2", {
+    className: "quoteHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: undefined
+  }, "Get a quote!"), __jsx("form", {
+    onSubmit: handleQuoteSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: undefined
+  }, __jsx("input", {
+    placeholder: "Email",
+    onChange: handleEmailChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: undefined
+  }), __jsx("input", {
+    placeholder: "First Name",
+    onChange: handleNameChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: undefined
+  }), __jsx("input", {
+    placeholder: "Your Car's Make",
+    onChange: handleMakeChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: undefined
+  }), __jsx("input", {
+    placeholder: "Your Car's Model",
+    onChange: handleModelChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128
+    },
+    __self: undefined
+  }), __jsx("input", {
+    placeholder: "Your Car's Condition",
+    onChange: handleConditionChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129
+    },
+    __self: undefined
+  }), __jsx("textarea", {
+    placeholder: "What kind of detail are you looking for?",
+    onChange: handleDetailChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: undefined
+  }), __jsx("input", {
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: undefined
+  }))), __jsx("div", {
     className: "signupDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 140
     },
     __self: undefined
   }, __jsx("h2", {
     className: "signupHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 141
     },
     __self: undefined
   }, "Sign Up For Deals!"), __jsx("form", {
@@ -2605,14 +2818,14 @@ const Contact = () => {
     className: "signupForm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 142
     },
     __self: undefined
   }, __jsx("div", {
     className: "signupInputParent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 143
     },
     __self: undefined
   }, __jsx("input", {
@@ -2623,7 +2836,7 @@ const Contact = () => {
     placeholder: "Your Email (I won't spam)",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 144
     },
     __self: undefined
   })), __jsx("input", {
@@ -2632,7 +2845,7 @@ const Contact = () => {
     placeholder: "Submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 153
     },
     __self: undefined
   })), __jsx("h4", {
@@ -2640,89 +2853,10 @@ const Contact = () => {
     className: "thankYou",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 159
     },
     __self: undefined
-  }, "Thank You!")), __jsx("div", {
-    className: "letsTalkDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: undefined
-  }, __jsx("h2", {
-    className: "letsTalkHead",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: undefined
-  }, "Lets Talk!"), __jsx("p", {
-    itemprop: "creator",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: undefined
-  }, "Jacob Broughton"), __jsx("a", {
-    href: "mailto:broughtondetailing@gmail.com?subject=Detailing Inquiry",
-    className: "emailLink",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: undefined
-  }, __jsx("p", {
-    className: "email",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91
-    },
-    __self: undefined
-  }, "BroughtonDetailing@gmail.com")), __jsx("a", {
-    href: "tel:+7047708371",
-    className: "phone",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93
-    },
-    __self: undefined
-  }, "704-770-8371"), __jsx("div", {
-    className: "socialDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "https://facebook.com/broughtondetailing",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: undefined
-  }, __jsx(_comps_logos_facebook__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "socialIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98
-    },
-    __self: undefined
-  })), __jsx("a", {
-    href: "https://instagram.com/broughtondetailing",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100
-    },
-    __self: undefined
-  }, __jsx(_comps_logos_instagram__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "socialIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101
-    },
-    __self: undefined
-  }))))))));
+  }, "Thank You!"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
@@ -2751,7 +2885,7 @@ const Contact = () => {
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!********************************!*\
   !*** multi ./pages/contact.js ***!
   \********************************/

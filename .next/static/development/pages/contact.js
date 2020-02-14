@@ -12336,25 +12336,79 @@ var Contact = function Contact() {
   // const { statusUrl } = useAppContext();
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
       formData = _useState[0],
-      setFormData = _useState[1]; // const closeNavMenu = () => {
-  //   let dropdown = document.getElementById("dropDown");
-  //   let overlay = document.getElementById("overlay");
-  //   dropdown.classList.remove("active");
-  //   overlay.classList.remove("active");
-  // }
-  // useEffect(() => {
-  //   closeNavMenu();
-  // })
+      setFormData = _useState[1];
 
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      email = _useState2[0],
+      setEmail = _useState2[1];
+
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      name = _useState3[0],
+      setName = _useState3[1];
+
+  var _useState4 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      make = _useState4[0],
+      setMake = _useState4[1];
+
+  var _useState5 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      model = _useState5[0],
+      setModel = _useState5[1];
+
+  var _useState6 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      condition = _useState6[0],
+      setCondition = _useState6[1];
+
+  var _useState7 = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(""),
+      detail = _useState7[0],
+      setDetail = _useState7[1];
 
   var handleChange = function handleChange(e) {
     setFormData(e.target.value);
   };
 
+  var handleEmailChange = function handleEmailChange(e) {
+    setEmail(e.target.value);
+  };
+
+  var handleNameChange = function handleNameChange(e) {
+    setName(e.target.value);
+  };
+
+  var handleMakeChange = function handleMakeChange(e) {
+    setMake(e.target.value);
+  };
+
+  var handleModelChange = function handleModelChange(e) {
+    setModel(e.target.value);
+  };
+
+  var handleConditionChange = function handleConditionChange(e) {
+    setCondition(e.target.value);
+  };
+
+  var handleDetailChange = function handleDetailChange(e) {
+    setDetail(e.target.value);
+  };
+
+  var handleQuoteSubmit = function handleQuoteSubmit(e) {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("https://www.broughtondetailing.com/api/addquote", {
+      email: email,
+      first_name: name,
+      car_make: make,
+      car_model: model,
+      car_condition: condition,
+      preferred_service: detail
+    }).then(function (response) {
+      return console.log(response);
+    })["catch"](function (err) {
+      return console.log(err);
+    });
+  };
+
   var handleFormInput = function handleFormInput(e) {
     var input = document.getElementById("emailInput");
     var thankYou = document.getElementById("thankYou");
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("http://localhost:3000/api/addclient", {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("https://www.broughtondetailing.com/api/addclient", {
       email: formData
     }).then(function (response) {
       return console.log(response);
@@ -12379,69 +12433,231 @@ var Contact = function Contact() {
     className: "contactMother",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 82
     },
     __self: this
   }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 87
     },
     __self: this
   }), __jsx("div", {
     className: "contactMain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 88
     },
     __self: this
   }, __jsx("section", {
     className: "leftSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 89
     },
     __self: this
   }, __jsx("div", {
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 90
     },
     __self: this
   }, __jsx("h1", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 91
     },
     __self: this
   }, "Contact"))), __jsx("section", {
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 94
     },
     __self: this
   }, __jsx("div", {
     className: "rightSectChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 95
     },
     __self: this
   }, __jsx("div", {
+    className: "letsTalkDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }, __jsx("h2", {
+    className: "letsTalkHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, "Lets Talk!"), __jsx("p", {
+    itemprop: "creator",
+    className: "contactPara name",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, "Jacob Broughton"), __jsx("a", {
+    href: "mailto:broughtondetailing@gmail.com?subject=Detailing Inquiry",
+    className: "emailLink",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "email contactPara",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106
+    },
+    __self: this
+  }, "BroughtonDetailing@gmail.com")), __jsx("a", {
+    href: "tel:+7047708371",
+    className: "contactPara phone",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110
+    },
+    __self: this
+  }, "704-770-8371"), __jsx("div", {
+    className: "socialDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113
+    },
+    __self: this
+  }, __jsx("a", {
+    href: "https://facebook.com/broughtondetailing",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, __jsx(_comps_logos_facebook__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    className: "socialIcon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: this
+  })), __jsx("a", {
+    href: "https://instagram.com/broughtondetailing",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117
+    },
+    __self: this
+  }, __jsx(_comps_logos_instagram__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    className: "socialIcon",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: this
+  })))), __jsx("div", {
+    className: "quoteDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122
+    },
+    __self: this
+  }, __jsx("h2", {
+    className: "quoteHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123
+    },
+    __self: this
+  }, "Get a quote!"), __jsx("form", {
+    onSubmit: handleQuoteSubmit,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124
+    },
+    __self: this
+  }, __jsx("input", {
+    placeholder: "Email",
+    onChange: handleEmailChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125
+    },
+    __self: this
+  }), __jsx("input", {
+    placeholder: "First Name",
+    onChange: handleNameChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126
+    },
+    __self: this
+  }), __jsx("input", {
+    placeholder: "Your Car's Make",
+    onChange: handleMakeChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127
+    },
+    __self: this
+  }), __jsx("input", {
+    placeholder: "Your Car's Model",
+    onChange: handleModelChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128
+    },
+    __self: this
+  }), __jsx("input", {
+    placeholder: "Your Car's Condition",
+    onChange: handleConditionChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129
+    },
+    __self: this
+  }), __jsx("textarea", {
+    placeholder: "What kind of detail are you looking for?",
+    onChange: handleDetailChange,
+    type: "",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: this
+  }), __jsx("input", {
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135
+    },
+    __self: this
+  }))), __jsx("div", {
     className: "signupDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 140
     },
     __self: this
   }, __jsx("h2", {
     className: "signupHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 141
     },
     __self: this
   }, "Sign Up For Deals!"), __jsx("form", {
@@ -12449,14 +12665,14 @@ var Contact = function Contact() {
     className: "signupForm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 142
     },
     __self: this
   }, __jsx("div", {
     className: "signupInputParent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 143
     },
     __self: this
   }, __jsx("input", {
@@ -12467,7 +12683,7 @@ var Contact = function Contact() {
     placeholder: "Your Email (I won't spam)",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65
+      lineNumber: 144
     },
     __self: this
   })), __jsx("input", {
@@ -12476,7 +12692,7 @@ var Contact = function Contact() {
     placeholder: "Submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 153
     },
     __self: this
   })), __jsx("h4", {
@@ -12484,96 +12700,17 @@ var Contact = function Contact() {
     className: "thankYou",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 159
     },
     __self: this
-  }, "Thank You!")), __jsx("div", {
-    className: "letsTalkDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 84
-    },
-    __self: this
-  }, __jsx("h2", {
-    className: "letsTalkHead",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 85
-    },
-    __self: this
-  }, "Lets Talk!"), __jsx("p", {
-    itemprop: "creator",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 86
-    },
-    __self: this
-  }, "Jacob Broughton"), __jsx("a", {
-    href: "mailto:broughtondetailing@gmail.com?subject=Detailing Inquiry",
-    className: "emailLink",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 87
-    },
-    __self: this
-  }, __jsx("p", {
-    className: "email",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91
-    },
-    __self: this
-  }, "BroughtonDetailing@gmail.com")), __jsx("a", {
-    href: "tel:+7047708371",
-    className: "phone",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93
-    },
-    __self: this
-  }, "704-770-8371"), __jsx("div", {
-    className: "socialDiv",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96
-    },
-    __self: this
-  }, __jsx("a", {
-    href: "https://facebook.com/broughtondetailing",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97
-    },
-    __self: this
-  }, __jsx(_comps_logos_facebook__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    className: "socialIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98
-    },
-    __self: this
-  })), __jsx("a", {
-    href: "https://instagram.com/broughtondetailing",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100
-    },
-    __self: this
-  }, __jsx(_comps_logos_instagram__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    className: "socialIcon",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101
-    },
-    __self: this
-  }))))))));
+  }, "Thank You!"))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /*!*****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fcontact&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fcontact.js ***!
   \*****************************************************************************************************************************************************************/
@@ -12596,5 +12733,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=contact.js.map

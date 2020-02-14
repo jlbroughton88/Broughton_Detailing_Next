@@ -1,376 +1,3 @@
-html, body, #root {
-  height: 100%;
-  min-height: 100%;
-  background: #333333; }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.body {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */ }
-
-.body::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0; }
-
-* {
-  appearance: none; }
-
-.home1Mother {
-  height: 100%;
-  width: 100%; }
-  .home1Mother .home1Main {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%; }
-    .home1Mother .home1Main .leftSect {
-      height: 100vh;
-      width: calc(50% - 30px);
-      background: #4698fe;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      padding-right: 30px;
-      position: fixed; }
-      .home1Mother .home1Main .leftSect .headDiv {
-        height: 156px;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%; }
-        .home1Mother .home1Main .leftSect .headDiv .subHead {
-          display: none; }
-        .home1Mother .home1Main .leftSect .headDiv .head {
-          text-align: end;
-          color: #333;
-          font-size: 4rem; }
-          .home1Mother .home1Main .leftSect .headDiv .head:before {
-            content: "Mobile "; }
-    .home1Mother .home1Main .rightSect {
-      height: 100%;
-      width: 50%;
-      background: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-start;
-      position: relative;
-      left: 50%; }
-      .home1Mother .home1Main .rightSect .rightSectChild {
-        width: 100%; }
-        .home1Mother .home1Main .rightSect .rightSectChild .imgDiv {
-          max-width: inherit;
-          margin-bottom: 50px; }
-          .home1Mother .home1Main .rightSect .rightSectChild .imgDiv img {
-            width: 100%;
-            height: auto;
-            max-width: 700px; }
-          @media (min-width: 1405px) {
-            .home1Mother .home1Main .rightSect .rightSectChild .imgDiv img {
-              border-bottom-right-radius: 5px; } }
-          @media (min-width: 1445px) {
-            .home1Mother .home1Main .rightSect .rightSectChild .imgDiv {
-              padding-top: 30px;
-              padding-left: 30px; }
-              .home1Mother .home1Main .rightSect .rightSectChild .imgDiv img {
-                border-radius: 5px; } }
-        .home1Mother .home1Main .rightSect .rightSectChild .addrParent {
-          width: calc(100% - 30px);
-          margin-bottom: 100px; }
-          .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrTextSmall {
-            display: none; }
-          .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText {
-            color: #4698fe;
-            font-size: 2rem; }
-            .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText:after {
-              content: "."; }
-          .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2 {
-            color: #4698fe;
-            font-size: 2rem; }
-            .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2:after {
-              content: "!"; }
-
-@keyframes bounce {
-  from {
-    box-shadow: none;
-    transform: translateY(0px); }
-  to {
-    box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe, 9px 6px 10px rgba(30, 30, 30, 0.6);
-    transform: translateY(-1px); } }
-          .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .buttonsDiv {
-            display: flex;
-            flex-direction: row; }
-            .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .buttonsDiv a {
-              width: inherit;
-              justify-content: center;
-              display: flex; }
-              .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .buttonsDiv a .CTA {
-                background: #4696fe;
-                color: #333333;
-                font-weight: 700;
-                font-size: 1.25rem;
-                border: none;
-                border-radius: 3px;
-                margin-top: 12px;
-                padding: 5px 10px;
-                box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe;
-                animation: bounce 2s infinite alternate;
-                cursor: pointer; }
-              .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .buttonsDiv a:nth-child(2) {
-                margin-left: 30px; }
-          @media (min-width: 1370px) {
-            .home1Mother .home1Main .rightSect .rightSectChild .addrParent {
-              padding-left: 30px; } }
-
-@keyframes scrollRevs {
-  from {
-    transform: translate(0); }
-  to {
-    transform: translate(-1200px); } }
-        .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent {
-          width: calc(100% - 30px);
-          max-width: 500px;
-          margin-bottom: 50px; }
-          .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv {
-            display: flex;
-            justify-content: flex-start; }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
-              max-width: 500px;
-              text-align: start;
-              color: #333;
-              font-size: 1.8rem;
-              background: #4698fe;
-              padding: 10px 15px;
-              border-radius: 5px;
-              margin-bottom: 10px;
-              width: calc(100% - 20px);
-              max-width: 600px; }
-          .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
-            overflow: hidden;
-            display: flex;
-            position: relative; }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv:before {
-              background: linear-gradient(to right, #333333 0%, rgba(51, 51, 51, 0) 100%);
-              content: "";
-              position: absolute;
-              height: 100%;
-              width: 100px;
-              top: 0;
-              left: 0;
-              z-index: 2; }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv:after {
-              background: linear-gradient(to left, #333333 0%, rgba(51, 51, 51, 0) 100%);
-              content: "";
-              position: absolute;
-              height: 100%;
-              width: 100px;
-              right: 0;
-              top: 0;
-              z-index: 2; }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsScroll {
-              display: flex;
-              flex-direction: row;
-              align-items: flex-start;
-              width: 1500px;
-              animation: scrollRevs 60s linear infinite; }
-              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsScroll .revItem {
-                margin-left: 100px;
-                padding: 5px 10px;
-                width: 225px; }
-                .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsScroll .revItem .revText {
-                  width: 180px;
-                  background: #ffffff;
-                  color: #333;
-                  padding: 5px 10px;
-                  border-radius: 3px;
-                  margin-bottom: 10px;
-                  font-size: 1.05rem; }
-                .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsScroll .revItem .revName {
-                  font-size: 1.2rem;
-                  font-weight: 700;
-                  color: #4698fe; }
-          @media (min-width: 1370px) {
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent {
-              padding-left: 30px; } }
-          @media (min-width: 1050px) {
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent {
-              max-width: 650px; }
-              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsScroll .revItem {
-                width: 275px; }
-                .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsScroll .revItem .revText {
-                  font-size: 1.1rem; } }
-        .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv {
-          width: calc(100% - 30px);
-          margin-bottom: 100px; }
-          .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQHeadDiv {
-            display: flex;
-            justify-content: flex-start; }
-            .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQHeadDiv .FAQHead {
-              color: #333;
-              font-size: 1.8rem;
-              background: #4698fe;
-              padding: 10px 15px;
-              border-radius: 5px;
-              width: calc(100% - 20px);
-              max-width: 600px; }
-          .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem {
-            margin: 10px 5px;
-            border-radius: 3px;
-            padding: 5px 10px; }
-            .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqQuestion {
-              color: #4698fe; }
-            .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqAnswer {
-              margin-left: 20px;
-              color: #ffffff; }
-            .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqLink {
-              margin-left: 10px;
-              color: #ffffff;
-              font-size: 1rem;
-              border: solid black 1px;
-              margin-top: 5px;
-              padding: 5px 10px;
-              background: black;
-              border-radius: 3px; }
-              .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqLink a {
-                text-decoration: underline;
-                color: #4698fe;
-                font-weight: 700; }
-          @media (min-width: 1370px) {
-            .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv {
-              padding-left: 30px; } }
-          @media (min-width: 1050px) {
-            .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv {
-              max-width: 650px; }
-              .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqQuestion {
-                font-size: 1.6rem; }
-              .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqAnswer {
-                font-size: 1.1rem; } }
-  @media (max-width: 1369px) {
-    .home1Mother .home1Main .rightSect .rightSectChild {
-      display: flex;
-      flex-direction: column;
-      width: calc(100% - 20px);
-      padding-left: 10px;
-      padding-right: 10px;
-      justify-content: center;
-      align-items: center; }
-      .home1Mother .home1Main .rightSect .rightSectChild .imgDiv {
-        width: calc(100% + 20px);
-        align-self: center;
-        position: relative;
-        left: 0;
-        right: 0;
-        top: 0; } }
-  @media (max-width: 900px) {
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText {
-      font-size: 1.7rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2 {
-      font-size: 1.7rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
-      font-size: 1.6rem;
-      padding: 5px 10px; }
-    .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQHeadDiv .FAQHead {
-      font-size: 1.6rem;
-      padding: 5px 10px; }
-    .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem {
-      padding: 5px 5px; }
-      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqQuestion {
-        font-size: 1.4rem; }
-      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqAnswer {
-        margin-left: 10px; }
-      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqLink {
-        margin-left: 0; } }
-  @media (max-width: 700px) {
-    .home1Mother .home1Main .leftSect {
-      display: none; }
-    .home1Mother .home1Main .rightSect {
-      width: 100%;
-      left: 0;
-      top: 69px; }
-      .home1Mother .home1Main .rightSect .rightSectChild {
-        display: flex;
-        flex-direction: column;
-        align-self: center;
-        align-items: center;
-        justify-content: flex-start; }
-        .home1Mother .home1Main .rightSect .rightSectChild .imgDiv {
-          margin-bottom: 50px; }
-        .home1Mother .home1Main .rightSect .rightSectChild .addrParent {
-          width: calc(100% - 40px);
-          padding-left: 0;
-          padding: 0 20px 0 20px;
-          margin-bottom: 50px;
-          align-items: center; }
-          .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-            .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrTextSmall {
-              display: inline;
-              color: #4698fe;
-              font-size: 2.2rem; }
-            .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText {
-              font-size: 2.2rem;
-              text-align: center;
-              align-self: center; }
-            .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2 {
-              font-size: 2.2rem; }
-        .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent {
-          width: calc(100% - 15px);
-          padding-left: 0;
-          max-width: initial; }
-          .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv {
-            max-width: initial; }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
-              max-width: initial; }
-          .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
-            width: 100%;
-            max-width: initial; }
-        .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv {
-          max-width: initial;
-          align-self: center;
-          padding-left: 0; }
-          .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQHeadDiv .FAQHead {
-            font-size: 1.6rem; }
-          .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqQuestion {
-            font-size: 1.35rem; }
-          .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqAnswer {
-            margin-left: 20px; }
-          .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqLink {
-            margin-left: 10px; } }
-  @media (max-width: 500px) {
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv {
-      align-items: flex-start; }
-      .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrTextSmall {
-        font-size: 2.2rem; }
-      .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText {
-        font-size: 1.55rem;
-        align-self: flex-start; }
-      .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2 {
-        font-size: 1.55rem; }
-      .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv a {
-        width: 100%; } }
-  @media (max-width: 400px) {
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrTextSmall {
-      font-size: 1.65rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText {
-      font-size: 1.25rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2 {
-      font-size: 1.25rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQHeadDiv .FAQHead {
-      font-size: 1.4rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
-      font-size: 1.4rem; } }
-
 html,
 body,
 #root {
@@ -437,16 +64,15 @@ body {
         padding-left: 30px;
         width: calc(100% - 30px); }
         .contactMother .contactMain .rightSect .rightSectChild .signupDiv {
-          margin-bottom: 40px; }
+          width: calc(100% - 30px);
+          max-width: 530px; }
           .contactMother .contactMain .rightSect .rightSectChild .signupDiv .signupHead {
             background: #4698fe;
-            text-align: start;
-            color: #333;
-            font-size: 1.8rem;
-            background: #4698fe;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin-bottom: 10px; }
+            padding: 6px 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            border-radius: 2px; }
           .contactMother .contactMain .rightSect .rightSectChild .signupDiv .signupForm {
             display: flex;
             flex-direction: row; }
@@ -483,7 +109,8 @@ body {
             display: none; }
         .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv {
           width: calc(100% - 60px);
-          max-width: 500px; }
+          max-width: 500px;
+          margin-bottom: 40px; }
           .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .letsTalkHead {
             width: 100%;
             background: #4698fe;
@@ -492,23 +119,22 @@ body {
             font-weight: 600;
             margin-bottom: 5px;
             border-radius: 2px; }
-          .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .emailLink .email {
-            color: #ffffff;
-            text-decoration: none;
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            cursor: pointer;
-            transition: opacity 0.2s ease-in-out; }
-            .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .emailLink .email:hover {
-              opacity: 0.7; }
-          .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .phone {
+          .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .contactPara {
             color: #ffffff !important;
             font-size: 1.1rem;
             text-decoration: none;
             cursor: pointer;
-            transition: opacity 0.2s ease-in-out; }
-            .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .phone:hover {
+            transition: opacity 0.2s ease-in-out;
+            margin-bottom: 10px; }
+            .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .contactPara:hover {
               opacity: 0.7; }
+          .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .name {
+            font-size: 1.4rem;
+            font-weight: 600;
+            transition: none 0s ease-in-out;
+            cursor: default; }
+            .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .name:hover {
+              opacity: 1; }
           .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .socialDiv {
             margin-top: 10px; }
             .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .socialDiv .socialIcon {
@@ -518,6 +144,41 @@ body {
               transition: opacity 0.2s ease-in-out; }
               .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv .socialDiv .socialIcon:hover {
                 opacity: 0.7; }
+        .contactMother .contactMain .rightSect .rightSectChild .quoteDiv {
+          width: calc(100% - 30px);
+          max-width: 530px;
+          margin-bottom: 40px; }
+          .contactMother .contactMain .rightSect .rightSectChild .quoteDiv .quoteHead {
+            width: calc(100% - 30px);
+            background: #4698fe;
+            padding: 6px 15px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            border-radius: 2px; }
+          .contactMother .contactMain .rightSect .rightSectChild .quoteDiv form {
+            background: #4698fe;
+            padding: 3px;
+            border-radius: 3px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            width: calc(100% - 6px); }
+            .contactMother .contactMain .rightSect .rightSectChild .quoteDiv form input,
+            .contactMother .contactMain .rightSect .rightSectChild .quoteDiv form textarea {
+              background: #333;
+              padding: 5px 10px;
+              border-radius: 3px;
+              border: none;
+              width: calc(100% - 30px);
+              color: #ffffff;
+              font-size: 0.9rem;
+              margin: 5px; }
+              .contactMother .contactMain .rightSect .rightSectChild .quoteDiv form input:nth-child(5),
+              .contactMother .contactMain .rightSect .rightSectChild .quoteDiv form textarea:nth-child(5) {
+                grid-column: 1/3; }
+            .contactMother .contactMain .rightSect .rightSectChild .quoteDiv form textarea {
+              grid-column: 1/3;
+              height: 100px; }
   @media (max-width: 700px) {
     .contactMother {
       height: calc(100vh - 156px); }
@@ -539,15 +200,13 @@ body {
           justify-content: flex-start;
           left: 0; }
           .contactMother .contactMain .rightSect .rightSectChild {
-            align-items: flex-start;
-            justify-content: flex-start;
+            align-items: center;
+            justify-content: center;
             align-self: center;
             margin-top: 50px;
             width: calc(100% - 40px);
             max-width: 500px;
-            padding: 0 20px 0 20px; }
-            .contactMother .contactMain .rightSect .rightSectChild .letsTalkDiv {
-              width: calc(100% - 30px); } }
+            padding: 0 20px 0 20px; } }
 
 * {
   margin: 0;
