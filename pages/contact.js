@@ -46,6 +46,7 @@ const Contact = () => {
     let quoteMsg = document.getElementById("quoteMessage");
     let date = moment().format('L');
     let formattedDate = date.replace(/\//g, "-");
+    console.log(formattedDate)
 
     axios
       .post(`https://www.broughtondetailing.com/api/addquote`, {
