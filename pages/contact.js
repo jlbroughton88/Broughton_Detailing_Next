@@ -17,31 +17,35 @@ const Contact = () => {
   const [condition, setCondition] = useState("");
   const [detail, setDetail] = useState("");
 
-
   const handleChange = e => {
     setFormData(e.target.value);
   };
-  
+
   const handleEmailChange = e => {
-    setEmail(e.target.value)
-  }
+    setEmail(e.target.value);
+  };
   const handleNameChange = e => {
-    setName(e.target.value)
-  }
+    setName(e.target.value);
+  };
   const handleMakeChange = e => {
-    setMake(e.target.value)
-  }
+    setMake(e.target.value);
+  };
   const handleModelChange = e => {
-    setModel(e.target.value)
-  }
+    setModel(e.target.value);
+  };
   const handleConditionChange = e => {
-    setCondition(e.target.value)
-  }
+    console.log(e.target.value)
+    setCondition(e.target.value);
+  };
   const handleDetailChange = e => {
-    setDetail(e.target.value)
-  }
+    setDetail(e.target.value);
+  };
 
   const handleQuoteSubmit = e => {
+    let quoteMsg = document.getElementById("quoteMessage");
+    let date = moment().format('L');
+    let formattedDate = date.replace(/\//g, "-");
+
     axios
       .post(`https://www.broughtondetailing.com/api/addquote`, {
         email: email,
@@ -49,11 +53,17 @@ const Contact = () => {
         car_make: make,
         car_model: model,
         car_condition: condition,
-        preferred_service: detail
+        preferred_service: detail,
+        date: formattedDate
       })
       .then(response => console.log(response))
-      .catch(err => console.log(err))
-  }
+      .catch(err => console.log(err));
+    quoteMsg.style.display = "block";
+    setTimeout(() => {
+      quoteMsg.style.display = "none";
+    }, 5000);
+    e.preventDefault();
+  };
 
   const handleFormInput = e => {
     let input = document.getElementById("emailInput");
@@ -76,8 +86,6 @@ const Contact = () => {
     e.preventDefault();
   };
 
-
-
   return (
     <div
       itemScope
@@ -93,7 +101,6 @@ const Contact = () => {
         </section>
         <section className="rightSect">
           <div className="rightSectChild">
-            
             <div className="letsTalkDiv">
               <h2 className="letsTalkHead">Lets Talk!</h2>
               <p itemprop="creator" className="contactPara name">
@@ -122,21 +129,48 @@ const Contact = () => {
             <div className="quoteDiv">
               <h2 className="quoteHead">Get a quote!</h2>
               <form onSubmit={handleQuoteSubmit}>
-                <input placeholder="Email" onChange={handleEmailChange} type="" />
-                <input placeholder="First Name" onChange={handleNameChange} type="" />
-                <input placeholder="Your Car's Make" onChange={handleMakeChange} type="" />
-                <input placeholder="Your Car's Model" onChange={handleModelChange} type="" />
-                <input placeholder="Your Car's Condition" onChange={handleConditionChange} type="" />
+                <input
+                  placeholder="Email"
+                  onChange={handleEmailChange}
+                  required
+                  type=""
+                />
+                <input
+                  placeholder="First Name"
+                  onChange={handleNameChange}
+                  type=""
+                />
+                <input
+                  placeholder="Your Car's Make"
+                  onChange={handleMakeChange}
+                  required
+                  type=""
+                />
+                <input
+                  placeholder="Your Car's Model"
+                  onChange={handleModelChange}
+                  required
+                  type=""
+                />
+                {/* <input placeholder="Your Car's Condition" onChange={handleConditionChange} required type="" /> */}
+                <select onChange={handleConditionChange} width="100%">
+                  <option value="Just needs a touch-up...">Just needs a touch-up...</option>
+                  <option value="Not that bad...">Not that bad...</option>
+                  <option value="Really bad...">Really bad...</option>
+                </select>
                 <textarea
                   placeholder="What kind of detail are you looking for?"
                   onChange={handleDetailChange}
                   type=""
+                  required
                 />
-                <input className="quoteSubmit" type="submit"/>
+                <input className="quoteSubmit" type="submit" />
               </form>
+              <h4 id="quoteMessage" className="quoteMessage">
+                We'll get back to you as soon as possible!
+              </h4>
             </div>
-            
-            
+
             <div className="signupDiv">
               <h2 className="signupHead">Sign Up For Deals!</h2>
               <form onSubmit={handleFormInput} className="signupForm">

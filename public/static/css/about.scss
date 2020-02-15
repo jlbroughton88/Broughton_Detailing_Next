@@ -150,7 +150,9 @@ html, body, #root{
       height: 100%;
       .aboutMain {
         .leftSect{
+          all: inherit;
           height: auto;
+          background: #4698fe;
           padding-top: 83px;
           padding-bottom: 6px;
           .headDiv{
