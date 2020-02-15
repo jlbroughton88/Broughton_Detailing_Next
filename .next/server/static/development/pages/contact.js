@@ -2793,6 +2793,7 @@ const Contact = () => {
     },
     __self: undefined
   }), __jsx("input", {
+    className: "quoteSubmit",
     type: "submit",
     __source: {
       fileName: _jsxFileName,

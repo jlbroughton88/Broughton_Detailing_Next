@@ -132,7 +132,7 @@ const Contact = () => {
                   onChange={handleDetailChange}
                   type=""
                 />
-                <input type="submit"/>
+                <input className="quoteSubmit" type="submit"/>
               </form>
             </div>
             

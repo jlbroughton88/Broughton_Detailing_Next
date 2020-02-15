@@ -12640,6 +12640,7 @@ var Contact = function Contact() {
     },
     __self: this
   }), __jsx("input", {
+    className: "quoteSubmit",
     type: "submit",
     __source: {
       fileName: _jsxFileName,
