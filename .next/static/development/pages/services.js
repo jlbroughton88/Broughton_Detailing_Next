@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/work.js"],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static/development/pages/services.js"],{
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
@@ -4518,21 +4518,21 @@ var assign=Object.assign.bind(Object);function g(){return assign;}Object.defineP
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fwork.js!./":
-/*!*******************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fwork.js ***!
-  \*******************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fservices.js!./":
+/*!***************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fservices.js ***!
+  \***************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-    (window.__NEXT_P=window.__NEXT_P||[]).push(["/work", function() {
-      var mod = __webpack_require__(/*! ./pages/work.js */ "./pages/work.js")
+    (window.__NEXT_P=window.__NEXT_P||[]).push(["/services", function() {
+      var mod = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
       if(true) {
-        module.hot.accept(/*! ./pages/work.js */ "./pages/work.js", function() {
-          if(!next.router.components["/work"]) return
-          var updatedPage = __webpack_require__(/*! ./pages/work.js */ "./pages/work.js")
-          next.router.update("/work", updatedPage)
+        module.hot.accept(/*! ./pages/services.js */ "./pages/services.js", function() {
+          if(!next.router.components["/services"]) return
+          var updatedPage = __webpack_require__(/*! ./pages/services.js */ "./pages/services.js")
+          next.router.update("/services", updatedPage)
         })
       }
       return mod
@@ -10195,10 +10195,10 @@ var Navbar = function Navbar() {
 
 /***/ }),
 
-/***/ "./pages/work.js":
-/*!***********************!*\
-  !*** ./pages/work.js ***!
-  \***********************/
+/***/ "./pages/services.js":
+/*!***************************!*\
+  !*** ./pages/services.js ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -10206,445 +10206,691 @@ var Navbar = function Navbar() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _public_static_css_work_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/static/css/work.scss */ "./public/static/css/work.scss");
-/* harmony import */ var _public_static_css_work_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_static_css_work_scss__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _public_static_css_services_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../public/static/css/services.scss */ "./public/static/css/services.scss");
+/* harmony import */ var _public_static_css_services_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_public_static_css_services_scss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _comps_navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./comps/navbar */ "./pages/comps/navbar.js");
-var _jsxFileName = "/Users/JacobBroughton/coding/work/broughton-detailing-next/pages/work.js";
+var _jsxFileName = "/Users/JacobBroughton/coding/work/broughton-detailing-next/pages/services.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
 
-var chevytruck1 = __webpack_require__(/*! ../public/static/images/chevytruck1.jpg */ "./public/static/images/chevytruck1.jpg");
+var Services = function Services() {
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(),
+      service = _useState[0],
+      setService = _useState[1];
 
-var chevyvan1 = __webpack_require__(/*! ../public/static/images/chevyvan1.jpeg */ "./public/static/images/chevyvan1.jpeg");
+  var handlePackageClick = function handlePackageClick(e) {
+    var packages = document.getElementsByClassName("serviceList");
+    var packagesArr = [].slice.call(packages);
+    var clickedPackage = e.target.id + "Desc";
 
-var genesis1 = __webpack_require__(/*! ../public/static/images/genesis1.jpg */ "./public/static/images/genesis1.jpg");
-
-var genesis2 = __webpack_require__(/*! ../public/static/images/genesis2.jpg */ "./public/static/images/genesis2.jpg");
-
-var genesis3 = __webpack_require__(/*! ../public/static/images/genesis3.jpg */ "./public/static/images/genesis3.jpg");
-
-var pilot1 = __webpack_require__(/*! ../public/static/images/pilot1.jpg */ "./public/static/images/pilot1.jpg");
-
-var smart1 = __webpack_require__(/*! ../public/static/images/smart1.jpg */ "./public/static/images/smart1.jpg");
-
-var smart2 = __webpack_require__(/*! ../public/static/images/smart2.jpg */ "./public/static/images/smart2.jpg");
-
-var runner1 = __webpack_require__(/*! ../public/static/images/4runner1.jpg */ "./public/static/images/4runner1.jpg");
-
-var patriot1 = __webpack_require__(/*! ../public/static/images/patriot1.jpg */ "./public/static/images/patriot1.jpg");
-
-var patriotFillDoor = __webpack_require__(/*! ../public/static/images/patriotFillDoor.jpg */ "./public/static/images/patriotFillDoor.jpg");
-
-var patriotInterior1 = __webpack_require__(/*! ../public/static/images/patriotInterior1.jpg */ "./public/static/images/patriotInterior1.jpg");
-
-var patriotInterior2 = __webpack_require__(/*! ../public/static/images/patriotInterior2.jpg */ "./public/static/images/patriotInterior2.jpg");
-
-var wrx1 = __webpack_require__(/*! ../public/static/images/wrx1.jpg */ "./public/static/images/wrx1.jpg");
-
-var wrx2 = __webpack_require__(/*! ../public/static/images/wrx2.jpg */ "./public/static/images/wrx2.jpg");
-
-var wrx3 = __webpack_require__(/*! ../public/static/images/wrx3.jpg */ "./public/static/images/wrx3.jpg");
-
-var wrxInterior = __webpack_require__(/*! ../public/static/images/wrxInterior.jpg */ "./public/static/images/wrxInterior.jpg");
-
-var Work = function Work() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0),
-      loadCount = _useState[0],
-      setLoadCount = _useState[1];
-
-  var imageArr = [{
-    url: chevytruck1,
-    alt: "Chevy Silverado (White)"
-  }, {
-    url: chevyvan1,
-    alt: "Chevy Van (Red)"
-  }, {
-    url: genesis1,
-    alt: "Hyundai Genesis (White)"
-  }, {
-    url: genesis2,
-    alt: "Hyundai Genesis (White)"
-  }, {
-    url: genesis3,
-    alt: "Hyundai Genesis (White)"
-  }, {
-    url: pilot1,
-    alt: "Honda Pilot (Green)"
-  }, {
-    url: smart1,
-    alt: "Smart Car (White)"
-  }, {
-    url: smart2,
-    alt: "Smart Car (White)"
-  }, {
-    url: runner1,
-    alt: "Toyota 4Runner (Silver)"
-  }, {
-    url: patriot1,
-    alt: "Jeep Patriot (White)"
-  }, {
-    url: patriotFillDoor,
-    alt: "Jeep Patriot (White)"
-  }, {
-    url: patriotInterior1,
-    alt: "Jeep Patriot (White)"
-  }, {
-    url: patriotInterior2,
-    alt: "Jeep Patriot (White)"
-  }, {
-    url: wrx1,
-    alt: "Subaru WRX (White)"
-  }, {
-    url: wrx2,
-    alt: "Subaru WRX (White)"
-  }, {
-    url: wrx3,
-    alt: "Subaru WRX (White)"
-  }, {
-    url: wrxInterior,
-    alt: "Subaru WRX (White)"
-  }]; //   const closeNavMenu = () => {
-  //     let dropdown = document.getElementById("dropDown");
-  //     let overlay = document.getElementById("overlay");
-  //     dropdown.classList.remove("active");
-  //     overlay.classList.remove("active");
-  //   }
-
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(function () {
-    // closeNavMenu();
-    var imagesContainer = document.getElementById("imagesGrid");
-    var loadingContainer = document.getElementById("loadingContainer");
-    console.log(loadCount); // console.log(imageArr.length)
-
-    if (loadCount != imageArr.length) {
-      imagesContainer.style.display = "none";
-      loadingContainer.style.display = "flex";
-    } else {
-      imagesContainer.style.display = "grid";
-      loadingContainer.style.display = "none";
+    for (var i = 0; i < packagesArr.length; i++) {
+      if (packagesArr[i].id === clickedPackage) {
+        packagesArr[i].classList.add("active");
+        packagesArr[i].style.display = "block";
+      } else {
+        packagesArr[i].style.display = "none";
+      }
     }
-  });
-
-  var loadFunc = function loadFunc(img) {
-    // let image = document.getElementById(img);
-    // let imageParent = image.parentNode;
-    // imageParent.style.backgroundImage = image.id;
-    setLoadCount(loadCount + 1);
-  }; // console.log(loadCount)
+  }; // const closeNavMenu = () => {
+  //   let dropdown = document.getElementById("dropDown");
+  //   let overlay = document.getElementById("overlay");
+  //   dropdown.classList.remove("active");
+  //   overlay.classList.remove("active");
+  // };
+  // useEffect(() => {
+  //   closeNavMenu();
+  // });
 
 
   return __jsx("div", {
-    itemScope: true,
-    itemType: "http://schema.org/ImageGallery",
-    className: "workMother",
+    className: "servicesMother",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 34
     },
     __self: this
   }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 35
     },
     __self: this
   }), __jsx("div", {
-    className: "workMain",
+    className: "servicesMain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134
+      lineNumber: 36
     },
     __self: this
   }, __jsx("section", {
     className: "leftSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 37
     },
     __self: this
   }, __jsx("div", {
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137
+      lineNumber: 38
     },
     __self: this
   }, __jsx("h1", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 39
     },
     __self: this
-  }, "Work"))), __jsx("section", {
+  }, "Services"))), __jsx("section", {
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141
+      lineNumber: 42
     },
     __self: this
   }, __jsx("div", {
     className: "rightSectChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 43
     },
     __self: this
   }, __jsx("div", {
-    itemprop: "mainContentOfPage",
-    itemScope: true,
-    itemType: "http://schema.org/Collection",
-    id: "imagesGrid",
-    className: "imagesGrid",
+    className: "servicesGrid",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 44
     },
     __self: this
-  }, imageArr.map(function (img) {
-    return __jsx("div", {
-      className: "imageItem",
-      tabIndex: "0",
-      "aria-labelledby": img.alt,
-      role: "img",
-      alt: img.alt,
-      id: img.url,
-      key: img.url,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 145
-      },
-      __self: this
-    }, __jsx("img", {
-      className: "image",
-      src: img.url,
-      alt: img.alt,
-      onLoad: function onLoad() {
-        return loadFunc(img.url);
-      },
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 154
-      },
-      __self: this
-    }));
-  })), __jsx("div", {
-    id: "loadingContainer",
+  }, __jsx("div", {
+    itemScope: true,
+    itemType: "http://schema.org/ItemList",
+    className: "serviceDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
+  }, __jsx("div", {
+    onClick: handlePackageClick,
+    id: "basics",
+    className: "serviceHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }, "The Basics"), __jsx("div", {
+    itemScope: true,
+    itemType: "http://schema.org/ItemList",
+    className: "serviceListBasics",
+    id: "basicsList",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53
+    },
+    __self: this
+  }, __jsx("li", {
+    itemProp: "itemListElement",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "- Hand Washed"), __jsx("li", {
+    itemProp: "itemListElement",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55
+    },
+    __self: this
+  }, "- Windows Inside & Out"), __jsx("li", {
+    itemProp: "itemListElement",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56
+    },
+    __self: this
+  }, "- Door Jams"), __jsx("li", {
+    itemProp: "itemListElement",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57
+    },
+    __self: this
+  }, "- Clean Plastics / Dust"), __jsx("li", {
+    itemProp: "itemListElement",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58
+    },
+    __self: this
+  }, "- Shampoo Floor Mats"), __jsx("li", {
+    itemProp: "itemListElement",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
+  }, "- Vacuum"), __jsx("div", {
+    itemProp: "itemListElement",
+    className: "priceTimeParent",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "priceRubric",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
+  }, "Cars ", __jsx("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, "/"), " SUVs ", __jsx("strong", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62
+    },
+    __self: this
+  }, "/"), " Minivans"), __jsx("div", {
+    className: "priceTimeDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64
+    },
+    __self: this
+  }, __jsx("h3", {
+    className: "packagePrice",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65
+    },
+    __self: this
+  }, "$45 / $55 / $65"), __jsx("h3", {
+    className: "packageTime",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66
+    },
+    __self: this
+  }, "1 - 1.5 hours"))))), __jsx("div", {
+    className: "premiumHeadDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }, __jsx("h2", {
+    className: "premiumHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 72
+    },
+    __self: this
+  }, "Premium Services")), __jsx("div", {
+    itemProp: "itemListElement",
+    className: "serviceDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }, __jsx("div", {
+    onClick: handlePackageClick,
+    id: "interior",
+    className: "serviceHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
+  }, "Interior Conditioning"), __jsx("div", {
+    className: "serviceList",
+    id: "interiorDesc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83
+    },
+    __self: this
+  }, __jsx("p", {
+    itemScope: true,
+    itemType: "http://schema.org/HowToTip",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84
+    },
+    __self: this
+  }, "Plastics and other vinyl-like interior surfaces are very susceptable to damage from the sun over time, as well as from natural body oils. ", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88
+    },
+    __self: this
+  }), "This sun damage mainly causes the color to fade. So rather than the deep color that was there from the factory, the plastics begin to look a bit develop. Protecting and conditioning these surfaces is vital to keeping them looking fantastic."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "questionPara",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "italic",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97
+    },
+    __self: this
+  }, "Any questions?"), " Click", " ", __jsx("a", {
+    href: "mailto:broughtondetailing@gmail.com?subject=Services Inquiry",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99
+    },
+    __self: this
+  }, "here")), " ", "and ask away!"))), __jsx("div", {
+    itemProp: "itemListElement",
+    className: "serviceDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106
+    },
+    __self: this
+  }, __jsx("div", {
+    onClick: handlePackageClick,
+    id: "wheels",
+    className: "serviceHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107
+    },
+    __self: this
+  }, "Wheel Service"), __jsx("div", {
+    className: "serviceList",
+    id: "wheelsDesc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114
+    },
+    __self: this
+  }, __jsx("p", {
+    itemScope: true,
+    itemType: "http://schema.org/HowToTip",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115
+    },
+    __self: this
+  }, "The first glance that people give to cars is usually straight to the wheels.", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119
+    },
+    __self: this
+  }), "Over time, wheels tend to gather lots of brake dust from continuous brake pad wear while driving. This break dust builds up on the wheel and can actually embed itself into the wheel, causing permanant damage if not taken care of. Not to mention, clean wheels just look fantastic. Along with getting that brake dust taken care of, applying a fresh coat of tire shine, cleaning the wheel wells, and inner barrel of the wheel are also taken care of."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "questionPara",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "italic",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131
+    },
+    __self: this
+  }, "Any questions?"), " Click", " ", __jsx("a", {
+    href: "mailto:broughtondetailing@gmail.com?subject=Services Inquiry",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133
+    },
+    __self: this
+  }, "here")), " ", "and ask away!"))), __jsx("div", {
+    itemProp: "itemListElement",
+    className: "serviceDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140
+    },
+    __self: this
+  }, __jsx("div", {
+    onClick: handlePackageClick,
+    id: "leather",
+    className: "serviceHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141
+    },
+    __self: this
+  }, "Leather Treatment"), __jsx("div", {
+    className: "serviceList",
+    id: "leatherDesc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148
+    },
+    __self: this
+  }, __jsx("p", {
+    itemScope: true,
+    itemType: "http://schema.org/HowToTip",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149
+    },
+    __self: this
+  }, "Leather is important to maintain. Over time, if cared for correctly, it develops a wonderful finish called a patina, or a 'sheen'. This adds a bit of character to the leather.", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154
+    },
+    __self: this
+  }), "This is caused by the sun, dirt particles, and your natural body oils. If cared for improperly, leather starts to crack and actually lose some of it's color."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "questionPara",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "italic",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 161
+    },
+    __self: this
+  }, "Any questions?"), " Click", " ", __jsx("a", {
+    href: "mailto:broughtondetailing@gmail.com?subject=Services Inquiry",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 162
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "link",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 163
     },
     __self: this
-  }, __jsx("h1", {
+  }, "here")), " ", "and ask away!"))), __jsx("div", {
+    itemProp: "itemListElement",
+    className: "serviceDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 170
     },
     __self: this
-  }, "Loading..."))))));
+  }, __jsx("div", {
+    onClick: handlePackageClick,
+    id: "carpets",
+    className: "serviceHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 171
+    },
+    __self: this
+  }, "Carpet & Seat Cleaning"), __jsx("div", {
+    className: "serviceList",
+    id: "carpetsDesc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 178
+    },
+    __self: this
+  }, __jsx("p", {
+    itemScope: true,
+    itemType: "http://schema.org/HowToTip",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 179
+    },
+    __self: this
+  }, "Carpets are often overlooked because we're always stepping and sitting on them, but their cleanliness actually effect the experience quite a lot. Past the obvious, (or not-so-obvious) visual appearance, they tend to hold the majority of whatever smell seems to be locked in the car.", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 185
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 186
+    },
+    __self: this
+  }), "You'd be amazed at how much dirt and gunk usually comes out of seats/carpets that look pretty clean. This is a great way to really restore the feel of your interior cabin."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 190
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "questionPara",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 191
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "italic",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 192
+    },
+    __self: this
+  }, "Any questions?"), " Click", " ", __jsx("a", {
+    href: "mailto:broughtondetailing@gmail.com?subject=Services Inquiry",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 193
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 194
+    },
+    __self: this
+  }, "here")), " ", "and ask away!"))), __jsx("div", {
+    itemProp: "itemListElement",
+    className: "serviceDiv",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 201
+    },
+    __self: this
+  }, __jsx("div", {
+    onClick: handlePackageClick,
+    id: "paint",
+    className: "serviceHead",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202
+    },
+    __self: this
+  }, "Paint Revitalization"), __jsx("div", {
+    className: "serviceList",
+    id: "paintDesc",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 209
+    },
+    __self: this
+  }, __jsx("p", {
+    itemScope: true,
+    itemType: "http://schema.org/HowToTip",
+    className: "serviceListItem",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 210
+    },
+    __self: this
+  }, "Paint can make all the difference visually.", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 212
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 213
+    },
+    __self: this
+  }), "Firstly, (if paint clearly contains contaminants), a clay bar will be used to safely extract the contaminants that are embeded into the paint. Secondly, after the paint is smooth to the touch and lacking any grit feeling, wax will be applied. Wax creates a hydrophobic effect, making water bead off the surface rather than sheeting off.", __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 220
+    },
+    __self: this
+  }), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 221
+    },
+    __self: this
+  }), "Along with the beading, wax provides an incredible gloss to the paint, as well as very smooth to the touch (I recommend avoiding contact though, without any lubrication that is.)."), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 226
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "questionPara",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 227
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "italic",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 228
+    },
+    __self: this
+  }, "Any questions?"), " Click", " ", __jsx("a", {
+    href: "mailto:broughtondetailing@gmail.com?subject=Services Inquiry",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 229
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "link",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 230
+    },
+    __self: this
+  }, "here")), " ", "and ask away!"), __jsx("br", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 234
+    },
+    __self: this
+  }), __jsx("p", {
+    className: "serviceNotice",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 235
+    },
+    __self: this
+  }, __jsx("strong", {
+    className: "italic",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 236
+    },
+    __self: this
+  }, "Notice:"), " Paint correction is not offered in this service."))))))));
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Work);
+/* harmony default export */ __webpack_exports__["default"] = (Services);
 
 /***/ }),
 
-/***/ "./public/static/images/4runner1.jpg":
-/*!*******************************************!*\
-  !*** ./public/static/images/4runner1.jpg ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/4runner1-a542e9c792511d91b88939d55caaaf98.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/chevytruck1.jpg":
-/*!**********************************************!*\
-  !*** ./public/static/images/chevytruck1.jpg ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/chevytruck1-9da49bca426443966b4b9e7d8c2f2b66.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/chevyvan1.jpeg":
-/*!*********************************************!*\
-  !*** ./public/static/images/chevyvan1.jpeg ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/chevyvan1-548648ba3ce9da243e5d9e2f61158029.jpeg";
-
-/***/ }),
-
-/***/ "./public/static/images/genesis1.jpg":
-/*!*******************************************!*\
-  !*** ./public/static/images/genesis1.jpg ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/genesis1-cbf26ec3a6fff5b233a80e663081b738.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/genesis2.jpg":
-/*!*******************************************!*\
-  !*** ./public/static/images/genesis2.jpg ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/genesis2-85613ed3b8a38d6ade5825bef4cab0e8.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/genesis3.jpg":
-/*!*******************************************!*\
-  !*** ./public/static/images/genesis3.jpg ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/genesis3-eefa2e49f3a7d59ffb932f337cbe6157.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/patriot1.jpg":
-/*!*******************************************!*\
-  !*** ./public/static/images/patriot1.jpg ***!
-  \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/patriot1-0522ec2b5e5b01134e6687c55086936d.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/patriotFillDoor.jpg":
-/*!**************************************************!*\
-  !*** ./public/static/images/patriotFillDoor.jpg ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/patriotFillDoor-a1cbda1a52ed59695fdb9eb0ab08899f.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/patriotInterior1.jpg":
-/*!***************************************************!*\
-  !*** ./public/static/images/patriotInterior1.jpg ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/patriotInterior1-b9cb0bbffe0535127626ae052197d1ba.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/patriotInterior2.jpg":
-/*!***************************************************!*\
-  !*** ./public/static/images/patriotInterior2.jpg ***!
-  \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/patriotInterior2-c21f4cd2a9990a85bb4c6e20ce679cca.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/pilot1.jpg":
-/*!*****************************************!*\
-  !*** ./public/static/images/pilot1.jpg ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/pilot1-14a2e731a4293ce1c39493985e10bf92.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/smart1.jpg":
-/*!*****************************************!*\
-  !*** ./public/static/images/smart1.jpg ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/smart1-bbd93575295ba487bb37331780cc644c.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/smart2.jpg":
-/*!*****************************************!*\
-  !*** ./public/static/images/smart2.jpg ***!
-  \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/smart2-0f628cb19c30a2b760b4d06d38a3aaab.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/wrx1.jpg":
-/*!***************************************!*\
-  !*** ./public/static/images/wrx1.jpg ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/wrx1-dcdb8d3e19fd3e02c2ab5f26f05bf0ab.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/wrx2.jpg":
-/*!***************************************!*\
-  !*** ./public/static/images/wrx2.jpg ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/wrx2-87a84ac48ef973ac1b3a23fff0e8b127.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/wrx3.jpg":
-/*!***************************************!*\
-  !*** ./public/static/images/wrx3.jpg ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/wrx3-8f5f9c55a958e5f91419677fbd809798.jpg";
-
-/***/ }),
-
-/***/ "./public/static/images/wrxInterior.jpg":
-/*!**********************************************!*\
-  !*** ./public/static/images/wrxInterior.jpg ***!
-  \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = "/_next/static/images/wrxInterior-e2b6b416581a09fcbd8fcde405a0acd5.jpg";
-
-/***/ }),
-
-/***/ 11:
-/*!***********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fwork&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fwork.js ***!
-  \***********************************************************************************************************************************************************/
+/***/ 6:
+/*!*******************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fservices.js ***!
+  \*******************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fwork&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fwork.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fwork&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fwork.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fservices.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fservices&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fservices.js!./");
 
 
 /***/ }),
@@ -10660,5 +10906,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[11,"static/runtime/webpack.js","styles"]]]);
-//# sourceMappingURL=work.js.map
+},[[6,"static/runtime/webpack.js","styles"]]]);
+//# sourceMappingURL=services.js.map

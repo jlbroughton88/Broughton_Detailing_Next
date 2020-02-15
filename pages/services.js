@@ -56,7 +56,7 @@ const Services = () => {
                   <li itemProp="itemListElement" className="serviceListItem">- Door Jams</li>
                   <li itemProp="itemListElement" className="serviceListItem">- Clean Plastics / Dust</li>
                   <li itemProp="itemListElement" className="serviceListItem">- Shampoo Floor Mats</li>
-                  <li citemProp="itemListElement" lassName="serviceListItem">- Vacuum</li>
+                  <li itemProp="itemListElement" className="serviceListItem">- Vacuum</li>
                   <div itemProp="itemListElement" className="priceTimeParent">
                     <p className="priceRubric">
                       Cars <strong>/</strong> SUVs <strong>/</strong> Minivans

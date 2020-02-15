@@ -2477,13 +2477,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "axios");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../public/static/css/contact.scss */ "./public/static/css/contact.scss");
-/* harmony import */ var _public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _comps_navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./comps/navbar */ "./pages/comps/navbar.js");
-/* harmony import */ var _comps_logos_facebook__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./comps/logos/facebook */ "./pages/comps/logos/facebook.js");
-/* harmony import */ var _comps_logos_instagram__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./comps/logos/instagram */ "./pages/comps/logos/instagram.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "moment");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../public/static/css/contact.scss */ "./public/static/css/contact.scss");
+/* harmony import */ var _public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_public_static_css_contact_scss__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _comps_navbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./comps/navbar */ "./pages/comps/navbar.js");
+/* harmony import */ var _comps_logos_facebook__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./comps/logos/facebook */ "./pages/comps/logos/facebook.js");
+/* harmony import */ var _comps_logos_instagram__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./comps/logos/instagram */ "./pages/comps/logos/instagram.js");
 var _jsxFileName = "/Users/JacobBroughton/coding/work/broughton-detailing-next/pages/contact.js";
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
 
  // import { useAppContext } from "./comps/context.js";
 
@@ -2554,7 +2557,7 @@ const Contact = () => {
 
   const handleQuoteSubmit = e => {
     let quoteMsg = document.getElementById("quoteMessage");
-    let date = moment().format('L');
+    let date = moment__WEBPACK_IMPORTED_MODULE_2___default()().format('L');
     let formattedDate = date.replace(/\//g, "-");
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`https://www.broughtondetailing.com/api/addquote`, {
       email: email,
@@ -2596,69 +2599,69 @@ const Contact = () => {
     className: "contactMother",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 91
     },
     __self: undefined
-  }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 96
     },
     __self: undefined
   }), __jsx("div", {
     className: "contactMain",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 97
     },
     __self: undefined
   }, __jsx("section", {
     className: "leftSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 98
     },
     __self: undefined
   }, __jsx("div", {
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 99
     },
     __self: undefined
   }, __jsx("h1", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 100
     },
     __self: undefined
   }, "Contact"))), __jsx("section", {
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 103
     },
     __self: undefined
   }, __jsx("div", {
     className: "rightSectChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 104
     },
     __self: undefined
   }, __jsx("div", {
     className: "letsTalkDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 105
     },
     __self: undefined
   }, __jsx("h2", {
     className: "letsTalkHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 106
     },
     __self: undefined
   }, "Lets Talk!"), __jsx("p", {
@@ -2666,7 +2669,7 @@ const Contact = () => {
     className: "contactPara name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 107
     },
     __self: undefined
   }, "Jacob Broughton"), __jsx("a", {
@@ -2674,14 +2677,14 @@ const Contact = () => {
     className: "emailLink",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 110
     },
     __self: undefined
   }, __jsx("p", {
     className: "email contactPara",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 114
     },
     __self: undefined
   }, "BroughtonDetailing@gmail.com")), __jsx("a", {
@@ -2689,102 +2692,102 @@ const Contact = () => {
     className: "contactPara phone",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 118
     },
     __self: undefined
   }, "704-770-8371"), __jsx("div", {
     className: "socialDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120
+      lineNumber: 121
     },
     __self: undefined
   }, __jsx("a", {
     href: "https://facebook.com/broughtondetailing",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 122
     },
     __self: undefined
-  }, __jsx(_comps_logos_facebook__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, __jsx(_comps_logos_facebook__WEBPACK_IMPORTED_MODULE_5__["default"], {
     className: "socialIcon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 123
     },
     __self: undefined
   })), __jsx("a", {
     href: "https://instagram.com/broughtondetailing",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124
+      lineNumber: 125
     },
     __self: undefined
-  }, __jsx(_comps_logos_instagram__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  }, __jsx(_comps_logos_instagram__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: "socialIcon",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 126
     },
     __self: undefined
   })))), __jsx("div", {
     className: "quoteDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129
+      lineNumber: 130
     },
     __self: undefined
   }, __jsx("h2", {
     className: "quoteHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 131
     },
     __self: undefined
   }, "Get a quote!"), __jsx("form", {
     onSubmit: handleQuoteSubmit,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 132
     },
     __self: undefined
   }, __jsx("input", {
     placeholder: "Email",
     onChange: handleEmailChange,
     required: true,
-    type: "",
+    type: "email",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 133
     },
     __self: undefined
   }), __jsx("input", {
     placeholder: "First Name",
     onChange: handleNameChange,
-    type: "",
+    type: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 139
     },
     __self: undefined
   }), __jsx("input", {
     placeholder: "Your Car's Make",
     onChange: handleMakeChange,
     required: true,
-    type: "",
+    type: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143
+      lineNumber: 144
     },
     __self: undefined
   }), __jsx("input", {
     placeholder: "Your Car's Model",
     onChange: handleModelChange,
     required: true,
-    type: "",
+    type: "text",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 150
     },
     __self: undefined
   }), __jsx("select", {
@@ -2792,28 +2795,28 @@ const Contact = () => {
     width: "100%",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 157
     },
     __self: undefined
   }, __jsx("option", {
     value: "Just needs a touch-up...",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157
+      lineNumber: 158
     },
     __self: undefined
   }, "Just needs a touch-up..."), __jsx("option", {
     value: "Not that bad...",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158
+      lineNumber: 159
     },
     __self: undefined
   }, "Not that bad..."), __jsx("option", {
     value: "Really bad...",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 160
     },
     __self: undefined
   }, "Really bad...")), __jsx("textarea", {
@@ -2823,7 +2826,7 @@ const Contact = () => {
     required: true,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161
+      lineNumber: 162
     },
     __self: undefined
   }), __jsx("input", {
@@ -2831,7 +2834,7 @@ const Contact = () => {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167
+      lineNumber: 168
     },
     __self: undefined
   })), __jsx("h4", {
@@ -2839,21 +2842,21 @@ const Contact = () => {
     className: "quoteMessage",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169
+      lineNumber: 170
     },
     __self: undefined
   }, "We'll get back to you as soon as possible!")), __jsx("div", {
     className: "signupDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174
+      lineNumber: 175
     },
     __self: undefined
   }, __jsx("h2", {
     className: "signupHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175
+      lineNumber: 176
     },
     __self: undefined
   }, "Sign Up For Deals!"), __jsx("form", {
@@ -2861,14 +2864,14 @@ const Contact = () => {
     className: "signupForm",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176
+      lineNumber: 177
     },
     __self: undefined
   }, __jsx("div", {
     className: "signupInputParent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 177
+      lineNumber: 178
     },
     __self: undefined
   }, __jsx("input", {
@@ -2879,7 +2882,7 @@ const Contact = () => {
     placeholder: "Your Email (I won't spam)",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178
+      lineNumber: 179
     },
     __self: undefined
   })), __jsx("input", {
@@ -2888,7 +2891,7 @@ const Contact = () => {
     placeholder: "Submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187
+      lineNumber: 188
     },
     __self: undefined
   })), __jsx("h4", {
@@ -2896,7 +2899,7 @@ const Contact = () => {
     className: "thankYou",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193
+      lineNumber: 194
     },
     __self: undefined
   }, "Thank You!"))))));
@@ -3003,6 +3006,17 @@ module.exports = require("core-js/library/fn/symbol/iterator");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/weak-map");
+
+/***/ }),
+
+/***/ "moment":
+/*!*************************!*\
+  !*** external "moment" ***!
+  \*************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("moment");
 
 /***/ }),
 

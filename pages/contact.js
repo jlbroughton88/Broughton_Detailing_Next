@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import moment from "moment";
 // import { useAppContext } from "./comps/context.js";
 import "../public/static/css/contact.scss";
 import Navbar from "./comps/navbar";
@@ -133,24 +134,24 @@ const Contact = () => {
                   placeholder="Email"
                   onChange={handleEmailChange}
                   required
-                  type=""
+                  type="email"
                 />
                 <input
                   placeholder="First Name"
                   onChange={handleNameChange}
-                  type=""
+                  type="text"
                 />
                 <input
                   placeholder="Your Car's Make"
                   onChange={handleMakeChange}
                   required
-                  type=""
+                  type="text"
                 />
                 <input
                   placeholder="Your Car's Model"
                   onChange={handleModelChange}
                   required
-                  type=""
+                  type="text"
                 />
                 {/* <input placeholder="Your Car's Condition" onChange={handleConditionChange} required type="" /> */}
                 <select onChange={handleConditionChange} width="100%">
