@@ -58,9 +58,6 @@ const AllClients = (allClients) => {
 
 AllClients.getInitialProps = async(ctx) => {
   const res = await fetch("https://www.broughtondetailing.com/api/clients");
-  console.log("getInitialProps res START")
-  console.log(res)
-  console.log("getInitialProps res END")
   const json = await res.json();
 
   return {json}

@@ -63,7 +63,7 @@ const Services = () => {
                     </p>
                     <div className="priceTimeDiv">
                       <h3 className="packagePrice">$45 / $55 / $65</h3>
-                      <h3 className="packageTime">1 - 1.5 hours</h3>
+                      <h3 className="packageTime">1.5 - 2.5 hours</h3>
                     </div>
                   </div>
                 </div>

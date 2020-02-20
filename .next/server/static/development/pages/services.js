@@ -2599,7 +2599,7 @@ const Services = () => {
       lineNumber: 66
     },
     __self: undefined
-  }, "1 - 1.5 hours"))))), __jsx("div", {
+  }, "1.5 - 2.5 hours"))))), __jsx("div", {
     className: "premiumHeadDiv",
     __source: {
       fileName: _jsxFileName,

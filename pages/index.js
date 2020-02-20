@@ -58,20 +58,20 @@ const Index = () => {
     {
       question: "Why not use a drive-thru carwash?",
       answer:
-        "Drive-thru car washes may potentially damage your paint, leaving micro-scratches from the large bristled brushes."
+        "Drive-thru car washes may potentially damage your paint, leaving scratches and swirls from the large bristled brushes and harsh contact."
     },
     {
       question: "Will my paint get damaged?",
-      answer: "Not at all! We use proven techniques to avoid any paint damage."
+      answer: "Not at all! Only proven, time-tested techniques are used avoid any paint damage."
     },
 
     {
       question: "Will I have to drop my car off?",
-      answer: "Nope, we'll come to you!"
+      answer: "Nope, we'll come to you! Dropping your car off is an option for you though."
     },
     {
       question: "How much do you charge?",
-      answer: `Broughton Detail's rates start at just $35!`,
+      answer: `Broughton Detail's rates start at just $55!`,
       link: "/services",
       topic: "services and pricing"
     },
@@ -82,7 +82,7 @@ const Index = () => {
     {
       question: "How long will the detail take??",
       answer:
-        "It really depends which package is chosen and what type of car you have, but average time ranges from about 1.5 hours to 4 hours.",
+        "It really depends which package is chosen and what type of car you have, but average time ranges from about 1.5 hours to 4 hours (depending on the service / condition of vehicle).",
       link: "/services",
       topic: "service time-frames"
     }

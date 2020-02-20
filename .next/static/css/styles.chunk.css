@@ -1,245 +1,3 @@
-strong.italic {
-  font-weight: 700;
-  font-style: italic; }
-
-strong {
-  font-weight: 800;
-  color: inherit; }
-
-* {
-  appearance: none; }
-
-html,
-body,
-#root {
-  height: 100%;
-  min-height: 100%;
-  background: #333333; }
-
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.body {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  /* Firefox */
-  -ms-overflow-style: none;
-  /* Internet Explorer 10+ */ }
-
-.body::-webkit-scrollbar {
-  /* WebKit */
-  width: 0;
-  height: 0; }
-
-.servicesMother {
-  height: 100%; }
-  .servicesMother .servicesMain {
-    display: flex;
-    flex-direction: row;
-    height: 100%; }
-    .servicesMother .servicesMain .leftSect {
-      height: 100vh;
-      width: calc(50% - 30px);
-      background: #4698fe;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      position: fixed;
-      padding-right: 30px; }
-      .servicesMother .servicesMain .leftSect .headDiv {
-        height: 156px;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%; }
-        .servicesMother .servicesMain .leftSect .headDiv .head {
-          text-align: end;
-          color: #333;
-          font-size: 4rem; }
-    .servicesMother .servicesMain .rightSect {
-      height: 100%;
-      width: 50%;
-      background: #333;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      flex-direction: column;
-      position: relative;
-      left: 50%; }
-      .servicesMother .servicesMain .rightSect .rightSectChild {
-        height: 100%;
-        margin-top: 50px;
-        position: relative;
-        padding-left: 30px;
-        display: flex;
-        width: calc(100% - 30px); }
-        .servicesMother .servicesMain .rightSect .rightSectChild .premiumHeadDiv {
-          display: flex;
-          justify-content: flex-start;
-          width: 100%;
-          max-width: 500px; }
-          .servicesMother .servicesMain .rightSect .rightSectChild .premiumHeadDiv .premiumHead {
-            color: #ffffff;
-            margin: 25px 0 5px 0;
-            justify-self: flex-start; }
-        .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid {
-          width: calc(100% - 60px);
-          height: auto;
-          position: absolute;
-          top: 5%;
-          display: grid;
-          grid-template-columns: 100%;
-          grid-template-rows: auto auto auto auto auto auto;
-          column-gap: 50px;
-          row-gap: 5px;
-          justify-content: center;
-          padding-bottom: 200px; }
-          .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv {
-            max-width: 500px; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceHead {
-              background: #4698fe;
-              padding: 6px 15px;
-              font-size: 1.5rem;
-              font-weight: 600;
-              margin-bottom: 5px;
-              border-radius: 2px;
-              cursor: pointer; }
-              @media (min-height: 800px) {
-                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceHead {
-                  padding: 10px 15px; } }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics {
-              margin-bottom: 5px; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceRubric {
-                color: #ffffff;
-                font-weight: 600;
-                opacity: 0.8; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList {
-              padding-left: 2px;
-              display: none; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .serviceListItem {
-                color: #ffffff;
-                list-style: none;
-                margin: 3px;
-                white-space: pre-wrap; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .questionPara {
-                color: #000000;
-                background: #ffffff;
-                padding: 3px 8px;
-                border-radius: 3px; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .serviceNotice {
-                color: #ffffff;
-                background: black;
-                padding: 3px 8px;
-                border-radius: 3px; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv {
-                display: flex;
-                flex-direction: column;
-                width: 100%; }
-                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packagePrice {
-                  color: #4698fe; }
-                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packagePrice:after {
-                    content: "\A0   \A0   |";
-                    color: #ffffff; }
-                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packageTime {
-                  color: #4698fe; }
-                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packageTime:before {
-                    content: "| \A0   ";
-                    color: #ffffff; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #basics {
-              background: #ffffff; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics {
-              padding-left: 2px;
-              display: block; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .serviceListItem {
-                color: #ffffff;
-                margin: 3px; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .serviceNotice {
-                background: #ffffff;
-                color: #ffffff; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv {
-                display: flex;
-                flex-direction: row;
-                width: 100%; }
-                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packagePrice {
-                  color: #4698fe; }
-                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packagePrice:after {
-                    content: "\A0   \A0   |";
-                    color: #ffffff; }
-                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packageTime {
-                  color: #4698fe; }
-                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packageTime:before {
-                    content: "| \A0   ";
-                    color: #ffffff; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList.active {
-              animation: fadein 0.35s normal;
-              margin-bottom: 8px; }
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-    margin-bottom: 0px;
-    filter: brightness(100%); }
-  to {
-    opacity: 1;
-    margin-bottom: 8px;
-    filter: brightness(103%); } }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #basics {
-              border-left: #4698fe solid 5px;
-              padding-left: 12px; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #interior {
-              border-left: #ffffff solid 5px;
-              padding-left: 15px; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #wheels {
-              border-left: #ffffff solid 7px;
-              padding-left: 10px; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #leather {
-              border-left: #ffffff solid 9px;
-              padding-left: 11px; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #carpets {
-              border-left: #ffffff solid 11px;
-              padding-left: 9px; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #paint {
-              border-left: #ffffff solid 13px;
-              padding-left: 8px; }
-  @media (max-width: 700px) {
-    .servicesMother {
-      height: 100%; }
-      .servicesMother .servicesMain {
-        flex-direction: column; }
-        .servicesMother .servicesMain .leftSect {
-          all: inherit;
-          height: auto;
-          background: #4698fe;
-          padding-top: 5px;
-          padding-bottom: 7px;
-          position: static; }
-          .servicesMother .servicesMain .leftSect .headDiv {
-            margin: 0;
-            justify-content: center;
-            align-items: flex-end; }
-            .servicesMother .servicesMain .leftSect .headDiv .head {
-              margin-top: 80px; }
-        .servicesMother .servicesMain .rightSect {
-          width: 100%;
-          justify-content: flex-start;
-          left: 0; }
-          .servicesMother .servicesMain .rightSect .rightSectChild {
-            position: absolute;
-            margin-top: 50px;
-            width: calc(100% - 40px);
-            padding: 0 20px 0 20px;
-            align-self: center;
-            height: auto; }
-            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid {
-              position: relative;
-              width: 100%;
-              justify-content: center;
-              justify-items: center; }
-              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv {
-                width: 100%; } }
-
 html,
 body,
 #root {
@@ -483,6 +241,248 @@ body {
               padding-bottom: 150px; }
             .contactMother .contactMain .rightSect .rightSectChild .quoteDiv, .contactMother .contactMain .rightSect .rightSectChild .signupDiv {
               width: 100%; } }
+
+strong.italic {
+  font-weight: 700;
+  font-style: italic; }
+
+strong {
+  font-weight: 800;
+  color: inherit; }
+
+* {
+  appearance: none; }
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  background: #333333; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+
+.body::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0; }
+
+.servicesMother {
+  height: 100%; }
+  .servicesMother .servicesMain {
+    display: flex;
+    flex-direction: row;
+    height: 100%; }
+    .servicesMother .servicesMain .leftSect {
+      height: 100vh;
+      width: calc(50% - 30px);
+      background: #4698fe;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: fixed;
+      padding-right: 30px; }
+      .servicesMother .servicesMain .leftSect .headDiv {
+        height: 156px;
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; }
+        .servicesMother .servicesMain .leftSect .headDiv .head {
+          text-align: end;
+          color: #333;
+          font-size: 4rem; }
+    .servicesMother .servicesMain .rightSect {
+      height: 100%;
+      width: 50%;
+      background: #333;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      left: 50%; }
+      .servicesMother .servicesMain .rightSect .rightSectChild {
+        height: 100%;
+        margin-top: 50px;
+        position: relative;
+        padding-left: 30px;
+        display: flex;
+        width: calc(100% - 30px); }
+        .servicesMother .servicesMain .rightSect .rightSectChild .premiumHeadDiv {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          max-width: 500px; }
+          .servicesMother .servicesMain .rightSect .rightSectChild .premiumHeadDiv .premiumHead {
+            color: #ffffff;
+            margin: 25px 0 5px 0;
+            justify-self: flex-start; }
+        .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid {
+          width: calc(100% - 60px);
+          height: auto;
+          position: absolute;
+          top: 5%;
+          display: grid;
+          grid-template-columns: 100%;
+          grid-template-rows: auto auto auto auto auto auto;
+          column-gap: 50px;
+          row-gap: 5px;
+          justify-content: center;
+          padding-bottom: 200px; }
+          .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv {
+            max-width: 500px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceHead {
+              background: #4698fe;
+              padding: 6px 15px;
+              font-size: 1.5rem;
+              font-weight: 600;
+              margin-bottom: 5px;
+              border-radius: 2px;
+              cursor: pointer; }
+              @media (min-height: 800px) {
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceHead {
+                  padding: 10px 15px; } }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics {
+              margin-bottom: 5px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceRubric {
+                color: #ffffff;
+                font-weight: 600;
+                opacity: 0.8; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList {
+              padding-left: 2px;
+              display: none; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .serviceListItem {
+                color: #ffffff;
+                list-style: none;
+                margin: 3px;
+                white-space: pre-wrap; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .questionPara {
+                color: #000000;
+                background: #ffffff;
+                padding: 3px 8px;
+                border-radius: 3px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .serviceNotice {
+                color: #ffffff;
+                background: black;
+                padding: 3px 8px;
+                border-radius: 3px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv {
+                display: flex;
+                flex-direction: column;
+                width: 100%; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packagePrice {
+                  color: #4698fe; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packagePrice:after {
+                    content: "\A0   \A0   |";
+                    color: #ffffff; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packageTime {
+                  color: #4698fe; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeDiv .packageTime:before {
+                    content: "| \A0   ";
+                    color: #ffffff; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #basics {
+              background: #ffffff; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics {
+              padding-left: 2px;
+              display: block; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .serviceListItem {
+                color: #ffffff;
+                margin: 3px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .serviceNotice {
+                background: #ffffff;
+                color: #ffffff; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv {
+                display: flex;
+                flex-direction: row;
+                width: 100%; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packagePrice {
+                  color: #4698fe; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packagePrice:after {
+                    content: "\A0   \A0   |";
+                    color: #ffffff; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packageTime {
+                  color: #4698fe; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeDiv .packageTime:before {
+                    content: "| \A0   ";
+                    color: #ffffff; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList.active {
+              animation: fadein 0.35s normal;
+              margin-bottom: 8px; }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    margin-bottom: 0px;
+    filter: brightness(100%); }
+  to {
+    opacity: 1;
+    margin-bottom: 8px;
+    filter: brightness(103%); } }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #basics {
+              border-left: #4698fe solid 5px;
+              padding-left: 12px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #interior {
+              border-left: #ffffff solid 5px;
+              padding-left: 15px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #wheels {
+              border-left: #ffffff solid 7px;
+              padding-left: 10px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #leather {
+              border-left: #ffffff solid 9px;
+              padding-left: 11px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #carpets {
+              border-left: #ffffff solid 11px;
+              padding-left: 9px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #paint {
+              border-left: #ffffff solid 13px;
+              padding-left: 8px; }
+  @media (max-width: 700px) {
+    .servicesMother {
+      height: 100%; }
+      .servicesMother .servicesMain {
+        flex-direction: column; }
+        .servicesMother .servicesMain .leftSect {
+          all: inherit;
+          height: auto;
+          background: #4698fe;
+          padding-top: 5px;
+          padding-bottom: 7px;
+          position: static; }
+          .servicesMother .servicesMain .leftSect .headDiv {
+            margin: 0;
+            justify-content: center;
+            align-items: flex-end; }
+            .servicesMother .servicesMain .leftSect .headDiv .head {
+              margin-top: 80px; }
+        .servicesMother .servicesMain .rightSect {
+          width: 100%;
+          justify-content: flex-start;
+          left: 0; }
+          .servicesMother .servicesMain .rightSect .rightSectChild {
+            position: absolute;
+            margin-top: 50px;
+            width: calc(100% - 40px);
+            padding: 0 20px 0 20px;
+            align-self: center;
+            height: auto; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid {
+              position: relative;
+              width: 100%;
+              justify-content: center;
+              justify-items: center; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv {
+                width: 100%; } }
 
 * {
   margin: 0;
