@@ -49,7 +49,7 @@ body {
 
       .headDiv {
         // margin-bottom: 100px;
-        height: 156px;
+        // height: 156px;
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -71,6 +71,8 @@ body {
       flex-direction: column;
       position: relative;
       left: 50%;
+
+
       .rightSectChild {
         padding-left: 30px;
         width: calc(100% - 30px);
@@ -132,7 +134,7 @@ body {
           width: calc(100% - 60px);
           max-width: 500px;
           margin-bottom: 40px;
-          padding-top: 100px;
+          padding-top: 30px;
           .letsTalkHead {
             width: 100%;
             background: #4698fe;
@@ -248,27 +250,42 @@ body {
             display: none;
           }
         }
+      }      
+      @media(min-height: 850px) {
+        height: 100vh;
+        align-items: center;
+        .rightSectChild{
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-self: center;
+          align-content: center;
+          justify-content: center;
+          .signupDiv{
+            padding: 0;
+          }
+        }
       }
     }
   }
 
   @media (max-width: 700px) {
-    height: calc(100vh - 156px);
+    height: 100%;
     .contactMain {
       flex-direction: column;
       .leftSect {
         all: inherit;
         height: auto;
         background: #4698fe;
-        padding-top: 60px;
-        padding-bottom: 6px;
+        padding-bottom: 7px;
         position: static;
         .headDiv {
           margin: 0;
           justify-content: center;
           align-items: flex-end;
           .head {
-            margin-top: 80px;
+            margin-top: 70px;
+            font-size: 3rem;
           }
         }
       }

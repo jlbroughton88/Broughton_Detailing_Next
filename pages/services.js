@@ -8,7 +8,7 @@ const Services = () => {
   const handlePackageClick = e => {
     let packages = document.getElementsByClassName("serviceList");
     let packagesArr = [].slice.call(packages);
-    let clickedPackage = e.target.id + "Desc";
+    let clickedPackage = e.target.id + "List";
     for (let i = 0; i < packagesArr.length; i++) {
       if (packagesArr[i].id === clickedPackage) {
         packagesArr[i].classList.add("active");
@@ -19,16 +19,45 @@ const Services = () => {
     }
   };
 
-  // const closeNavMenu = () => {
-  //   let dropdown = document.getElementById("dropDown");
-  //   let overlay = document.getElementById("overlay");
-  //   dropdown.classList.remove("active");
-  //   overlay.classList.remove("active");
-  // };
+  let interiorArr = [
+    "Windows Inside & Out",
+    "Thorough vacuum (Including trunk)",
+    "Door sills",
+    "Door Jams",
+    "Trunk Jams",
+    "Hood Jams",
+    "Remove door panel scuffs / Skid marks",
+    "Clean dashboard",
+    "Clean console",
+    "Vents cleaned",
+    "Deep clean leather",
+    "Protect leather",
+    "Dust Surfaces",
+    "Condition & Protect Interior",
+    "Shampoo Floor Mats",
+    "Shampoo Carpets",
+    "Fabric Guard cloth (seating, carpet, headliner)"
+  ];
 
-  // useEffect(() => {
-  //   closeNavMenu();
-  // });
+  let exteriorArr = [
+    "Windows Inside & Out",
+    "Wash the car",
+    "Dry the car",
+    "Door sills",
+    "Door Jams",
+    "Trunk Jams",
+    "Hood Jams",
+    "Wash tires",
+    "Degrease tires",
+    "Face of Wheels",
+    "Wheel Wells",
+    "Barrels of wheels",
+    "Non-sling dressing on tires",
+    "Wash the car",
+    "Dry the car",
+    "Decontaminate / Clay the paint",
+    "Light tar & bug removal (within reason)"
+  ];
 
   return (
     <div className="servicesMother">
@@ -42,33 +71,122 @@ const Services = () => {
         <section className="rightSect">
           <div className="rightSectChild">
             <div className="servicesGrid">
-              <div itemScope itemType="http://schema.org/ItemList" className="serviceDiv">
-                <div
+              <div className="serviceTypeRow">
+                <button  value="Interior" onClick={handlePackageClick} id="interior" className="interiorSlide slide">
+                  Interior
+                </button>
+                <button value="Exterior" onClick={handlePackageClick} id="exterior" className="exteriorSlide slide">
+                  Exterior
+                </button>
+                <button value="Full" onClick={handlePackageClick} id="full" className="fullSlide slide">
+                  Full
+                </button>
+              </div>
+              <div
+                itemScope
+                itemType="http://schema.org/ItemList"
+                className="serviceDiv"
+              >
+                {/* <div
                   onClick={handlePackageClick}
                   id="basics"
                   className="serviceHead"
                 >
-                  The Basics
-                </div>
-                <div itemScope itemType="http://schema.org/ItemList" className="serviceListBasics" id="basicsList">
-                  <li itemProp="itemListElement" className="serviceListItem">- Hand Washed</li>
-                  <li itemProp="itemListElement" className="serviceListItem">- Windows Inside & Out</li>
-                  <li itemProp="itemListElement" className="serviceListItem">- Door Jams</li>
-                  <li itemProp="itemListElement" className="serviceListItem">- Clean Plastics / Dust</li>
-                  <li itemProp="itemListElement" className="serviceListItem">- Shampoo Floor Mats</li>
-                  <li itemProp="itemListElement" className="serviceListItem">- Vacuum</li>
+                  Our Philosophy
+                </div> */}
+              </div>
+              <div
+                itemScope
+                itemType="http://schema.org/ItemList"
+                className="serviceDiv"
+              >
+               {/* <div
+                  onClick={handlePackageClick}
+                  id="interior"
+                  className="serviceHead"
+                >
+                  Interior
+                </div> */}
+                <ul
+                  itemScope
+                  itemType="http://schema.org/ItemList"
+                  className="serviceList"
+                  id="interiorList"
+                >
+                  {interiorArr.map(item => (
+                    <li itemProp="itemListElement" className="serviceListItem">
+                      {item}
+                    </li>
+                  ))}
+
                   <div itemProp="itemListElement" className="priceTimeParent">
-                    <p className="priceRubric">
-                      Cars <strong>/</strong> SUVs <strong>/</strong> Minivans
-                    </p>
-                    <div className="priceTimeDiv">
-                      <h3 className="packagePrice">$45 / $55 / $65</h3>
-                      <h3 className="packageTime">1.5 - 2.5 hours</h3>
+                    <div className="priceTimeDivInterior">
+                      <h4 className="packagePrice">2 Door Car : </h4>
+                      <h4 className="packagePrice">4 Door Family Sedan : </h4>
+                      <h4 className="packagePrice">
+                        Small SUV / 2 Door Pickup :{" "}
+                      </h4>
+                      <h4 className="packagePrice">
+                        Large SUV / 4 Door Pickup :{" "}
+                      </h4>
                     </div>
                   </div>
-                </div>
+                  <p className="questionPara">
+                    <strong className="italic">Any questions?</strong> Click{" "}
+                    <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
+                      <strong className="link">here</strong>
+                    </a>{" "}
+                    and ask away!
+                  </p>
+                </ul>
               </div>
-              <div className="premiumHeadDiv">
+
+              <div
+                itemScope
+                itemType="http://schema.org/ItemList"
+                className="serviceDiv"
+              >
+                {/* <div
+                  onClick={handlePackageClick}
+                  id="exterior"
+                  className="serviceHead"
+                >
+                  Exterior
+                </div> */}
+                <ul
+                  itemScope
+                  itemType="http://schema.org/ItemList"
+                  className="serviceList"
+                  id="exteriorList"
+                >
+                  {exteriorArr.map(item => (
+                    <li itemProp="itemListElement" className="serviceListItem">
+                      {item}
+                    </li>
+                  ))}
+                  <div itemProp="itemListElement" className="priceTimeParent">
+                    <div className="priceTimeDivExterior">
+                      <h4 className="packagePrice">2 Door Car : </h4>
+                      <h4 className="packagePrice">4 Door Family Sedan : </h4>
+                      <h4 className="packagePrice">
+                        Small SUV / 2 Door Pickup :{" "}
+                      </h4>
+                      <h4 className="packagePrice">
+                        Large SUV / 4 Door Pickup :{" "}
+                      </h4>
+                    </div>
+                  </div>
+                  <p className="questionPara">
+                    <strong className="italic">Any questions?</strong> Click{" "}
+                    <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
+                      <strong className="link">here</strong>
+                    </a>{" "}
+                    and ask away!
+                  </p>
+                </ul>
+              </div>
+
+              {/* <div className="premiumHeadDiv">
                 <h2 className="premiumHead">Premium Services</h2>
               </div>
 
@@ -81,7 +199,11 @@ const Services = () => {
                   Interior Conditioning
                 </div>
                 <div className="serviceList" id="interiorDesc">
-                  <p itemScope itemType="http://schema.org/HowToTip" className="serviceListItem">
+                  <p
+                    itemScope
+                    itemType="http://schema.org/HowToTip"
+                    className="serviceListItem"
+                  >
                     Plastics and other vinyl-like interior surfaces are very
                     susceptable to damage from the sun over time, as well as
                     from natural body oils. <br />
@@ -101,9 +223,9 @@ const Services = () => {
                     and ask away!
                   </p>
                 </div>
-              </div>
+              </div> */}
 
-              <div itemProp="itemListElement" className="serviceDiv">
+              {/* <div itemProp="itemListElement" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="wheels"
@@ -196,9 +318,9 @@ const Services = () => {
                     and ask away!
                   </p>
                 </div>
-              </div>
+              </div> */}
 
-              <div itemProp="itemListElement" className="serviceDiv">
+              {/* <div itemProp="itemListElement" className="serviceDiv">
                 <div
                   onClick={handlePackageClick}
                   id="paint"
@@ -237,7 +359,7 @@ const Services = () => {
                     is not offered in this service.
                   </p>
                 </div>
-              </div>
+              </div> */}
               {/* <div className="serviceDiv">
                 <div
                   onClick={handlePackageClick}

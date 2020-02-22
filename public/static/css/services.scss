@@ -39,6 +39,15 @@ body {
   height: 0;
 }
 
+@mixin priceAttr() {
+  font-style: italic;
+  background: #333333;
+  color: #ffffff;
+  border-radius: 3px;
+  padding: 0 5px;
+  margin-left: 5px;
+}
+
 .servicesMother {
   height: 100%;
   .servicesMain {
@@ -57,7 +66,6 @@ body {
       padding-right: 30px;
       .headDiv {
         // margin-bottom: 100px;
-        height: 156px;
         display: flex;
         justify-content: flex-end;
         width: 100%;
@@ -82,7 +90,7 @@ body {
       .rightSectChild {
         // position: absolute;
         height: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
         position: relative;
         padding-left: 30px;
         display: flex;
@@ -110,7 +118,39 @@ body {
           column-gap: 50px;
           row-gap: 5px;
           justify-content: center;
-          padding-bottom: 200px;
+          // padding-bottom: 200px;
+
+          
+          .serviceTypeRow{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            max-width: 500px;
+
+            .slide{
+              height: 100%;
+              width: 30%;
+              font-weight: 600;
+              border: none;
+              border-left: #ffffff solid 4px;
+              // border: none;
+              appearance: none;
+              font-size: 1.5rem;
+              background: #ffffff;
+              color: #333;
+              cursor: pointer;
+              border-radius: 3px;
+              background: #4698fe;
+              color: #333333;
+
+
+              h3{
+                height: 100%;
+              }
+            }
+          }
+
+
           .serviceDiv {
             max-width: 500px;
             .serviceHead {
@@ -125,6 +165,9 @@ body {
               @media (min-height: 800px) {
                 padding: 10px 15px;
               }
+            }
+            .serviceMainParaDiv{
+              color: #ffffff;
             }
             .serviceListBasics {
               margin-bottom: 5px;
@@ -144,11 +187,12 @@ body {
                 margin: 3px;
                 white-space: pre-wrap;
               }
-              .questionPara{
+              .questionPara {
                 color: #000000;
                 background: #ffffff;
                 padding: 3px 8px;
                 border-radius: 3px;
+                margin-top: 10px;
               }
               .serviceNotice {
                 color: #ffffff;
@@ -156,24 +200,80 @@ body {
                 padding: 3px 8px;
                 border-radius: 3px;
               }
-              .priceTimeDiv {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
+              .priceTimeParent {
+                background: #ffffff;
+                padding: 5px 10px;
+                border-radius: 3px;
+                margin-top: 10px;
+                .priceTimeDivInterior {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%;
 
-                .packagePrice {
-                  color: #4698fe;
-                  &:after {
-                    content: "\00a0 \00a0 |";
-                    color: #ffffff;
+                  :nth-child(1) {
+                    &:after {
+                      content: "$150";
+                      @include priceAttr;
+                    }
+                    margin-bottom: 5px;
+                  }
+                  :nth-child(2) {
+                    &:after {
+                      content: "$180 - $200";
+                      @include priceAttr;
+                    }
+                    margin-bottom: 5px;
+                  }
+                  :nth-child(3) {
+                    &:after {
+                      content: "$200 - $250";
+                      @include priceAttr;
+                    }
+                    margin-bottom: 5px;
+                  }
+                  :nth-child(4) {
+                    &:after {
+                      content: "$250 - $300";
+                      @include priceAttr;
+                    }
+                  }
+
+                  .packageTime {
+                    color: #333333;
                   }
                 }
-                .packageTime {
-                  color: #4698fe;
-                  &:before {
-                    content: "| \00a0 ";
-                    color: #ffffff;
+                .priceTimeDivExterior {
+                  :nth-child(1) {
+                    &:after {
+                      content: "$100 - $125";
+                      @include priceAttr;
+                    }
+                    margin-bottom: 5px;
                   }
+                  :nth-child(2) {
+                    &:after {
+                      content: "$125 - $140";
+                      @include priceAttr;
+                    }
+                    margin-bottom: 5px;
+                  }
+                  :nth-child(3) {
+                    &:after {
+                      content: "$150 - $160";
+                      @include priceAttr;
+                    }
+                    margin-bottom: 5px;
+                  }
+                  :nth-child(4) {
+                    &:after {
+                      content: "$200 - $225";
+                      @include priceAttr;
+                    }
+                  }
+                }
+
+                .packageTime {
+                  color: #333333;
                 }
               }
             }
@@ -191,22 +291,21 @@ body {
                 background: #ffffff;
                 color: #ffffff;
               }
-              .priceTimeDiv {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                .packagePrice {
-                  color: #4698fe;
-                  &:after {
-                    content: "\00a0 \00a0 |";
-                    color: #ffffff;
+              .priceTimeParent {
+                margin-bottom: 20px;
+                .priceTimeDiv {
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%;
+                  .packagePrice {
+                    color: #4698fe;
                   }
-                }
-                .packageTime {
-                  color: #4698fe;
-                  &:before {
-                    content: "| \00a0 ";
-                    color: #ffffff;
+                  .packageTime {
+                    color: #4698fe;
+                    &:before {
+                      content: "| \00a0 ";
+                      color: #ffffff;
+                    }
                   }
                 }
               }
@@ -261,14 +360,12 @@ body {
     }
   }
   @media (max-width: 700px) {
-    height: 100%;
     .servicesMain {
       flex-direction: column;
       .leftSect {
         all: inherit;
         height: auto;
         background: #4698fe;
-        padding-top: 5px;
         padding-bottom: 7px;
         position: static;
         .headDiv {
@@ -276,7 +373,8 @@ body {
           justify-content: center;
           align-items: flex-end;
           .head {
-            margin-top: 80px;
+            margin-top: 70px;
+            font-size: 3rem;
           }
         }
       }
@@ -286,7 +384,7 @@ body {
         left: 0;
         .rightSectChild {
           position: absolute;
-          margin-top: 50px;
+          // margin-top: 50px;
           width: calc(100% - 40px);
           padding: 0 20px 0 20px;
           align-self: center;
@@ -296,6 +394,10 @@ body {
             width: 100%;
             justify-content: center;
             justify-items: center;
+
+            .serviceTypeRow{
+              width: 100%;
+            }
             .serviceDiv {
               width: 100%;
               // .serviceHead {
