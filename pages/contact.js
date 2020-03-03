@@ -105,7 +105,7 @@ const Contact = () => {
           <div className="rightSectChild">
             <div className="letsTalkDiv">
               <h2 className="letsTalkHead">Lets Talk!</h2>
-              <p itemprop="creator" className="contactPara name">
+              <p itemProp="creator" className="contactPara name">
                 Jacob Broughton
               </p>
               <a

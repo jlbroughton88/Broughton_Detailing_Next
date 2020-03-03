@@ -1,4 +1,6 @@
-Add some kind of "active" type indication for selected service
-Add full detail section
+<!-- Urgent -->
+Fix services positioning on desktop for large height media query
+
+<!-- Eventually -->
 Update FAQ some
 Consider extra content (maintainance washes, blog, deals section)

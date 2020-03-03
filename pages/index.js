@@ -71,7 +71,7 @@ const Index = () => {
     },
     {
       question: "How much do you charge?",
-      answer: `Broughton Detail's rates start at just $55!`,
+      answer: `Broughton Detail's rates start at just $70!`,
       link: "/services",
       topic: "services and pricing"
     },
@@ -82,7 +82,7 @@ const Index = () => {
     {
       question: "How long will the detail take??",
       answer:
-        "It really depends which package is chosen and what type of car you have, but average time ranges from about 1.5 hours to 4 hours (depending on the service / condition of vehicle).",
+        "It really depends which package is chosen and what type of car you have, but average time ranges from about 2.5 hours to 6 hours (depending on the service / condition of vehicle).",
       link: "/services",
       topic: "service time-frames"
     }
@@ -93,7 +93,7 @@ const Index = () => {
       <Navbar/>
       <div className="home1Main">
         <section className="leftSect">
-          <div  itemprop="description" className="headDiv">
+          <div  itemProp="description" className="headDiv">
             {/* <Link href="/allclients">
               <a >All Clients</a>
             </Link> */}
@@ -108,9 +108,9 @@ const Index = () => {
             </div>
 
             <div className="addrParent">
-              <div itemprop="about" className="addrDiv">
-                <h1 itemprop="description" className="addrTextSmall">Mobile Auto Detailing</h1>
-                <h1 itemprop="contentLocation" className="addrText">Located in Matthews, NC</h1>
+              <div itemProp="about" className="addrDiv">
+                <h1 itemProp="description" className="addrTextSmall">Mobile Auto Detailing</h1>
+                <h1 itemProp="contentLocation" className="addrText">Located in Matthews, NC</h1>
                 <h1 className="addrText2">I'll come to you</h1>
                 <div className="buttonsDiv">
                   <a href="mailto:broughtondetailing@gmail.com?subject=Detail Inquiry">
@@ -155,8 +155,8 @@ const Index = () => {
                 <div className="reviewsScroll">
                   {reviews.map(rev => (
                     <div itemScope itemType="http://schema.org/Recommendation" key={rev.text} className="revItem">
-                      <p itemprop="reviewBody" className="revText">{rev.text}</p>
-                      <p itemprop="author" className="revName">{rev.name}</p>
+                      <p itemProp="reviewBody" className="revText">{rev.text}</p>
+                      <p itemProp="author" className="revName">{rev.name}</p>
                     </div>
                   ))}
                 </div>

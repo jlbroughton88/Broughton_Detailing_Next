@@ -25,18 +25,18 @@ const About1 = () => {
             <h1 className="head">About</h1>
           </div>
         </section>
-        <section itemprop="mainContentOfPage" className="rightSect">
+        <section itemProp="mainContentOfPage" className="rightSect">
           <div className="rightSectChild">
             <div className="storyDiv">
               {/* <div className="storyHeadDiv">
                 <h3 className="storyHead">The Story</h3>
               </div>                 */}
-              <div itemprop="primaryImageOfPage" className="aboutImgDiv">
+              <div itemProp="primaryImageOfPage" className="aboutImgDiv">
                 <img className="aboutImg" src={genesis4} alt="" />
               </div>
               <div className="storyParaDiv">
                 <h2 className="aboutSlogan">"Nothing Less Than Remarkable"</h2>
-                <h3 itemScope itemType="http://schema.org/ShortStory" itemprop="about" className="storyPara">
+                <h3 itemScope itemType="http://schema.org/ShortStory" itemProp="about" className="storyPara">
                   Hi, my name is Jacob, founder of Broughton Detailing. I
                   appreciate you spending a few minutes here on my site!
                   <br /> <br />

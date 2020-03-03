@@ -135,6 +135,9 @@ body {
           max-width: 500px;
           margin-bottom: 40px;
           padding-top: 30px;
+          // align-self: center;
+          justify-self: center;
+
           .letsTalkHead {
             width: 100%;
             background: #4698fe;
@@ -302,8 +305,11 @@ body {
           max-width: 500px;
           padding: 0 20px 0 20px;
           .letsTalkDiv {
-            width: calc(100% - 30px);
+            width: calc(100% - 0px);
             padding-top: 0px;
+            .letsTalkHead{
+              width: calc(100% - 30px)
+            }
           }
           .signupDiv{
             padding-bottom: 150px;

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import Link from "next/link";
+import LogoSVG from "./logos/logo";
 import Menu from "./logos/menusvg";
 import "../../public/static/css/navbar.scss";
 
@@ -37,26 +38,40 @@ const Navbar = () => {
         <Link href="/">
           <a>
             <div className="navLogoDiv">
+              {/* <LogoSVG/> */}
               <h2 className="navLogo">Broughton</h2>
               <h2 className="navLogoSecond">Detailing</h2>
             </div>
           </a>
         </Link>
 
-        <div itemScope itemType="http://schema.org/ItemList" tabIndex="0" className="navLinksDiv">
-          <Link  href="/about">
-            <a itemprop="itemListElement"  className="navLink">About</a>
+        <ul
+          itemScope
+          itemType="http://schema.org/ItemList"
+          tabIndex="0"
+          className="navLinksDiv"
+        >
+          <Link href="/about">
+            <a itemProp="itemListElement" className="navLink">
+              <li itemProp="ListItem" className="navListItem">About</li>
+            </a>
           </Link>
-          <Link  href="/services">
-            <a itemprop="itemListElement"  className="navLink">Services</a>
+          <Link href="/services">
+            <a itemProp="itemListElement" className="navLink">
+              <li itemProp="ListItem" className="navListItem">Services</li>
+            </a>
           </Link>
-          <Link  href="/work">
-            <a itemprop="itemListElement"  className="navLink">Work</a>
+          <Link href="/work">
+            <a itemProp="itemListElement" className="navLink">
+              <li itemProp="ListItem" className="navListItem">Work</li>
+            </a>
           </Link>
-          <Link  href="/contact">
-            <a itemprop="itemListElement"  className="navLink">Contact</a>
+          <Link href="/contact">
+            <a itemProp="itemListElement" className="navLink">
+              <li itemProp="ListItem" className="navListItem">Contact</li>
+            </a>
           </Link>
-        </div>
+        </ul>
         <div tabIndex="0" onClick={handleMenuOpen} className="burgerMenuDiv">
           {/* <button >Menu</button> */}
           <Menu className="burgerMenu" />
@@ -64,16 +79,28 @@ const Navbar = () => {
         <div tabIndex="0" id="dropDown" className="navDropDown">
           <ul itemScope itemType="http://schema.org/ItemList">
             <Link href="/about">
-              <li  itemprop="itemListElement" >About</li>
+              <a itemProp="itemListElement" >
+                 <li itemProp="ListItem">About</li>
+              </a>
+             
             </Link>
             <Link href="/services">
-              <li  itemprop="itemListElement" >Services</li>
+            <a itemProp="itemListElement" >
+              <li itemProp="ListItem">Services</li>
+            </a>
+              
             </Link>
             <Link href="/work">
-              <li  itemprop="itemListElement" >Work</li>
+            <a itemProp="itemListElement" >
+              <li itemProp="ListItem" >Work</li>
+            </a>
+              
             </Link>
             <Link href="/contact">
-              <li itemprop="itemListElement"  >Contact</li>
+            <a itemProp="itemListElement" >
+              <li itemProp="ListItem">Contact</li>
+            </a>
+              
             </Link>
           </ul>
         </div>

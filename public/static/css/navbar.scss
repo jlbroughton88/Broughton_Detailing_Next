@@ -32,13 +32,21 @@
       display: flex;
       flex-direction: row;
       align-items: center;
+      padding: 0;;
       .navLink {
         text-decoration: none;
         color: #ffffff;
         font-size: 1.15rem;
         margin-left: 15px;
         cursor: pointer;
+        .navListItem{
+          list-style: none;
+          padding: none;
+        }
       }
+    }
+    ul{
+      padding: none;
     }
     .burgerMenuDiv {
       display: none;

@@ -9,7 +9,8 @@ module.exports = withImages(
       HOST: process.env.HOST,
       USERNAME: process.env.USERNAME,
       PASSWORD: process.env.PASSWORD,
-      DATABASE: process.env.DATABASE
+      DATABASE: process.env.DATABASE, 
+      JAWSDB: process.env.JAWSDB_URL
     },
     exportPathMap: function () {
         return {

@@ -140,7 +140,7 @@ const Work = () => {
         </section>
         <section  className="rightSect">
           <div className="rightSectChild">
-            <div itemprop="mainContentOfPage" itemScope itemType="http://schema.org/Collection" id="imagesGrid" className="imagesGrid">
+            <div itemProp="mainContentOfPage" itemScope itemType="http://schema.org/Collection" id="imagesGrid" className="imagesGrid">
               {imageArr.map(img => (
                 <div
                   className="imageItem"
