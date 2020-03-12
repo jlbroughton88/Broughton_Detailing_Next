@@ -283,7 +283,7 @@ body {
                   }
                   :nth-child(4) {
                     &:after {
-                      content: "$140 - $160";
+                      content: "$130 - $140";
                       @include priceAttr;
                     }
                   }
@@ -296,28 +296,28 @@ body {
 
                   :nth-child(1) {
                     &:after {
-                      content: "$100 - $110";
+                      content: "$120 - $140";
                       @include priceAttr;
                     }
                     margin-bottom: 5px;
                   }
                   :nth-child(2) {
                     &:after {
-                      content: "$120 - $140";
+                      content: "$150 - $170";
                       @include priceAttr;
                     }
                     margin-bottom: 5px;
                   }
                   :nth-child(3) {
                     &:after {
-                      content: "$150 - $180";
+                      content: "$180 - $220";
                       @include priceAttr;
                     }
                     margin-bottom: 5px;
                   }
                   :nth-child(4) {
                     &:after {
-                      content: "$200 - $230";
+                      content: "$230 - $250";
                       @include priceAttr;
                     }
                   }
