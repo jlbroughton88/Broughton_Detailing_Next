@@ -216,6 +216,14 @@ body {
                 padding: 3px 8px;
                 border-radius: 3px;
               }
+              .conditionNoticeDiv{
+                background: #f8f8f8;
+                padding: 5px 10px;
+                border-radius: 3px;
+                margin-top: 10px;
+                .conditionNotice{
+                }
+              }
               .priceTimeParent {
                 background: #ffffff;
                 padding: 5px 10px;
@@ -332,6 +340,7 @@ body {
                 }
               }
               @media (max-width: 500px) {
+                .conditionNotice,
                 .packagePrice {
                   font-size: 0.9rem;
                 }
@@ -434,6 +443,11 @@ body {
               .serviceList{
                 .serviceListItem{
                   font-size: 1.1rem;
+                }
+                .conditionNoticeDiv{
+                  .conditionNotice{
+                    font-size: 1.1rem;
+                  }
                 }
                 .priceTimeParent{
                   .packagePrice{

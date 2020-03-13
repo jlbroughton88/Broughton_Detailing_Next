@@ -1,5 +1,22 @@
 {
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/about.scss": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/contact.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -33,7 +50,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/about.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/allclients.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -50,7 +67,7 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/contact.scss": [
+  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
     {
       "modules": {
         "byIdentifier": {},
@@ -101,23 +118,6 @@
       }
     }
   ],
-  "mini-css-extract-plugin node_modules/@zeit/next-css/node_modules/css-loader/index.js??ref--6-1!node_modules/sass-loader/dist/cjs.js??ref--6-2!public/static/css/navbar.scss": [
-    {
-      "modules": {
-        "byIdentifier": {},
-        "usedIds": {}
-      },
-      "chunks": {
-        "byName": {
-          "mini-css-extract-plugin": 0
-        },
-        "bySource": {},
-        "usedIds": [
-          0
-        ]
-      }
-    }
-  ],
   "modules": {
     "byIdentifier": {
       "multi next-client-pages-loader?page=%2F_app&absolutePagePath=private-next-pages%2F_app.js! node_modules/next/dist/client/router.js": 0,
@@ -144,60 +144,26 @@
     "byName": {
       "static/runtime/webpack.js": 0,
       "framework": 1,
-      "11825e7304f714f9aa11edf07d26707e8abc4448": 2,
-      "34ac6693c4c75056123895694bcd883f8bfdb367": 3,
-      "0cfb9ff464a86367021438754311f495b5081046": 4,
+      "dbe7617ba2a0980fda20009ea9cd5ccfb57ba639": 2,
+      "4d85593f85eb89023be722e0a2c432feb917be46": 3,
+      "6578eda730d38f972cf52d6a73db212f98e4fca4": 4,
       "styles": 5,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/_app.js": 6,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/_error.js": 7,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/about.js": 8,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/allclients.js": 9,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/comps/context.js": 10,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/comps/logos/facebook.js": 11,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/comps/logos/instagram.js": 12,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/comps/logos/logo.js": 13,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/comps/logos/menusvg.js": 14,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/comps/navbar.js": 15,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/contact.js": 16,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/index.js": 17,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/services.js": 18,
-      "static/UK_ULzBlD5-hp01T1Q7a2/pages/work.js": 19,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/_app.js": 6,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/_error.js": 7,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/about.js": 8,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/allclients.js": 9,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/comps/context.js": 10,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/comps/logos/facebook.js": 11,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/comps/logos/instagram.js": 12,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/comps/logos/logo.js": 13,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/comps/logos/menusvg.js": 14,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/comps/navbar.js": 15,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/contact.js": 16,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/index.js": 17,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/services.js": 18,
+      "static/QsSGN8nvPyC3PV1JBOzai/pages/work.js": 19,
       "static/runtime/main.js": 20,
-      "static/runtime/polyfills.js": 21,
-      "a5a97f42c586e816a0cbf187a39052b7e8c51b27": 22,
-      "bf25f25e238ed8a5bca096ba1dde988de366e395": 23,
-      "1430569588fa2c9a3acf494046f770f11b13d868": 24,
-      "static/fP4-50fMjK9DAJIRP8082/pages/_app.js": 25,
-      "static/fP4-50fMjK9DAJIRP8082/pages/_error.js": 26,
-      "static/fP4-50fMjK9DAJIRP8082/pages/about.js": 27,
-      "static/fP4-50fMjK9DAJIRP8082/pages/allclients.js": 28,
-      "static/fP4-50fMjK9DAJIRP8082/pages/comps/context.js": 29,
-      "static/fP4-50fMjK9DAJIRP8082/pages/comps/logos/facebook.js": 30,
-      "static/fP4-50fMjK9DAJIRP8082/pages/comps/logos/instagram.js": 31,
-      "static/fP4-50fMjK9DAJIRP8082/pages/comps/logos/logo.js": 32,
-      "static/fP4-50fMjK9DAJIRP8082/pages/comps/logos/menusvg.js": 33,
-      "static/fP4-50fMjK9DAJIRP8082/pages/comps/navbar.js": 34,
-      "static/fP4-50fMjK9DAJIRP8082/pages/contact.js": 35,
-      "static/fP4-50fMjK9DAJIRP8082/pages/index.js": 36,
-      "static/fP4-50fMjK9DAJIRP8082/pages/services.js": 37,
-      "static/fP4-50fMjK9DAJIRP8082/pages/work.js": 38,
-      "085aef9d3b1431b9a7b1da55fa5c3d43580551b6": 2,
-      "de42c912a722b7861e79050ef94406ef463d9775": 3,
-      "2911b29f3ec8398940fd2c696938058d5f355516": 4,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/_app.js": 6,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/_error.js": 7,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/about.js": 8,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/allclients.js": 9,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/comps/context.js": 10,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/comps/logos/facebook.js": 11,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/comps/logos/instagram.js": 12,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/comps/logos/logo.js": 13,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/comps/logos/menusvg.js": 14,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/comps/navbar.js": 15,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/contact.js": 16,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/index.js": 17,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/services.js": 18,
-      "static/i7NeSxmCOHgq0uXEZPomh/pages/work.js": 19
+      "static/runtime/polyfills.js": 21
     },
     "bySource": {},
     "usedIds": [

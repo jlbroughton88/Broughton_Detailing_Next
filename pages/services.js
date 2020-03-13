@@ -150,7 +150,9 @@ const Services = () => {
                       {item}
                     </li>
                   ))}
-
+                  <div className="conditionNoticeDiv">
+                    <h4 className="conditionNotice">Prices are based on a vehicle in average condition.</h4>
+                  </div>
                   <div itemProp="itemListElement" className="priceTimeParent">
                     <div className="priceTimeDivInterior">
                       <h4 className="packagePrice">2 Door Car : </h4>
@@ -189,6 +191,9 @@ const Services = () => {
                       {item}
                     </li>
                   ))}
+                  <div className="conditionNoticeDiv">
+                    <h4 className="conditionNotice">Prices are based on a vehicle in average condition.</h4>
+                  </div>
                   <div itemProp="itemListElement" className="priceTimeParent">
                     <div className="priceTimeDivExterior">
                       <h4 className="packagePrice">2 Door Car : </h4>
@@ -228,6 +233,9 @@ const Services = () => {
                       {item}
                     </li>
                   ))}
+                                    <div className="conditionNoticeDiv">
+                    <h4 className="conditionNotice">Prices are based on a vehicle in average condition.</h4>
+                  </div>
                   <div itemProp="itemListElement" className="priceTimeParent">
                     <div className="priceTimeDivFull">
                       <h4 className="packagePrice">2 Door Car : </h4>
