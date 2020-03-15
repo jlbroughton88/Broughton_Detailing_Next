@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2938,11 +2938,11 @@ const Index = () => {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/genesisWithTitle-59f4f0e06bd0027addd312ef81a4fd14.jpg";
+module.exports = "/_next/static/images/genesisWithTitle-6ccb8710c9a4711c5c2f32f96c0cf1c7.jpg";
 
 /***/ }),
 
-/***/ 4:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

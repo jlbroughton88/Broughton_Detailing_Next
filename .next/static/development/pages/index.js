@@ -10752,11 +10752,11 @@ var Index = function Index() {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/_next/static/images/genesisWithTitle-59f4f0e06bd0027addd312ef81a4fd14.jpg";
+module.exports = "/_next/static/images/genesisWithTitle-6ccb8710c9a4711c5c2f32f96c0cf1c7.jpg";
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************************/
@@ -10779,5 +10779,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[1,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map
