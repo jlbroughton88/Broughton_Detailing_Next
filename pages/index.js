@@ -94,9 +94,6 @@ const Index = () => {
       <div className="home1Main">
         <section className="leftSect">
           <div  itemProp="description" className="headDiv">
-            {/* <Link href="/allclients">
-              <a >All Clients</a>
-            </Link> */}
             <h3 className="subHead">Mobile</h3>
             <h1 className="head">Auto Detailing</h1>
           </div>
@@ -111,7 +108,8 @@ const Index = () => {
               <div itemProp="about" className="addrDiv">
                 <h1 itemProp="description" className="addrTextSmall">Mobile Auto Detailing</h1>
                 <h1 itemProp="contentLocation" className="addrText">Located in Matthews, NC</h1>
-                <h1 className="addrText2">I'll come to you</h1>
+                {/* <h1 className="addrText2">I'll come to you</h1> */}
+                <h1 className="CTAText">15% off your first detail!</h1>
                 <div className="buttonsDiv">
                   <a href="mailto:broughtondetailing@gmail.com?subject=Detail Inquiry">
                     <div className="CTA">Lets talk!</div>

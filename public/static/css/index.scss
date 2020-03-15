@@ -144,15 +144,28 @@
                   // color: #ffffff;
                 }
               }
+
+              .CTAText{
+                color: #ffffff;
+                margin-top: 2px;
+              }
               @keyframes bounce {
                 from {
+                  // box-shadow: none;
+                  // transform: translateY(0px);
+
                   box-shadow: none;
                   transform: translateY(0px);
+                  filter: brightness(100%);
                 }
                 to {
-                  box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe,
-                    9px 6px 10px rgba(30, 30, 30, 0.6);
-                  transform: translateY(-1px);
+                  // box-shadow: -2px -2px #ffffff, 3px 2px #e6522d, 6px 4px #4696fe,
+                  //   9px 6px 10px rgba(30, 30, 30, 0.6);
+                  // transform: translateY(-1px);
+
+                  box-shadow: -2px 2px black, -4px 3px #ffffff;
+                  transform: translateY(-3px);
+                  filter: brightness(120%);
                 }
               }
               .buttonsDiv {
@@ -174,7 +187,7 @@
                     padding: 5px 10px;
                     box-shadow: -2px -2px #ffffff, 3px 2px #e6522d,
                       6px 4px #4696fe;
-                    animation: bounce 2s infinite alternate;
+                    animation: bounce 1.75s infinite alternate;
                     cursor: pointer;
                   }              
   
