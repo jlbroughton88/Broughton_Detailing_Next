@@ -1,6 +1,4 @@
-<!-- Urgent -->
-Fix services positioning on desktop for large height media query
-
-<!-- Eventually -->
+<!-- Plan -->
+Fix navbar ASAP
 Update FAQ some
-Consider extra content (maintainance washes, blog, deals section)
+Consider extra content (maintainance washes, blogß deals section)

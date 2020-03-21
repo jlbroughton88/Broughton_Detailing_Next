@@ -38,7 +38,7 @@ const Navbar = () => {
         <Link href="/">
           <a>
             <div className="navLogoDiv">
-              <LogoSVG/>
+              <LogoSVG className="navLogoSvg"/>
               {/* <h2 className="navLogo">Broughton</h2>
               <h2 className="navLogoSecond">Detailing</h2> */}
             </div>

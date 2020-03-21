@@ -10,11 +10,18 @@
   .navMain {
     display: flex;
     flex-direction: row;
-    .navLogoDiv {
-      background: #333;
-      width: 200px;
+    a{
+          .navLogoDiv {
+      // background: #333;
+      width: auto;
       padding: 10px 20px;
-      border-bottom-right-radius: 3px;
+      display: flex;
+      align-items: center;
+      // border-bottom-right-radius: 3px;
+      .navLogoSvg{
+        // width: 50px;
+        background: blue;
+      }
       .navLogo {
         text-align: start;
         font-size: 1.8rem;
@@ -27,6 +34,8 @@
         color: #ffffff;
         font-weight: 500;
       }
+    }
+
     }
     .navLinksDiv {
       display: flex;
