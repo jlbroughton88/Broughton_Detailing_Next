@@ -10444,9 +10444,13 @@ var Services = function Services() {
     }
   };
 
-  var interiorArr = ["Windows inside & out", "Thorough vacuum (Including trunk)", "Door sills", "Door jams", "Trunk jams", "Hood jams", "Remove door panel scuffs / Skid marks", "Clean dashboard", "Clean console", "Vents cleaned", "Deep clean leather", "Dust surfaces", "Condition & protect interior", "Shampoo floor mats", "Shampoo carpets", "Fabric guard cloth (seating, carpet, headliner)"];
-  var exteriorArr = ["Windows inside & out", "Wash the car", "Dry the car", "Machine wax the car", "Protect black trim", "Door sills", "Door jams", "Trunk jams", "Hood jams", "Wash tires", "Degrease tires", "Face of wheels", "Wheel wells", "Barrels of wheels", "Satin black tire dressing", "Decontaminate / Clay paint (If necessary))", "Bug removal (Within reason)"];
-  var fullArr = ["Windows inside & out", "Thorough vacuum (Including trunk)", "Door sills", "Door jams", "Trunk jams", "Hood jams", "Remove door panel scuffs / Skid marks", "Clean dashboard", "Clean console", "Vents cleaned", "Deep clean leather", "Dust surfaces", "Condition & protect interior", "Shampoo floor mats", "Shampoo carpets", "Fabric guard cloth (seating, carpet, headliner)", "Wash the car", "Dry the car", "Wash tires", "Machine wax the car", "Protect black trim", "Degrease tires", "Face of wheels", "Wheel wells", "Barrels of wheels", "Satin black tire dressing", "Decontaminate / Clay paint (If necessary)", "Bug removal (Within reason)"];
+  var interiorArr = ["Windows inside & out", "Thorough vacuum (Including trunk)", "Door sills", "Door jams", "Trunk jams", "Hood jams", "Remove door panel scuffs / Skid marks", "Clean dashboard", "Clean console", "Vents cleaned", "Deep clean leather", "Dust surfaces", "Condition & protect interior", "Shampoo floor mats", "Shampoo carpets" // "Fabric guard cloth (seating, carpet, headliner)"
+  ];
+  var exteriorArr = ["Windows inside & out", "Wash the car", "Dry the car", "Machine wax", "Protect black trim", "Door sills", "Door jams", "Trunk jams", "Hood jams", "Wash tires", "Degrease tires", "Face of wheels", "Wheel wells", // "Barrels of wheels",
+  "Satin black tire dressing", "Decontaminate / Clay paint (If necessary))", "Bug removal (Within reason)"];
+  var fullArr = ["Windows inside & out", "Thorough vacuum (Including trunk)", "Door sills", "Door jams", "Trunk jams", "Hood jams", "Remove door panel scuffs / Skid marks", "Clean dashboard", "Clean console", "Vents cleaned", "Deep clean leather", "Dust surfaces", "Condition & protect interior", "Shampoo floor mats", "Shampoo carpets", // "Fabric guard cloth (seating, carpet, headliner)",
+  "Wash the car", "Dry the car", "Wash tires", "Machine wax", "Protect black trim", "Degrease tires", "Face of wheels", "Wheel wells", // "Barrels of wheels",
+  "Satin black tire dressing", "Decontaminate / Clay paint (If necessary)", "Bug removal (Within reason)"];
   return __jsx("div", {
     className: "servicesMother",
     __source: {
@@ -10898,7 +10902,7 @@ var Services = function Services() {
 
 /***/ }),
 
-/***/ 1:
+/***/ 4:
 /*!*******************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fservices&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Fservices.js ***!
   \*******************************************************************************************************************************************************************/
@@ -10921,5 +10925,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[4,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=services.js.map

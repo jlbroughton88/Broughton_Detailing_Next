@@ -51,14 +51,14 @@ const Services = () => {
     "Condition & protect interior",
     "Shampoo floor mats",
     "Shampoo carpets",
-    "Fabric guard cloth (seating, carpet, headliner)"
+    // "Fabric guard cloth (seating, carpet, headliner)"
   ];
 
   let exteriorArr = [
     "Windows inside & out",
     "Wash the car",
     "Dry the car",
-    "Machine wax the car",
+    "Machine wax",
     "Protect black trim",
     "Door sills",
     "Door jams",
@@ -68,7 +68,7 @@ const Services = () => {
     "Degrease tires",
     "Face of wheels",
     "Wheel wells",
-    "Barrels of wheels",
+    // "Barrels of wheels",
     "Satin black tire dressing",
     "Decontaminate / Clay paint (If necessary))",
     "Bug removal (Within reason)"
@@ -90,16 +90,16 @@ const Services = () => {
     "Condition & protect interior",
     "Shampoo floor mats",
     "Shampoo carpets",
-    "Fabric guard cloth (seating, carpet, headliner)",
+    // "Fabric guard cloth (seating, carpet, headliner)",
     "Wash the car",
     "Dry the car",
     "Wash tires",
-    "Machine wax the car",
+    "Machine wax",
     "Protect black trim",
     "Degrease tires",
     "Face of wheels",
     "Wheel wells",
-    "Barrels of wheels",
+    // "Barrels of wheels",
     "Satin black tire dressing",
     "Decontaminate / Clay paint (If necessary)",
     "Bug removal (Within reason)"
