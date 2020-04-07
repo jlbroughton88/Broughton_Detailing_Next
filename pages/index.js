@@ -109,7 +109,7 @@ const Index = () => {
                 <h1 itemProp="description" className="addrTextSmall">Mobile Auto Detailing</h1>
                 <h1 itemProp="contentLocation" className="addrText">Located in Matthews, NC</h1>
                 {/* <h1 className="addrText2">I'll come to you</h1> */}
-                <h1 className="CTAText">15% off your first detail!</h1>
+                <h1 className="CTAText">I'll come to you!</h1>
                 <div className="buttonsDiv">
                   <a href="mailto:broughtondetailing@gmail.com?subject=Detail Inquiry">
                     <div className="CTA">Lets talk!</div>

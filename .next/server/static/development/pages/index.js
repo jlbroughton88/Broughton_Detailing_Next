@@ -2757,7 +2757,7 @@ const Index = () => {
       lineNumber: 112
     },
     __self: undefined
-  }, "15% off your first detail!"), __jsx("div", {
+  }, "I'll come to you!"), __jsx("div", {
     className: "buttonsDiv",
     __source: {
       fileName: _jsxFileName,

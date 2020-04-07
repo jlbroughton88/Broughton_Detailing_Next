@@ -10589,7 +10589,7 @@ var Index = function Index() {
       lineNumber: 112
     },
     __self: this
-  }, "15% off your first detail!"), __jsx("div", {
+  }, "I'll come to you!"), __jsx("div", {
     className: "buttonsDiv",
     __source: {
       fileName: _jsxFileName,
