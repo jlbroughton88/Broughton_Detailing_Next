@@ -36,73 +36,52 @@ const Services = () => {
   };
 
   let interiorArr = [
-    "Windows inside & out",
     "Thorough vacuum (Including trunk)",
-    "Door sills",
-    "Door jams",
-    "Trunk jams",
-    "Hood jams",
+    "Windows inside & out",
+    "Door, hood, & trunk jams",
     "Remove door panel scuffs / Skid marks",
-    "Clean dashboard",
-    "Clean console",
-    "Vents cleaned",
+    "Cleanse dashboard & console",
+    "Dust & clean air vents",
     "Deep clean leather",
-    "Dust surfaces",
     "Condition & protect interior",
-    "Shampoo floor mats",
-    "Shampoo carpets",
-    // "Fabric guard cloth (seating, carpet, headliner)"
+    "Shampoo floor mats"
   ];
 
   let exteriorArr = [
-    "Windows inside & out",
-    "Wash the car",
-    "Dry the car",
+    "Microfiber wash & dry",
     "Machine wax",
-    "Protect black trim",
-    "Door sills",
-    "Door jams",
-    "Trunk jams",
-    "Hood jams",
+    "Protect / finish black trim",
+    "Door, hood, & trunk jams",
     "Wash tires",
     "Degrease tires",
-    "Face of wheels",
+    "Clean wheels",
     "Wheel wells",
-    // "Barrels of wheels",
-    "Satin black tire dressing",
+    "Satin black tire 'gloss'",
     "Decontaminate / Clay paint (If necessary))",
-    "Bug removal (Within reason)"
+    "Bug removal (Within limits)"
   ];
 
   let fullArr = [
-    "Windows inside & out",
     "Thorough vacuum (Including trunk)",
-    "Door sills",
-    "Door jams",
-    "Trunk jams",
-    "Hood jams",
+    "Windows inside & out",
+    "Door, hood, & trunk jams",
     "Remove door panel scuffs / Skid marks",
-    "Clean dashboard",
-    "Clean console",
-    "Vents cleaned",
+    "Cleanse dashboard & console",
+    "Dust & clean air vents",
     "Deep clean leather",
-    "Dust surfaces",
     "Condition & protect interior",
     "Shampoo floor mats",
-    "Shampoo carpets",
-    // "Fabric guard cloth (seating, carpet, headliner)",
-    "Wash the car",
-    "Dry the car",
-    "Wash tires",
+    "Microfiber wash & dry",
     "Machine wax",
-    "Protect black trim",
+    "Protect / finish black trim",
+    "Door, hood, & trunk jams",
+    "Wash tires",
     "Degrease tires",
-    "Face of wheels",
+    "Clean wheels",
     "Wheel wells",
-    // "Barrels of wheels",
-    "Satin black tire dressing",
-    "Decontaminate / Clay paint (If necessary)",
-    "Bug removal (Within reason)"
+    "Satin black tire 'gloss'",
+    "Decontaminate / Clay paint (If necessary))",
+    "Bug removal (Within limits)"
   ]
 
   return (
@@ -150,7 +129,7 @@ const Services = () => {
                       {item}
                     </li>
                   ))}
-                  <div className="conditionNoticeDiv">
+                  {/* <div className="conditionNoticeDiv">
                     <h4 className="conditionNotice">Prices are based on a vehicle in average condition.</h4>
                   </div>
                   <div itemProp="itemListElement" className="priceTimeParent">
@@ -164,7 +143,7 @@ const Services = () => {
                         Large SUV / 4 Door Pickup :{" "}
                       </h4>
                     </div>
-                  </div>
+                  </div> */}
                   <p className="questionPara">
                     <strong className="italic">Any questions?</strong> Click{" "}
                     <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
@@ -191,7 +170,7 @@ const Services = () => {
                       {item}
                     </li>
                   ))}
-                  <div className="conditionNoticeDiv">
+                  {/* <div className="conditionNoticeDiv">
                     <h4 className="conditionNotice">Prices are based on a vehicle in average condition.</h4>
                   </div>
                   <div itemProp="itemListElement" className="priceTimeParent">
@@ -205,7 +184,7 @@ const Services = () => {
                         Large SUV / 4 Door Pickup :{" "}
                       </h4>
                     </div>
-                  </div>
+                  </div> */}
                   <p className="questionPara">
                     <strong className="italic">Any questions?</strong> Click{" "}
                     <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
@@ -233,7 +212,7 @@ const Services = () => {
                       {item}
                     </li>
                   ))}
-                                    <div className="conditionNoticeDiv">
+                                    {/* <div className="conditionNoticeDiv">
                     <h4 className="conditionNotice">Prices are based on a vehicle in average condition.</h4>
                   </div>
                   <div itemProp="itemListElement" className="priceTimeParent">
@@ -247,7 +226,7 @@ const Services = () => {
                         Large SUV / 4 Door Pickup :{" "}
                       </h4>
                     </div>
-                  </div>
+                  </div> */}
                   <p className="questionPara">
                     <strong className="italic">Any questions?</strong> Click{" "}
                     <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">

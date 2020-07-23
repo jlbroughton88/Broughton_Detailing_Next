@@ -208,7 +208,6 @@ body {
             select
             {
               background: #333;
-
               padding: 5px 10px;
               border-radius: 3px;
               border: none;
@@ -217,6 +216,7 @@ body {
               font-size: 0.9rem;
               margin: 5px;
               resize: none;
+              font-family: inherit;
 
               &:nth-child(5) {
                 grid-column: 1/3;

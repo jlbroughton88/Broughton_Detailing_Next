@@ -176,26 +176,45 @@ body {
               max-width: 600px; }
           .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
             overflow: hidden;
-            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: .75em;
             position: relative; }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv:before {
-              background: linear-gradient(to right, #333333 0%, rgba(51, 51, 51, 0) 100%);
-              content: "";
-              position: absolute;
-              height: 100%;
-              width: 100px;
-              top: 0;
-              left: 0;
-              z-index: 2; }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv:after {
-              background: linear-gradient(to left, #333333 0%, rgba(51, 51, 51, 0) 100%);
-              content: "";
-              position: absolute;
-              height: 100%;
-              width: 100px;
-              right: 0;
-              top: 0;
-              z-index: 2; }
+            @media (max-width: 1200px) {
+              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
+                grid-template-columns: repeat(1, 1fr);
+                margin-bottom: 1em; } }
+            @media (max-width: 700px) {
+              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
+                grid-template-columns: repeat(3, 1fr); } }
+            @media (max-width: 550px) {
+              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
+                grid-template-columns: repeat(1, 1fr); } }
+            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewFooter {
+              color: #4698fe;
+              font-weight: 600;
+              font-size: 1.25rem; }
+            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsChild {
+              display: flex;
+              flex-direction: column;
+              margin: 5px 0; }
+              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsChild .reviewText {
+                color: #fff;
+                font-size: 1.1rem; }
+              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsChild .reviewName {
+                align-self: flex-start;
+                color: #fff;
+                background: black;
+                font-weight: 600;
+                margin-top: .25em;
+                padding: 5px 10px;
+                border-radius: 2px; }
+            @media (max-width: 700px) {
+              .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsChild {
+                max-width: 430px;
+                padding-left: 5px; }
+                .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsChild .reviewText {
+                  font-size: 1rem; } }
             .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsScroll {
               display: flex;
               flex-direction: row;
@@ -243,9 +262,9 @@ body {
               width: calc(100% - 20px);
               max-width: 600px; }
           .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem {
-            margin: 10px 5px;
+            margin: 10px 0px;
             border-radius: 3px;
-            padding: 5px 10px; }
+            padding: 5px 0; }
             .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqQuestion {
               color: #4698fe; }
             .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqAnswer {
@@ -291,24 +310,26 @@ body {
         right: 0;
         top: 0; } }
   @media (max-width: 900px) {
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText {
-      font-size: 1.7rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2 {
-      font-size: 1.7rem; }
-    .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
-      font-size: 1.6rem;
-      padding: 5px 10px; }
-    .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQHeadDiv .FAQHead {
-      font-size: 1.6rem;
-      padding: 5px 10px; }
-    .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem {
-      padding: 5px 5px; }
-      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqQuestion {
-        font-size: 1.4rem; }
-      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqAnswer {
-        margin-left: 10px; }
-      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqLink {
-        margin-left: 0; } }
+    .home1Mother .home1Main {
+      flex-direction: column; }
+      .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText {
+        font-size: 1.7rem; }
+      .home1Mother .home1Main .rightSect .rightSectChild .addrParent .addrDiv .addrText2 {
+        font-size: 1.7rem; }
+      .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsHeadDiv .reviewsHead {
+        font-size: 1.6rem;
+        padding: 5px 10px; }
+      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQHeadDiv .FAQHead {
+        font-size: 1.6rem;
+        padding: 5px 10px; }
+      .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem {
+        padding: 5px 5px; }
+        .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqQuestion {
+          font-size: 1.4rem; }
+        .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqAnswer {
+          margin-left: 10px; }
+        .home1Mother .home1Main .rightSect .rightSectChild .FAQDiv .FAQListDiv .faqItem .faqLink {
+          margin-left: 0; } }
   @media (max-width: 700px) {
     .home1Mother .home1Main .leftSect {
       display: none; }

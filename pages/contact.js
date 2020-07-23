@@ -34,11 +34,11 @@ const Contact = () => {
   const handleModelChange = e => {
     setModel(e.target.value);
   };
-  const handleConditionChange = e => {
+  const handleDetailChange = e => {
     console.log(e.target.value)
     setCondition(e.target.value);
   };
-  const handleDetailChange = e => {
+  const handleConditionChange = e => {
     setDetail(e.target.value);
   };
 
@@ -54,8 +54,8 @@ const Contact = () => {
         first_name: name,
         car_make: make,
         car_model: model,
-        car_condition: condition,
-        preferred_service: detail,
+        condition: condition,
+        condition: detail,
         date: formattedDate
       })
       .then(response => console.log(response))
@@ -130,7 +130,12 @@ const Contact = () => {
             </div>
             <div className="quoteDiv">
               <h2 className="quoteHead">Get a quote!</h2>
-              <form onSubmit={handleQuoteSubmit}>
+              <form onSubmit={handleQuoteSubmit}>                
+              <input
+                  placeholder="First Name"
+                  onChange={handleNameChange}
+                  type="text"
+                />
                 <input
                   placeholder="Email"
                   onChange={handleEmailChange}
@@ -138,10 +143,12 @@ const Contact = () => {
                   type="email"
                 />
                 <input
-                  placeholder="First Name"
-                  onChange={handleNameChange}
-                  type="text"
+                  placeholder="Phone Number"
+                  onChange={handleEmailChange}
+                  required
+                  type="email"
                 />
+
                 <input
                   placeholder="Your Car's Make"
                   onChange={handleMakeChange}
@@ -154,17 +161,20 @@ const Contact = () => {
                   required
                   type="text"
                 />
-                {/* <input placeholder="Your Car's Condition" onChange={handleConditionChange} required type="" /> */}
-                <select onChange={handleConditionChange} width="100%">
-                  <option value="Just needs a touch-up...">Just needs a touch-up...</option>
-                  <option value="Not that bad...">Not that bad...</option>
-                  <option value="Really bad...">Really bad...</option>
-                </select>
+                {/* <input placeholder="Your Car's Condition" onChange={handleDetailChange} required type="" /> */}
+                {/* <select onChange={handleConditionChange} width="100%">
+                  <option value="Just needs a touch-up...">Interior Detail</option>
+                  <option value="Not that bad...">Exterior Detail</option>
+                  <option value="Really bad...">Full Detail</option>
+                </select> */}
+                <input
+                  placeholder="Requested Detail (Full, Exterior, or Interior)"
+                />
                 <textarea
-                  placeholder="What kind of detail are you looking for?"
+                  placeholder="How would you describe the condition of your vehicle? (optional, but appreciated)"
                   onChange={handleDetailChange}
                   type=""
-                  required
+                  // required
                 />
                 <input className="quoteSubmit" type="submit" />
               </form>

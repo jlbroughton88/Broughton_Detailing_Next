@@ -10451,15 +10451,16 @@ var Index = function Index() {
   var FAQs = [{
     question: "Why not use a drive-thru carwash?",
     answer: "Drive-thru car washes may potentially damage your paint, leaving scratches and swirls from the large bristled brushes and harsh contact."
-  }, {
-    question: "Will my paint get damaged?",
-    answer: "Not at all! Only proven, time-tested techniques are used avoid any paint damage."
-  }, {
+  }, // {
+  //   question: "Will my paint get damaged?",
+  //   answer: "Only proven, time-tested techniques are used avoid any paint damage. Unlike traditional drive-thru carwashes, where brushes are slapped onto your vehicle's paintwork, causing scratches and swirls."
+  // },
+  {
     question: "Will I have to drop my car off?",
-    answer: "Nope, we'll come to you! Dropping your car off is an option for you though."
+    answer: "It is preferred as several variables are controlled during the detailing process, but if you need us to come to you, we will!"
   }, {
     question: "How much do you charge?",
-    answer: "Broughton Detail's rates start at just $70!",
+    answer: "We don't have a fixed rate for details, as each vehicle requires a different kind/amount of attention. Instead please get in touch so we can get you a quote!",
     link: "/services",
     topic: "services and pricing"
   }, {
@@ -10467,9 +10468,9 @@ var Index = function Index() {
     answer: "At the moment, no. Only cash or paypal/venmo is accepted."
   }, {
     question: "How long will the detail take??",
-    answer: "It really depends which package is chosen and what type of car you have, but average time ranges from about 2.5 hours to 6 hours (depending on the service / condition of vehicle).",
-    link: "/services",
-    topic: "service time-frames"
+    answer: "It really depends which package is chosen and what type of car you have, but average time ranges from about 2.5 hours to 7 hours (depending on the service / condition of vehicle)." // link: "/services",
+    // topic: "service time-frames"
+
   }];
   return __jsx("div", {
     itemScope: true,
@@ -10477,27 +10478,27 @@ var Index = function Index() {
     className: "home1Mother",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 91
     },
     __self: this
   }, __jsx(_comps_navbar__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 92
     },
     __self: this
   }), __jsx("div", {
     className: "home1Main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94
+      lineNumber: 93
     },
     __self: this
   }, __jsx("section", {
     className: "leftSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 94
     },
     __self: this
   }, __jsx("div", {
@@ -10505,42 +10506,42 @@ var Index = function Index() {
     className: "headDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 95
     },
     __self: this
   }, __jsx("h3", {
     className: "subHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 96
     },
     __self: this
   }, "Mobile"), __jsx("h1", {
     className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 97
     },
     __self: this
   }, "Auto Detailing"))), __jsx("section", {
     className: "rightSect",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 100
     },
     __self: this
   }, __jsx("div", {
     className: "rightSectChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 101
     },
     __self: this
   }, __jsx("div", {
     className: "imgDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 102
     },
     __self: this
   }, __jsx("img", {
@@ -10548,14 +10549,14 @@ var Index = function Index() {
     alt: "Broughton Detailing",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 103
     },
     __self: this
   })), __jsx("div", {
     className: "addrParent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 106
     },
     __self: this
   }, __jsx("div", {
@@ -10563,7 +10564,7 @@ var Index = function Index() {
     className: "addrDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 107
     },
     __self: this
   }, __jsx("h1", {
@@ -10571,7 +10572,7 @@ var Index = function Index() {
     className: "addrTextSmall",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 108
     },
     __self: this
   }, "Mobile Auto Detailing"), __jsx("h1", {
@@ -10579,55 +10580,55 @@ var Index = function Index() {
     className: "addrText",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 109
     },
     __self: this
   }, "Located in Matthews, NC"), __jsx("h1", {
     className: "CTAText",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112
+      lineNumber: 111
     },
     __self: this
   }, "I'll come to you!"), __jsx("div", {
     className: "buttonsDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 112
     },
     __self: this
   }, __jsx("a", {
     href: "mailto:broughtondetailing@gmail.com?subject=Detail Inquiry",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 113
     },
     __self: this
   }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 114
     },
     __self: this
   }, "Lets talk!")), __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
     href: "/services",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117
+      lineNumber: 116
     },
     __self: this
   }, __jsx("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 117
     },
     __self: this
   }, __jsx("div", {
     className: "CTA",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119
+      lineNumber: 118
     },
     __self: this
   }, "Services")))))), __jsx("div", {
@@ -10636,28 +10637,28 @@ var Index = function Index() {
     className: "FAQDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126
+      lineNumber: 125
     },
     __self: this
   }, __jsx("div", {
     className: "FAQHeadDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 126
     },
     __self: this
   }, __jsx("h2", {
     className: "FAQHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128
+      lineNumber: 127
     },
     __self: this
   }, "FAQ")), __jsx("div", {
     className: "FAQListDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130
+      lineNumber: 129
     },
     __self: this
   }, FAQs.map(function (faq) {
@@ -10666,7 +10667,7 @@ var Index = function Index() {
       className: "faqItem",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132
+        lineNumber: 131
       },
       __self: this
     }, __jsx("h2", {
@@ -10675,7 +10676,7 @@ var Index = function Index() {
       className: "faqQuestion",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133
+        lineNumber: 132
       },
       __self: this
     }, faq.question), __jsx("p", {
@@ -10684,27 +10685,27 @@ var Index = function Index() {
       className: "faqAnswer",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134
+        lineNumber: 133
       },
       __self: this
     }, faq.answer), faq.link && faq.topic && __jsx("p", {
       className: "faqLink",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136
+        lineNumber: 135
       },
       __self: this
     }, "Click", " ", __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
       href: faq.link,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 138
+        lineNumber: 137
       },
       __self: this
     }, __jsx("a", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139
+        lineNumber: 138
       },
       __self: this
     }, "here")), " ", "for more info on ", faq.topic, "."));
@@ -10712,66 +10713,107 @@ var Index = function Index() {
     className: "reviewsParent",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 147
     },
     __self: this
   }, __jsx("div", {
     className: "reviewsHeadDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 148
     },
     __self: this
   }, __jsx("h2", {
     className: "reviewsHead",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 149
     },
     __self: this
   }, "Here's what people are saying!")), __jsx("div", {
     className: "reviewsDiv",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152
+      lineNumber: 151
     },
     __self: this
   }, __jsx("div", {
-    className: "reviewsScroll",
+    className: "reviewsChild",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153
+      lineNumber: 163
     },
     __self: this
-  }, reviews.map(function (rev) {
-    return __jsx("div", {
-      itemScope: true,
-      itemType: "http://schema.org/Recommendation",
-      key: rev.text,
-      className: "revItem",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 155
-      },
-      __self: this
-    }, __jsx("p", {
-      itemProp: "reviewBody",
-      className: "revText",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 156
-      },
-      __self: this
-    }, rev.text), __jsx("p", {
-      itemProp: "author",
-      className: "revName",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 157
-      },
-      __self: this
-    }, rev.name));
-  }))))))));
+  }, __jsx("p", {
+    className: "reviewText",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164
+    },
+    __self: this
+  }, "\"Great guy, professional attitude. Worked around my schedule, and came to me. Car looks great!\""), __jsx("p", {
+    className: "reviewName",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 165
+    },
+    __self: this
+  }, "Geoffrey S.")), __jsx("div", {
+    className: "reviewsChild",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 169
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "reviewText",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 170
+    },
+    __self: this
+  }, "\"Great job on our 96 truck, looks like new. Worked with our schedule. Thanks again!!\""), __jsx("p", {
+    className: "reviewName",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 171
+    },
+    __self: this
+  }, "Louis M.")), __jsx("div", {
+    className: "reviewsChild",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 175
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "reviewText",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176
+    },
+    __self: this
+  }, "\"Broughton Detailing did an amazing job with my husband's SUV. I will definitely be using his services again.\""), __jsx("p", {
+    className: "reviewName",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 177
+    },
+    __self: this
+  }, "Kori T.")), __jsx("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 179
+    },
+    __self: this
+  }, __jsx("p", {
+    className: "reviewFooter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 180
+    },
+    __self: this
+  }, "Just to name a few!"))))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -10789,7 +10831,7 @@ module.exports = "/_next/static/images/genesisWithTitle-6ccb8710c9a4711c5c2f32f9
 
 /***/ }),
 
-/***/ 1:
+/***/ 2:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************************/
@@ -10812,5 +10854,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js","styles"]]]);
+},[[2,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

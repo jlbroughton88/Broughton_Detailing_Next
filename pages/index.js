@@ -60,18 +60,17 @@ const Index = () => {
       answer:
         "Drive-thru car washes may potentially damage your paint, leaving scratches and swirls from the large bristled brushes and harsh contact."
     },
-    {
-      question: "Will my paint get damaged?",
-      answer: "Not at all! Only proven, time-tested techniques are used avoid any paint damage."
-    },
-
+    // {
+    //   question: "Will my paint get damaged?",
+    //   answer: "Only proven, time-tested techniques are used avoid any paint damage. Unlike traditional drive-thru carwashes, where brushes are slapped onto your vehicle's paintwork, causing scratches and swirls."
+    // },
     {
       question: "Will I have to drop my car off?",
-      answer: "Nope, we'll come to you! Dropping your car off is an option for you though."
+      answer: "It is preferred as several variables are controlled during the detailing process, but if you need us to come to you, we will!"
     },
     {
       question: "How much do you charge?",
-      answer: `Broughton Detail's rates start at just $70!`,
+      answer: `We don't have a fixed rate for details, as each vehicle requires a different kind/amount of attention. Instead please get in touch so we can get you a quote!`,
       link: "/services",
       topic: "services and pricing"
     },
@@ -82,9 +81,9 @@ const Index = () => {
     {
       question: "How long will the detail take??",
       answer:
-        "It really depends which package is chosen and what type of car you have, but average time ranges from about 2.5 hours to 6 hours (depending on the service / condition of vehicle).",
-      link: "/services",
-      topic: "service time-frames"
+        "It really depends which package is chosen and what type of car you have, but average time ranges from about 2.5 hours to 7 hours (depending on the service / condition of vehicle)."
+      // link: "/services",
+      // topic: "service time-frames"
     }
   ];
   
@@ -150,14 +149,36 @@ const Index = () => {
                 <h2 className="reviewsHead">Here's what people are saying!</h2>
               </div>
               <div className="reviewsDiv">
-                <div className="reviewsScroll">
+
+
+                
+                {/* <div className="reviewsScroll">
                   {reviews.map(rev => (
                     <div itemScope itemType="http://schema.org/Recommendation" key={rev.text} className="revItem">
                       <p itemProp="reviewBody" className="revText">{rev.text}</p>
                       <p itemProp="author" className="revName">{rev.name}</p>
                     </div>
                   ))}
+                </div> */}
+                <div className="reviewsChild">
+                   <p className="reviewText">"Great guy, professional attitude. Worked around my schedule, and came to me. Car looks great!"</p>
+                   <p className="reviewName">Geoffrey S.</p>
+
                 </div>
+
+                <div className="reviewsChild">
+                  <p className="reviewText">"Great job on our 96 truck, looks like new. Worked with our schedule. Thanks again!!"</p>
+                  <p className="reviewName">Louis M.</p>
+                  
+                </div>
+
+                <div className="reviewsChild">
+                  <p className="reviewText">"Broughton Detailing did an amazing job with my husband's SUV. I will definitely be using his services again."</p>
+                  <p className="reviewName">Kori T.</p>
+                </div>
+               <div>
+                <p className="reviewFooter">Just to name a few!</p>
+              </div>
               </div>
             </div>
           </div>
