@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../public/static/css/services.scss";
 import Navbar from "./comps/navbar";
 import Link from "next/link"
-import QuoteContainer from "./comps/quote.js";
+// import QuoteContainer from "./comps/quote.js";
 
 const Services = () => {
   const [service, setService] = useState();
@@ -245,7 +245,7 @@ const Services = () => {
                     <strong>Looking for a quote? </strong> Click{" "}
                     <Link href="/quote">here!</Link>
                   </p>
-                  
+
                   <p className="questionPara">
                     <strong className="italic">Any questions?</strong> Click{" "}
                     <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">

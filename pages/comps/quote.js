@@ -1,13 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
+import axios from "axios"
 import "../../public/static/css/quote.scss";
 
 const Quote = () => {
-  const handleChange = (e) => {
-    setFormData(e.target.value);
-  };
+
+    const [formData, setFormData] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [name, setName] = useState("");
+    const [make, setMake] = useState("");
+    const [model, setModel] = useState("");
+    const [condition, setCondition] = useState("");
+    const [detail, setDetail] = useState("");
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
+  };
+  const handlePhoneChange = (e) => {
+    setPhone(e.target.value);
   };
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -20,18 +30,30 @@ const Quote = () => {
   };
   const handleDetailChange = (e) => {
     console.log(e.target.value);
+    setDetail(e.target.value);
+  };
+  const handleConditionChange = (e) => {
+    console.log(e.target.value);
     setCondition(e.target.value);
   };
 
+
   const handleQuoteSubmit = () => {
+
+    let quoteMsg = document.getElementById("quoteMessage");
+    let date = moment().format('L');
+    let formattedDate = date.replace(/\//g, "-");
+    console.log(formattedDate)
+
     axios
       .post(`https://www.broughtondetailing.com/api/addquote`, {
-        email: email,
         first_name: name,
+        email: email,
+        phone_number: phone,
         car_make: make,
         car_model: model,
+        detail: detail,
         condition: condition,
-        condition: detail,
         date: formattedDate,
       })
       .then((response) => console.log(response))
@@ -43,26 +65,26 @@ const Quote = () => {
     e.preventDefault();
   };
 
-  //   const handleFormInput = e => {
-  //     let input = document.getElementById("emailInput");
-  //     let thankYou = document.getElementById("thankYou");
-  //     axios
-  //       .post(`https://www.broughtondetailing.com/api/addclient`, {
-  //         email: formData
-  //       })
-  //       .then(response => console.log(response))
-  //       .catch(err => console.log(err));
-  //     if (formData !== "") {
-  //       thankYou.style.display = "block";
-  //     }
+    // const handleFormInput = e => {
+    //   let input = document.getElementById("emailInput");
+    //   let thankYou = document.getElementById("thankYou");
+    //   axios
+    //     .post(`https://www.broughtondetailing.com/api/addclient`, {
+    //       email: formData
+    //     })
+    //     .then(response => console.log(response))
+    //     .catch(err => console.log(err));
+    //   if (formData !== "") {
+    //     thankYou.style.display = "block";
+    //   }
 
-  //     input.value = "";
-  //     setTimeout(() => {
-  //       thankYou.style.display = "none";
-  //     }, 5000);
+    //   input.value = "";
+    //   setTimeout(() => {
+    //     thankYou.style.display = "none";
+    //   }, 5000);
 
-  //     e.preventDefault();
-  //   };
+    //   e.preventDefault();
+    // };
   return (
     <div className="quoteDiv">
       <h2 className="quoteHead">Get a quote!</h2>
@@ -80,9 +102,9 @@ const Quote = () => {
         />
         <input
           placeholder="Phone Number"
-          onChange={handleEmailChange}
+          onChange={handlePhoneChange}
           required
-          type="email"
+          type="tel"
         />
 
         <input
@@ -98,10 +120,10 @@ const Quote = () => {
           type="text"
         />
 
-        <input placeholder="Requested Detail (Full, Exterior, or Interior)" />
+        <input placeholder="Requested Detail (Full, Exterior, or Interior)" onChange={handleDetailChange}/>
         <textarea
           placeholder="How would you describe the condition of your vehicle? (optional, but appreciated)"
-          onChange={handleDetailChange}
+          onChange={handleConditionChange}
           type=""
           // required
         />

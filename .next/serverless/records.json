@@ -1,0 +1,53 @@
+{
+  "modules": {
+    "byIdentifier": {},
+    "usedIds": {}
+  },
+  "chunks": {
+    "byName": {
+      "init-server.js": 0,
+      "on-error-server.js": 1,
+      "pages/_error.js": 2,
+      "pages/about.js": 3,
+      "pages/allclients.js": 4,
+      "pages/api/addclient.js": 5,
+      "pages/api/addquote.js": 6,
+      "pages/api/clients.js": 7,
+      "pages/comps/context.js": 8,
+      "pages/comps/logos/facebook.js": 9,
+      "pages/comps/logos/instagram.js": 10,
+      "pages/comps/logos/logo.js": 11,
+      "pages/comps/logos/menusvg.js": 12,
+      "pages/comps/navbar.js": 13,
+      "pages/comps/quote.js": 14,
+      "pages/contact.js": 15,
+      "pages/index.js": 16,
+      "pages/quote.js": 17,
+      "pages/services.js": 18,
+      "pages/work.js": 19
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

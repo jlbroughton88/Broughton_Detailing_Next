@@ -12,6 +12,7 @@ const Contact = () => {
 
   const [formData, setFormData] = useState("");
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [name, setName] = useState("");
   const [make, setMake] = useState("");
   const [model, setModel] = useState("");
