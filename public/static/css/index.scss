@@ -264,7 +264,12 @@
                 width: calc(100% - 20px);
                 max-width: 600px;
               }
-            }
+            }              .reviewFooter{
+                margin: 0;
+                color: #4698fe;
+                font-weight: 600;
+                font-size: 1.25rem;
+              }
             .reviewsDiv {
               overflow: hidden;
               display: grid;
@@ -288,11 +293,7 @@
                   
                 }
               }
-              .reviewFooter{
-                color: #4698fe;
-                font-weight: 600;
-                font-size: 1.25rem;
-              }
+
 
               .reviewsChild {
                 display: flex;

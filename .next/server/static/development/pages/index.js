@@ -2966,20 +2966,20 @@ const Index = () => {
       lineNumber: 177
     },
     __self: undefined
-  }, "Kori T.")), __jsx("div", {
+  }, "Kori T."))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179
+      lineNumber: 181
     },
     __self: undefined
   }, __jsx("p", {
     className: "reviewFooter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 182
     },
     __self: undefined
-  }, "Just to name a few!"))))))));
+  }, "Just to name a few!")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);

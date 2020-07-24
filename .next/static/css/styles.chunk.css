@@ -1,3 +1,438 @@
+strong.italic {
+  font-weight: 700;
+  font-style: italic; }
+
+strong {
+  font-weight: 800;
+  color: inherit; }
+
+* {
+  appearance: none; }
+
+html,
+body,
+#root {
+  height: 100%;
+  min-height: 100%;
+  background: #333333; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.body {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* Internet Explorer 10+ */ }
+
+.body::-webkit-scrollbar {
+  /* WebKit */
+  display: none;
+  width: 0;
+  height: 0; }
+
+.servicesMother {
+  height: 100%; }
+  .servicesMother .servicesMain {
+    display: flex;
+    flex-direction: row;
+    height: 100%; }
+    .servicesMother .servicesMain .leftSect {
+      height: 100vh;
+      width: calc(50% - 30px);
+      background: #4698fe;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      position: fixed;
+      padding-right: 30px; }
+      .servicesMother .servicesMain .leftSect .headDiv {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; }
+        .servicesMother .servicesMain .leftSect .headDiv .head {
+          text-align: end;
+          color: #333;
+          font-size: 4rem; }
+    .servicesMother .servicesMain .rightSect {
+      height: 100%;
+      width: 50%;
+      background: #333;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      left: 50%; }
+      .servicesMother .servicesMain .rightSect .rightSectChild {
+        height: 100%;
+        margin-top: 30px;
+        position: relative;
+        padding-left: 30px;
+        display: flex;
+        width: calc(100% - 30px); }
+        .servicesMother .servicesMain .rightSect .rightSectChild .premiumHeadDiv {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          max-width: 500px; }
+          .servicesMother .servicesMain .rightSect .rightSectChild .premiumHeadDiv .premiumHead {
+            color: #ffffff;
+            margin: 25px 0 5px 0;
+            justify-self: flex-start; }
+        .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid {
+          width: calc(100% - 60px);
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          column-gap: 50px;
+          row-gap: 5px;
+          justify-content: center; }
+          .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceTypeRow {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            max-width: 500px;
+            z-index: 2;
+            margin-bottom: 10px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceTypeRow .slide {
+              height: 100%;
+              width: 30%;
+              font-weight: 600;
+              border: none;
+              appearance: none;
+              font-size: 1.5rem;
+              background: #ffffff;
+              color: #333;
+              cursor: pointer;
+              border-radius: 3px;
+              background: #4698fe;
+              color: #333333;
+              transition: all 0.1s ease-in-out;
+              text-align: center;
+              display: flex;
+              justify-content: center; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceTypeRow .slide:focus {
+                outline: thin dotted; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceTypeRow .slide.active {
+              box-shadow: -2px 2px black, -4px 3px #ffffff;
+              transform: translateY(-3px);
+              filter: brightness(120%); }
+            @media (max-width: 500px) {
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceTypeRow .slide {
+                font-size: 1.35rem; } }
+          .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv {
+            max-width: 500px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceHead {
+              background: #4698fe;
+              padding: 6px 15px;
+              font-size: 1.5rem;
+              font-weight: 600;
+              margin-bottom: 5px;
+              border-radius: 2px;
+              cursor: pointer; }
+              @media (min-height: 800px) {
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceHead {
+                  padding: 10px 15px; } }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceMainParaDiv {
+              color: #ffffff; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics {
+              margin-bottom: 5px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceRubric {
+                color: #ffffff;
+                font-weight: 600;
+                opacity: 0.8; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList {
+              padding-left: 2px;
+              display: none; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .serviceListItem {
+                color: #ffffff;
+                list-style: none;
+                margin: 3px;
+                white-space: pre-wrap; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .quotePara {
+                color: #000000;
+                background: #ffffff;
+                padding: 3px 8px;
+                border-radius: 3px;
+                margin-top: 10px; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .quotePara strong {
+                  font-weight: 700;
+                  font-style: italic; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .quotePara a {
+                  color: blue;
+                  font-weight: 800; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .questionPara {
+                color: #000000;
+                background: #ffffff;
+                padding: 3px 8px;
+                border-radius: 3px;
+                margin-top: 10px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .serviceNotice {
+                color: #ffffff;
+                background: black;
+                padding: 3px 8px;
+                border-radius: 3px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .conditionNoticeDiv {
+                background: #f8f8f8;
+                padding: 5px 10px;
+                border-radius: 3px;
+                margin-top: 10px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent {
+                background: #ffffff;
+                padding: 5px 10px;
+                border-radius: 3px;
+                margin-top: 10px; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior :nth-child(1) {
+                    margin-bottom: 5px; }
+                    .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior :nth-child(1):after {
+                      content: "$60 - $70";
+                      font-style: italic;
+                      background: #333333;
+                      color: #ffffff;
+                      border-radius: 3px;
+                      padding: 0 5px;
+                      margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior :nth-child(2) {
+                    margin-bottom: 5px; }
+                    .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior :nth-child(2):after {
+                      content: "$70 - $80";
+                      font-style: italic;
+                      background: #333333;
+                      color: #ffffff;
+                      border-radius: 3px;
+                      padding: 0 5px;
+                      margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior :nth-child(3) {
+                    margin-bottom: 5px; }
+                    .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior :nth-child(3):after {
+                      content: "$100 - $120";
+                      font-style: italic;
+                      background: #333333;
+                      color: #ffffff;
+                      border-radius: 3px;
+                      padding: 0 5px;
+                      margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior :nth-child(4):after {
+                    content: "$130 - $150";
+                    font-style: italic;
+                    background: #333333;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    padding: 0 5px;
+                    margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivInterior .packageTime {
+                    color: #333333; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivExterior :nth-child(1) {
+                  margin-bottom: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivExterior :nth-child(1):after {
+                    content: "$50 - $60";
+                    font-style: italic;
+                    background: #333333;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    padding: 0 5px;
+                    margin-left: 5px; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivExterior :nth-child(2) {
+                  margin-bottom: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivExterior :nth-child(2):after {
+                    content: "$60 - $70";
+                    font-style: italic;
+                    background: #333333;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    padding: 0 5px;
+                    margin-left: 5px; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivExterior :nth-child(3) {
+                  margin-bottom: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivExterior :nth-child(3):after {
+                    content: "$80 - $100";
+                    font-style: italic;
+                    background: #333333;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    padding: 0 5px;
+                    margin-left: 5px; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivExterior :nth-child(4):after {
+                  content: "$100 - $120";
+                  font-style: italic;
+                  background: #333333;
+                  color: #ffffff;
+                  border-radius: 3px;
+                  padding: 0 5px;
+                  margin-left: 5px; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull {
+                  display: flex;
+                  flex-direction: column;
+                  width: 100%; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull :nth-child(1) {
+                    margin-bottom: 5px; }
+                    .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull :nth-child(1):after {
+                      content: "$100 - $120";
+                      font-style: italic;
+                      background: #333333;
+                      color: #ffffff;
+                      border-radius: 3px;
+                      padding: 0 5px;
+                      margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull :nth-child(2) {
+                    margin-bottom: 5px; }
+                    .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull :nth-child(2):after {
+                      content: "$120 - $150";
+                      font-style: italic;
+                      background: #333333;
+                      color: #ffffff;
+                      border-radius: 3px;
+                      padding: 0 5px;
+                      margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull :nth-child(3) {
+                    margin-bottom: 5px; }
+                    .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull :nth-child(3):after {
+                      content: "$180 - $210";
+                      font-style: italic;
+                      background: #333333;
+                      color: #ffffff;
+                      border-radius: 3px;
+                      padding: 0 5px;
+                      margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull :nth-child(4):after {
+                    content: "$220 - $250";
+                    font-style: italic;
+                    background: #333333;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    padding: 0 5px;
+                    margin-left: 5px; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .priceTimeDivFull .packageTime {
+                    color: #333333; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .packageTime {
+                  color: #333333; }
+              @media (max-width: 500px) {
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .conditionNotice,
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .packagePrice {
+                  font-size: 0.9rem; } }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #basics {
+              background: #ffffff; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics {
+              padding-left: 2px;
+              display: block; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .serviceListItem {
+                color: #ffffff;
+                margin: 3px; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .serviceNotice {
+                background: #ffffff;
+                color: #ffffff; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeParent {
+                margin-bottom: 20px; }
+                .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeParent .priceTimeDiv {
+                  display: flex;
+                  flex-direction: row;
+                  width: 100%; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeParent .priceTimeDiv .packagePrice {
+                    color: #4698fe; }
+                  .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeParent .priceTimeDiv .packageTime {
+                    color: #4698fe; }
+                    .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceListBasics .priceTimeParent .priceTimeDiv .packageTime:before {
+                      content: "| \A0   ";
+                      color: #ffffff; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList.active {
+              display: block;
+              animation: fadein 0.35s normal;
+              margin-bottom: 8px; }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    margin-bottom: 0px;
+    filter: brightness(100%); }
+  to {
+    opacity: 1;
+    margin-bottom: 8px;
+    filter: brightness(103%); } }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #basics {
+              border-left: #4698fe solid 5px;
+              padding-left: 12px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #interior {
+              border-left: #ffffff solid 5px;
+              padding-left: 15px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #wheels {
+              border-left: #ffffff solid 7px;
+              padding-left: 10px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #leather {
+              border-left: #ffffff solid 9px;
+              padding-left: 11px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #carpets {
+              border-left: #ffffff solid 11px;
+              padding-left: 9px; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv #paint {
+              border-left: #ffffff solid 13px;
+              padding-left: 8px; }
+      @media (min-height: 880px) and (min-width: 701px) {
+        .servicesMother .servicesMain .rightSect {
+          height: 100vh;
+          align-items: center; }
+          .servicesMother .servicesMain .rightSect .rightSectChild {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid {
+              padding: 0; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .serviceListItem {
+                font-size: 1.1rem; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .conditionNoticeDiv .conditionNotice {
+                font-size: 1.1rem; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .priceTimeParent .packagePrice {
+                font-size: 1.1rem; }
+              .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv .serviceList .questionPara {
+                font-size: 1.1rem; } }
+  @media (max-width: 700px) {
+    .servicesMother .servicesMain {
+      flex-direction: column; }
+      .servicesMother .servicesMain .leftSect {
+        all: inherit;
+        height: auto;
+        background: #4698fe;
+        padding-bottom: 7px;
+        position: static; }
+        .servicesMother .servicesMain .leftSect .headDiv {
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end; }
+          .servicesMother .servicesMain .leftSect .headDiv .head {
+            margin-top: 70px;
+            font-size: 3rem; }
+      .servicesMother .servicesMain .rightSect {
+        width: 100%;
+        justify-content: flex-start;
+        left: 0; }
+        .servicesMother .servicesMain .rightSect .rightSectChild {
+          position: absolute;
+          width: calc(100% - 40px);
+          padding: 0 20px 100px 20px;
+          align-self: center;
+          height: auto; }
+          .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid {
+            position: relative;
+            width: 100%;
+            justify-content: center;
+            justify-items: center;
+            align-items: center; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceTypeRow {
+              width: 100%; }
+            .servicesMother .servicesMain .rightSect .rightSectChild .servicesGrid .serviceDiv {
+              width: 100%; } }
+
 html, body, #root {
   height: 100%;
   min-height: 100%;
@@ -174,6 +609,11 @@ body {
               margin-bottom: 10px;
               width: calc(100% - 20px);
               max-width: 600px; }
+          .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewFooter {
+            margin: 0;
+            color: #4698fe;
+            font-weight: 600;
+            font-size: 1.25rem; }
           .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
             overflow: hidden;
             display: grid;
@@ -190,10 +630,6 @@ body {
             @media (max-width: 550px) {
               .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv {
                 grid-template-columns: repeat(1, 1fr); } }
-            .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewFooter {
-              color: #4698fe;
-              font-weight: 600;
-              font-size: 1.25rem; }
             .home1Mother .home1Main .rightSect .rightSectChild .reviewsParent .reviewsDiv .reviewsChild {
               display: flex;
               flex-direction: column;
@@ -555,6 +991,126 @@ body {
           display: block; }
           .navMother .navMain .navDropDown.active ul li:hover, .navMother .navMain .navDropDown.active ul li:focus {
             color: #4698fe; } }
+
+.quoteMother {
+  height: 100vh; }
+  .quoteMother .quoteMain {
+    display: flex;
+    flex-direction: row;
+    height: 100%; }
+    .quoteMother .quoteMain .leftSect {
+      height: 100%;
+      width: calc(50% - 30px);
+      background: #4698fe;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 30px;
+      position: fixed; }
+      .quoteMother .quoteMain .leftSect .headDiv {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%; }
+        .quoteMother .quoteMain .leftSect .headDiv .head {
+          text-align: end;
+          color: #333;
+          font-size: 4rem; }
+    .quoteMother .quoteMain .rightSect {
+      height: 100%;
+      width: 50%;
+      background: #333;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+      left: 50%; }
+      .quoteMother .quoteMain .rightSect .quoteDiv {
+        padding-left: 30px;
+        width: calc(100% - 30px);
+        max-width: 530px;
+        margin-bottom: 40px; }
+        .quoteMother .quoteMain .rightSect .quoteDiv .quoteHead {
+          width: calc(100% - 30px);
+          background: #4698fe;
+          padding: 6px 15px;
+          font-size: 1.5rem;
+          font-weight: 600;
+          margin-bottom: 5px;
+          border-radius: 2px; }
+        .quoteMother .quoteMain .rightSect .quoteDiv form {
+          background: #4698fe;
+          padding: 3px;
+          border-radius: 3px;
+          width: calc(100% - 6px);
+          display: flex;
+          flex-direction: column; }
+          .quoteMother .quoteMain .rightSect .quoteDiv form input,
+          .quoteMother .quoteMain .rightSect .quoteDiv form textarea,
+          .quoteMother .quoteMain .rightSect .quoteDiv form select {
+            background: #333;
+            padding: 5px 10px;
+            border-radius: 3px;
+            border: none;
+            width: calc(100% - 30px);
+            color: #ffffff;
+            font-size: 0.9rem;
+            margin: 5px;
+            resize: none;
+            font-family: inherit; }
+            .quoteMother .quoteMain .rightSect .quoteDiv form input:nth-child(5),
+            .quoteMother .quoteMain .rightSect .quoteDiv form textarea:nth-child(5),
+            .quoteMother .quoteMain .rightSect .quoteDiv form select:nth-child(5) {
+              grid-column: 1/3; }
+          .quoteMother .quoteMain .rightSect .quoteDiv form select {
+            width: calc(100% - 11px);
+            margin: 5px;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border-radius: 3px;
+            align-self: center;
+            cursor: pointer; }
+          .quoteMother .quoteMain .rightSect .quoteDiv form textarea {
+            grid-column: 1/3;
+            height: 100px; }
+          .quoteMother .quoteMain .rightSect .quoteDiv form .quoteSubmit {
+            align-self: start;
+            width: 150px;
+            font-size: 1.1rem;
+            appearance: none;
+            -webkit-appearance: none;
+            cursor: pointer; }
+        .quoteMother .quoteMain .rightSect .quoteDiv #quoteMessage {
+          margin-top: 10px;
+          color: #ffffff;
+          display: none; }
+  @media (max-width: 700px) {
+    .quoteMother {
+      height: 100%; }
+      .quoteMother .quoteMain {
+        flex-direction: column; }
+        .quoteMother .quoteMain .leftSect {
+          all: inherit;
+          height: auto;
+          background: #4698fe;
+          padding-bottom: 7px;
+          position: static; }
+          .quoteMother .quoteMain .leftSect .headDiv {
+            margin: 0;
+            justify-content: center;
+            align-items: flex-end; }
+            .quoteMother .quoteMain .leftSect .headDiv .head {
+              margin-top: 70px;
+              font-size: 3rem; }
+        .quoteMother .quoteMain .rightSect {
+          width: 100%;
+          justify-content: flex-start;
+          align-items: center;
+          left: 0; }
+          .quoteMother .quoteMain .rightSect .quoteDiv {
+            margin-top: 30px;
+            padding: 0; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

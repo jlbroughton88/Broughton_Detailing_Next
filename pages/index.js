@@ -176,9 +176,10 @@ const Index = () => {
                   <p className="reviewText">"Broughton Detailing did an amazing job with my husband's SUV. I will definitely be using his services again."</p>
                   <p className="reviewName">Kori T.</p>
                 </div>
-               <div>
+
+              </div>               
+              <div>
                 <p className="reviewFooter">Just to name a few!</p>
-              </div>
               </div>
             </div>
           </div>

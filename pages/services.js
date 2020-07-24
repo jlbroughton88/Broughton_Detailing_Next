@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "../public/static/css/services.scss";
 import Navbar from "./comps/navbar";
+import Link from "next/link"
+import QuoteContainer from "./comps/quote.js";
 
 const Services = () => {
   const [service, setService] = useState();
@@ -74,7 +76,6 @@ const Services = () => {
     "Microfiber wash & dry",
     "Machine wax",
     "Protect / finish black trim",
-    "Door, hood, & trunk jams",
     "Wash tires",
     "Degrease tires",
     "Clean wheels",
@@ -113,6 +114,9 @@ const Services = () => {
                 className="serviceDiv"
               >
               </div> */}
+
+
+
               <div
                 itemScope
                 itemType="http://schema.org/ItemList"
@@ -129,21 +133,14 @@ const Services = () => {
                       {item}
                     </li>
                   ))}
-                  {/* <div className="conditionNoticeDiv">
-                    <h4 className="conditionNotice">Prices are based on a vehicle in average condition.</h4>
-                  </div>
-                  <div itemProp="itemListElement" className="priceTimeParent">
-                    <div className="priceTimeDivInterior">
-                      <h4 className="packagePrice">2 Door Car : </h4>
-                      <h4 className="packagePrice">4 Door Family Sedan : </h4>
-                      <h4 className="packagePrice">
-                        Small SUV / 2 Door Pickup :{" "}
-                      </h4>
-                      <h4 className="packagePrice">
-                        Large SUV / 4 Door Pickup :{" "}
-                      </h4>
-                    </div>
-                  </div> */}
+
+                  <p className="quotePara">
+                    <strong>Looking for a quote? </strong> Click{" "}
+                    <Link href="/quote">here!</Link>
+                  </p>
+
+
+
                   <p className="questionPara">
                     <strong className="italic">Any questions?</strong> Click{" "}
                     <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
@@ -153,6 +150,11 @@ const Services = () => {
                   </p>
                 </ul>
               </div>
+
+
+
+
+
 
               <div
                 itemScope
@@ -185,6 +187,12 @@ const Services = () => {
                       </h4>
                     </div>
                   </div> */}
+
+<p className="quotePara">
+                    <strong>Looking for a quote? </strong> Click{" "}
+                    <Link href="/quote">here!</Link>
+                  </p>
+
                   <p className="questionPara">
                     <strong className="italic">Any questions?</strong> Click{" "}
                     <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">
@@ -194,6 +202,11 @@ const Services = () => {
                   </p>
                 </ul>
               </div>
+
+              {/* Quote component */}
+
+
+
 
 
               <div
@@ -227,6 +240,12 @@ const Services = () => {
                       </h4>
                     </div>
                   </div> */}
+
+<p className="quotePara">
+                    <strong>Looking for a quote? </strong> Click{" "}
+                    <Link href="/quote">here!</Link>
+                  </p>
+                  
                   <p className="questionPara">
                     <strong className="italic">Any questions?</strong> Click{" "}
                     <a href="mailto:broughtondetailing@gmail.com?subject=Services Inquiry">

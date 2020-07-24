@@ -161,12 +161,7 @@ const Contact = () => {
                   required
                   type="text"
                 />
-                {/* <input placeholder="Your Car's Condition" onChange={handleDetailChange} required type="" /> */}
-                {/* <select onChange={handleConditionChange} width="100%">
-                  <option value="Just needs a touch-up...">Interior Detail</option>
-                  <option value="Not that bad...">Exterior Detail</option>
-                  <option value="Really bad...">Full Detail</option>
-                </select> */}
+
                 <input
                   placeholder="Requested Detail (Full, Exterior, or Interior)"
                 />

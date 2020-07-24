@@ -10800,20 +10800,20 @@ var Index = function Index() {
       lineNumber: 177
     },
     __self: this
-  }, "Kori T.")), __jsx("div", {
+  }, "Kori T."))), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179
+      lineNumber: 181
     },
     __self: this
   }, __jsx("p", {
     className: "reviewFooter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180
+      lineNumber: 182
     },
     __self: this
-  }, "Just to name a few!"))))))));
+  }, "Just to name a few!")))))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
@@ -10831,7 +10831,7 @@ module.exports = "/_next/static/images/genesisWithTitle-6ccb8710c9a4711c5c2f32f9
 
 /***/ }),
 
-/***/ 2:
+/***/ 6:
 /*!********************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2FJacobBroughton%2Fcoding%2Fwork%2Fbroughton-detailing-next%2Fpages%2Findex.js ***!
   \********************************************************************************************************************************************************/
@@ -10854,5 +10854,5 @@ module.exports = dll_ef0ff7c60362f24a921f;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js","styles"]]]);
+},[[6,"static/runtime/webpack.js","styles"]]]);
 //# sourceMappingURL=index.js.map

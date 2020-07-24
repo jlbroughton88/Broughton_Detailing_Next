@@ -1,0 +1,148 @@
+.quoteMother{
+    height: 100vh;
+    .quoteMain {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  .leftSect {
+    height: 100%;
+    width: calc(50% - 30px);
+    background: #4698fe;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 30px;
+    position: fixed;
+
+    .headDiv {
+      // margin-bottom: 100px;
+      // height: 156px;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      .head {
+        text-align: end;
+        color: #333;
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .rightSect {
+    height: 100%;
+    width: 50%;
+    background: #333;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    left: 50%;
+    
+    .quoteDiv {
+        padding-left: 30px;
+    width: calc(100% - 30px);
+    max-width: 530px;
+    margin-bottom: 40px;
+  .quoteHead {
+    width: calc(100% - 30px);
+    background: #4698fe;
+    padding: 6px 15px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    border-radius: 2px;
+  }
+  form {
+    background: #4698fe;
+    padding: 3px;
+    border-radius: 3px;
+    width: calc(100% - 6px);
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea,
+    select {
+      background: #333;
+      padding: 5px 10px;
+      border-radius: 3px;
+      border: none;
+      width: calc(100% - 30px);
+      color: #ffffff;
+      font-size: 0.9rem;
+      margin: 5px;
+      resize: none;
+      font-family: inherit;
+
+      &:nth-child(5) {
+        grid-column: 1/3;
+      }
+    }
+
+    select {
+      width: calc(100% - 11px);
+      margin: 5px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border-radius: 3px;
+      align-self: center;
+      cursor: pointer;
+    }
+
+    textarea {
+      grid-column: 1/3;
+      height: 100px;
+    }
+    .quoteSubmit {
+      align-self: start;
+      width: 150px;
+      font-size: 1.1rem;
+      appearance: none;
+      -webkit-appearance: none;
+      cursor: pointer;
+    }
+  }
+  #quoteMessage {
+    margin-top: 10px;
+    color: #ffffff;
+    display: none;
+  }
+}
+
+  }
+}
+
+@media (max-width: 700px) {
+    height: 100%;
+    .quoteMain {
+      flex-direction: column;
+      .leftSect {
+        all: inherit;
+        height: auto;
+        background: #4698fe;
+        padding-bottom: 7px;
+        position: static;
+        .headDiv {
+          margin: 0;
+          justify-content: center;
+          align-items: flex-end;
+          .head {
+            margin-top: 70px;
+            font-size: 3rem;
+          }
+        }
+      }
+      .rightSect {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+        left: 0;
+       .quoteDiv{
+           margin-top: 30px;
+           padding: 0;
+       }
+      }
+    }
+  }
+}
